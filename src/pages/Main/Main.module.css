@@ -15,3 +15,38 @@
   object-fit: cover; 
   z-index: -1; 
 }
+
+.Cover{
+  position: relative;
+  z-index: 1;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.Title{
+  
+  margin-bottom: 60px;
+}
+
+h2{
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+h1{
+  font-family: 'Playfair Display SC', serif;
+  font-size: 60px;
+  margin-top: 10px;
+  font-weight: 900;
+  color: var(--color-secondary);
+}
+
+.Button{
+  position:relatve;
+  top: -80px !important;
+}

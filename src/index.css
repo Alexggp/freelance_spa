@@ -1,19 +1,24 @@
 /* App.css */
+@import '@fontsource/poppins';
+@import '@fontsource/allura';
+@import '@fontsource/playfair-display';
+@import '@fontsource/playfair-display-sc';
+@import '@fontsource/cormorant';
 
 
 :root{
-  --color-primary: #55646e;
-  --color-secondary: #19c2ba;
+  --color-primary: #0f172a;
+  --color-secondary: #1e3a8a;
   --color-white: #cdd7e2;
   --color-black: #323639;
 
-  --color-aux-primary: #55646e;
+  --color-aux-primary: #0f172a;
   --color-aux-secondary: #19c2ba;
   --color-aux-danger: #f3cd4f;
   --color-aux-success: #0ba10b;
   --color-aux-error: #f13434;
   --color-aux-text-secondary: #19c2ba;
-  --color-aux-text-primary:#55646e; 
+  --color-aux-text-primary:#e5e7eb; 
 
   --color-gradiente-primary: #fff;
   --color-gradient-secondary: #f1f1f1;
@@ -27,6 +32,8 @@
   --mobile-breakpoint: 768px;
   --tablet-breakpoint: 991px;
   --desktop-breakpoint: 1199px;
+
+  --primary-font: 'Poppins', sans-serif;
 
 }
 #root{
@@ -48,7 +55,7 @@ html, body {
 
 body {
   font-family: Arial, sans-serif; /* Sets a base font */
-  color: var(--color-aux-text-primary); /* Default text color */
+  color: var(--color-primary); /* Default text color */
   background-color: var(--color-white); /* Default background color */
   overflow-x: hidden;
   display: flex !important;
