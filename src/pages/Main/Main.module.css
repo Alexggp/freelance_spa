@@ -1,0 +1,17 @@
+.BackgroundContainer{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+
+.Video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; 
+  z-index: -1; 
+}
