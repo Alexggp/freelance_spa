@@ -1,0 +1,61 @@
+.References{
+  flex-direction: column;
+  justify-content: space-around !important;
+  align-items: center !important;
+  text-align: center;
+  color: var(--color-white);
+  background-color: var(--color-primary) !important;
+  background-image: url('../../assets/bg-clients.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+.Title{
+  margin: 100px;
+}
+
+.Title h1{
+  font-size: 55px;
+  color: #fff;
+}
+
+.Title h2{
+  font-size: 40px;
+}
+
+.LogoContainer{
+  height: 100px;
+  margin-bottom: 50px !important;
+}
+
+.LogoContainer img{
+  width: auto;
+  height: 100%;
+  filter: brightness(0%) invert(1);
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .Title{
+    margin: 50px;
+  }
+
+  .Title h1{
+    font-size: 40px;
+  }
+
+  .Title h2{
+    font-size: 25px;
+  }
+  
+  .Cta{
+    padding: 25px;
+  }
+  .LogoContainer{
+    height: 50px;
+  }
+
+}

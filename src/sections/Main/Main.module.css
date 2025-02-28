@@ -1,0 +1,47 @@
+.Main{
+  flex-direction: column;
+  justify-content: space-between !important;
+  align-items: center !important;
+  text-align: center;
+  min-height: 100vh !important;
+}
+
+.Title h1{
+  font-size: 55px;
+  color: var(--color-aux-text-secondary);
+  font-weight: bold;
+}
+
+.Title h2{
+  font-size: 40px;
+  margin: 0;
+}
+
+.Cta{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+}
+
+.Cta span{
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .Title h1{
+    font-size: 35px;
+  }
+
+  .Title h2{
+    font-size: 25px;
+  }
+  
+  .Cta{
+    padding: 25px;
+  }
+
+
+}

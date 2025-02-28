@@ -1,0 +1,47 @@
+.Avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.AvatarImage {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+}
+
+.Initials {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.FallbackIcon {
+  font-size: 1.5rem;
+}
+
+.Status {
+  border: 4px solid !important;
+}
+
+.Status.online {
+  border-color: var(--color-aux-success) !important;
+}
+
+.Status.offline {
+  border-color: var(--color-aux-error) !important;
+}
+
+.Status.busy {
+  border-color: var(--color-aux-error) !important;
+}
+
+.Status.offline {
+  border-color: var( --color-disabled) !important;
+}
+
+.Status.absent {
+  border-color: var(--color-aux-danger) !important;
+}
