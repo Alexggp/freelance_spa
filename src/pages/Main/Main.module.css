@@ -1,7 +1,16 @@
+.MainPage{
+  width: 100vw;
+  height: 100vh;
+}
+
+
 .BackgroundContainer{
   width: 100vw;
   height: 100vh;
-  position: relative;
+  position: fixed;
+  top:0;
+  left:0;
+  overflow: hidden;
 }
 
 
@@ -17,8 +26,11 @@
 }
 
 .Cover{
+  padding: 40px;
   position: relative;
   z-index: 1;
+  width: 100%;
+  height: 100vh;
   display: flex !important;
   flex-direction: column;
   align-items: center;
@@ -49,4 +61,23 @@ h1{
 .Button{
   position:relatve;
   top: -80px !important;
+}
+
+
+.Body{
+  position: relative;
+  background-color: transparent;
+  width: 100vw;
+  min-height: 100vh;
+  margin-top: 100vh;
+  margin-bottom: 100vh;
+}
+
+.BodyContainer{
+  min-height: 100vh;
+}
+
+.Bottom{
+  height:1px;
+  background-color: transparent;
 }
