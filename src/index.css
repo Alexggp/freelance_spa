@@ -9,7 +9,7 @@
 :root{
   --color-primary: #0f172a;
   --color-secondary: #1e3a8a;
-  --color-white: #cdd7e2;
+  --color-white: #fafafa;
   --color-black: #323639;
 
   --color-aux-primary: #0f172a;
@@ -18,7 +18,7 @@
   --color-aux-success: #0ba10b;
   --color-aux-error: #f13434;
   --color-aux-text-secondary: #19c2ba;
-  --color-aux-text-primary:#e5e7eb; 
+  --color-aux-text-primary:#fafafa; 
 
   --color-gradiente-primary: #fff;
   --color-gradient-secondary: #f1f1f1;

@@ -34,47 +34,50 @@
   display: flex !important;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
   text-align: center;
 }
 
 .Title{
-  
-  margin-bottom: 60px;
+  position: absolute;
+  text-align: left;
+  left: 10vh;
+  bottom: 10vh;
 }
 
 h2{
   font-family: 'Playfair Display', serif;
-  font-size: 50px;
+  font-size: 3vh;
+  margin-bottom: 0.5em;
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-white);
+  position:relative
 }
 
 h1{
   font-family: 'Playfair Display SC', serif;
-  font-size: 60px;
-  margin-top: 10px;
+  font-size: 3.5vh;
+  margin-bottom: 0.5em;
   font-weight: 900;
-  color: var(--color-secondary);
+  color: var(--color-white);
+  position: relative;
+  margin-bottom: 30px;
+} 
+
+
+.LogoContainer{
+  transform: scale(2);
+  margin-top: 15vh
 }
 
-.Button{
-  position:relatve;
-  top: -80px !important;
-}
 
 
 .Body{
   position: relative;
-  background-color: transparent;
   width: 100vw;
   min-height: 100vh;
   margin-top: 100vh;
   margin-bottom: 100vh;
-}
-
-.BodyContainer{
-  min-height: 100vh;
 }
 
 .Bottom{
@@ -84,12 +87,11 @@ h1{
 
 
 @media (max-width: 750px) {
-  h2{
-    font-size: 24px;
+
+  .LogoContainer{
+    transform: scale(1);
+    margin-top: 15vh
   }
   
-  h1{
-    font-size: 30px;
-  }
   
 }

@@ -1,10 +1,10 @@
 {
   "logo": "El arte de hacer las cosas bien.",
   "main": {
-    "cover":{
-    "title": "Lleva tu proyecto a buen puerto",
-    "subtitle": "El oceano digital es infinito",
-    "button": "Llámanos"
+    "cover": {
+      "title": "Lleva tu proyecto a buen puerto.",
+      "subtitle": "El oceano digital es infinito.",
+      "button": "Contáctanos"
     }
   }
 }
