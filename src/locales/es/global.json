@@ -6,5 +6,28 @@
       "subtitle": "El oceano digital es infinito.",
       "button": "Contáctanos"
     }
+  },
+  "mainBody": {
+    "intro": [
+      "Tienes que tener una cosa bien clara.",
+      "Una <span>empresa</span> sin una buena identidad digital es un barco a la deriva, en la noche, con las <span>luces apagadas</span>.",
+      "Nadie te ve, nadie sale en tu busca y lo peor...",
+      "Te vas <span>a pique</span>.",
+      "Tranquilo, no dejes que eso te hunda."
+    ],
+    "ocean": [
+      "Internet nos abre un océano infinito<br />de <span>oportunidades</span>.",
+      "Lleno de posibilidades, lleno de <span>tesoros</span>.",
+      "Pero hay demasiados peces en el mar...",
+      "¿Qué <span>tecnología</span> escoger? ¿Qué <span>proveedor</span> contratar?"
+    ],
+    "cta": {
+      "warning": "No te dejes seducir por sirenas que te llevan contra las rocas.",
+      "action": "Pisa en tierra firme",
+      "button": "Contáctanos"
+    },
+    "footer": {
+      "explore": "Quiero profundizar"
+    }
   }
 }
