@@ -1,33 +1,48 @@
-:root {
-  --primary-color: #121212;
-}
-
 .AboutPage {
   position: relative;
   width: 100vw;
-  height: auto;
-  min-height: 300vh; /* 🔥 Espacio suficiente para el scroll */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--primary-color);
+  height: 400vh; /* 🔥 Reducido un 50% */
+  background-color: var(--color-primary);
   overflow: hidden;
 }
 
 .Portrait {
   position: fixed;
-  left: 19%; /* 🔥 Ahora se mueve correctamente hacia la izquierda */
+  left: 19%;
   top: 50%;
   transform: translateY(-50%);
-  height: 75vh; /* 🔥 Altura fija */
-  width: auto; /* 🔥 Mantiene la proporción */
-  max-height: 683px; /* Para evitar distorsión en pantallas pequeñas */
+  height: 75vh;
+  width: auto;
+  max-height: 683px;
+  z-index: 3;
 }
 
-/* Spacer solo abajo para permitir scroll */
+.Background {
+  position: fixed;
+  right: 19%;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 75vh;
+  width: auto;
+  max-height: 683px;
+  opacity: 0;
+  z-index: 2;
+}
+
+.BackgroundSmall {
+  position: fixed;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 75vh;
+  width: auto;
+  max-height: 683px;
+  opacity: 0;
+  z-index: 1;
+}
+
 .Spacer {
-  height: 150vh;
+  height: 350vh; /* 🔥 Reducido a la mitad */
   width: 100%;
   background-color: transparent;
 }
