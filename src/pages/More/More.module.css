@@ -1,0 +1,50 @@
+.MorePage{
+  width: 100vw;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+.ParallaxContainer {
+  width: 100vw;
+  height: 75vh;
+  position: relative;
+}
+
+.BackgroundContainer{
+  width: 100vw;
+  height: 75vh;
+  top:0;
+  left:0;
+  overflow: hidden;
+}
+
+.Video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1; 
+}
+
+.Body{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:start;
+  align-items: center;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+.ParallaxLogo{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content:start;
+  align-items: center;
+  width: 100%;
+  overflow: visible !important;
+}

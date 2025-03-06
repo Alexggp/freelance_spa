@@ -10,7 +10,7 @@
   "mainBody": {
     "intro": [
       "Tienes que tener una cosa bien clara.",
-      "Una <span>empresa</span> sin una buena identidad digital es un barco a la deriva, en la noche, con las <span>luces apagadas</span>.",
+      "Una <span>empresa</span> sin una buena <span>identidad digital</span> es un <span>barco a la deriva</span>, en la noche, con las luces apagadas.",
       "Nadie te ve, nadie sale en tu busca y lo peor...",
       "Te vas <span>a pique</span>.",
       "Tranquilo, no dejes que eso te hunda."
@@ -28,6 +28,70 @@
     },
     "footer": {
       "explore": "Quiero profundizar"
+    }
+  },
+  "moreBody": {
+    "intro": [
+      "Si piensas que vale con tener una web bonita...",
+      "malas noticias",
+      "para ti."
+    ],
+    "competition": [
+      "En",
+      "internet",
+      "cada uno de tus productos compite",
+      "a nivel global. No te queda más remedio que buscar la excelencia en cada paso del proceso."
+    ],
+    "reputation": [
+      "Tu",
+      "reputación está en juego",
+      "a cada segundo, con cada interacción."
+    ],
+    "quality": [
+      "Por eso, hay que hacer las cosas bien. Con",
+      "amor",
+      "y con",
+      "alma."
+    ],
+    "callToAction": {
+      "title": "Así que te recomiendo agendar una llamada.",
+      "text": "Te dejo aquí el enlace, te lo pongo fácil...",
+      "button": "Agendar llamada"
+    },
+    "uncertainty": [
+      "Porque, verás.",
+      "Yo no sé en lo que eres bueno",
+      "Quizá seas un gran empresario, un cocinero de estrella Michelín, el mejor florista de tu barrio o el Rey de la Tortilla."
+    ],
+    "supportAreas": [
+      "Lo que sí tengo claro es que no estarías aquí si no necesitaras apoyo en:"
+    ],
+    "steps": [
+      "Estrategia comercial e identidad de marca",
+      "Desarrollo de aplicaciones web",
+      "Automatización con Inteligencia Artificial"
+    ],
+    "expertise": [
+      "Por suerte, nosotros somos expertos en este sector.",
+      "Te aconsejo que agendes una llamada y nos cuentes tu caso."
+    ],
+    "cta2": {
+      "button": "Pincha aquí"
+    },
+    "solution": [
+      "Porque te ofreceremos la solución que necesitas. Ni más, ni menos. A tu medida. Nos encargaremos de todo."
+    ],
+    "focus": [
+      "Y así podrás enfocarte, de nuevo, en eso en lo que eres un maestro.",
+      "Eso que te hace sonreír por las mañanas. Tu empresa. Tus creaciones. Tus tortillas..."
+    ],
+    "finalCall": {
+      "title": "¿Aún no has agendado?",
+      "text": "Venga, hay que mojarse. Haz click.",
+      "button": "Volver a sonreír"
+    },
+    "footer": {
+      "aboutUs": "Sobre nosotros"
     }
   }
 }

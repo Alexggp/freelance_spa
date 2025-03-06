@@ -9,16 +9,17 @@
 :root{
   --color-primary: #0f172a;
   --color-secondary: #1e3a8a;
-  --color-white: #fafafa;
+  --color-tertiary: #c79557;
+  --color-white: #f0f0f0;
   --color-black: #323639;
 
   --color-aux-primary: #0f172a;
-  --color-aux-secondary: #19c2ba;
+  --color-aux-secondary: #c79557;
   --color-aux-danger: #f3cd4f;
   --color-aux-success: #0ba10b;
   --color-aux-error: #f13434;
   --color-aux-text-secondary: #19c2ba;
-  --color-aux-text-primary:#fafafa; 
+  --color-aux-text-primary:#f0f0f0; 
 
   --color-gradiente-primary: #fff;
   --color-gradient-secondary: #f1f1f1;
