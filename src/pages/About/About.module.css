@@ -7,40 +7,27 @@
 .AboutPage {
   position: relative;
   width: 100vw;
-  height: 400vh;
+  height: 500vh;
   background-color: var(--primary-color);
   overflow: hidden;
 }
 
-.Title {
+.Title, .StoryText, .FinalText {
   position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
-  font-size: 4vw;
   text-align: center;
   color: white;
   text-transform: uppercase;
   z-index: 4;
-  opacity: 1;
 }
 
-.StoryText {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Poppins', sans-serif;
-  font-weight: 900;
-  font-size: 3vw;
-  text-align: center;
-  color: white;
-  text-transform: uppercase;
-  opacity: 0; /* 🔥 Invisible al inicio */
-  z-index: 4;
-}
+.Title { font-size: 4vw; opacity: 1; }
+.StoryText { font-size: 3vw; opacity: 0; }
+.FinalText { font-size: 5vw; opacity: 0; z-index: 5; }
 
 .Portrait {
   position: fixed;
@@ -53,32 +40,21 @@
   z-index: 3;
 }
 
-.Background {
+.Background, .BackgroundSmall {
   position: fixed;
-  right: 19%;
   top: 50%;
   transform: translateY(-50%);
   height: 75vh;
   width: auto;
   max-height: 683px;
   opacity: 0;
-  z-index: 2;
 }
 
-.BackgroundSmall {
-  position: fixed;
-  left: 10%;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 75vh;
-  width: auto;
-  max-height: 683px;
-  opacity: 0;
-  z-index: 1;
-}
+.Background { right: 19%; z-index: 2; }
+.BackgroundSmall { left: 10%; z-index: 1; }
 
 .Spacer {
-  height: 350vh;
+  height: 400vh;
   width: 100%;
   background-color: transparent;
 }
