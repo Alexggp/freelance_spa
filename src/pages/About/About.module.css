@@ -16,15 +16,15 @@
 }
 
 .Portrait {
-  position: fixed; /* 🔥 Se mantiene fija en pantalla */
-  left: 33%; /* 🔥 Ligeramente hacia la izquierda */
+  position: fixed;
+  left: 19%; /* 🔥 Ahora se mueve correctamente hacia la izquierda */
   top: 50%;
-  transform: translateY(-50%); /* 🔥 Centrada en altura */
-  width: 30vw;
-  height: auto;
-  max-width: 502px;
-  max-height: 683px;
+  transform: translateY(-50%);
+  height: 75vh; /* 🔥 Altura fija */
+  width: auto; /* 🔥 Mantiene la proporción */
+  max-height: 683px; /* Para evitar distorsión en pantallas pequeñas */
 }
+
 /* Spacer solo abajo para permitir scroll */
 .Spacer {
   height: 150vh;
