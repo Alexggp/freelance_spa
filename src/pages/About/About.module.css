@@ -1,9 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+:root {
+  --primary-color: #121212;
+}
+
 .AboutPage {
   position: relative;
   width: 100vw;
-  height: 400vh; /* 🔥 Reducido un 50% */
-  background-color: var(--color-primary);
+  height: 400vh;
+  background-color: var(--primary-color);
   overflow: hidden;
+}
+
+.Title {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 4vw;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  z-index: 4;
+  opacity: 1;
+}
+
+.StoryText {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 3vw;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  opacity: 0; /* 🔥 Invisible al inicio */
+  z-index: 4;
 }
 
 .Portrait {
@@ -42,7 +78,7 @@
 }
 
 .Spacer {
-  height: 350vh; /* 🔥 Reducido a la mitad */
+  height: 350vh;
   width: 100%;
   background-color: transparent;
 }
