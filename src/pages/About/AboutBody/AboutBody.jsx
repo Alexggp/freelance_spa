@@ -32,6 +32,9 @@ const AboutBody = () => {
          <p>
             Me metí en <span>Teleco</span> porque quería aprender a piratear el Canal+. 
          </p>
+         <p>
+            Ya sabes, ilusiones de adolescente...
+          </p>
          </div>
          </Container>
          <HorizontalBody/>
@@ -43,11 +46,11 @@ const AboutBody = () => {
           <div className={classes.FeedBackContainer}>
           <p>
             Ya sabes, ilusiones de adolescente. Siempre se me dió bien arreglar cosas, y cuando se me rompía cualquier aparatito en vez de tirarlo, lo destripaba. Muchas veces se iba a la basura peor de como estaba antes, pero otras, lo ponía a funcionar y me consideraba un genio. 
-
           </p>
           <p>
             Así que entré en Teleco. 
           </p>
+
          </div>
          </div>
         
