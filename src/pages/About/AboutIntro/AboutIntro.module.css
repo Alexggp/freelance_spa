@@ -61,7 +61,7 @@
   filter: grayscale(0.7);
 }
 
-.Background, .BackgroundSmall {
+.BackgroundLeft, .BackgroundRight {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
@@ -70,9 +70,17 @@
   max-height: 683px;
   opacity: 0;
 }
-
-.Background { right: 20%; z-index: 2; }
-.BackgroundSmall { left: 20%; z-index: 1; }
+.Background{
+  transform: translate(-50%,-50%);
+  position: fixed;
+  top: 50%;
+  height: 75vh;
+  width: auto;
+  max-height: 683px;
+  opacity: 0;
+}
+.BackgroundRight { right: 20%; z-index: 2; }
+.BackgroundLeft { left: 20%; z-index: 1; }
 
 .Spacer {
   height: 400vh;
@@ -83,7 +91,6 @@
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-color: red;
   overflow: hidden;
 }
 

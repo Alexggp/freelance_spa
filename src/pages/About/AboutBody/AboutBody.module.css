@@ -1,0 +1,80 @@
+.MoreBody {
+  color: var(--color-black);
+}
+
+.BodyContainer {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  text-align: left;
+  font-weight: 100;
+}
+
+.CenterText {
+  width: max-content;
+  transform: translateX(-50%);
+  margin-left: 50%;
+}
+
+
+.MainText,
+.CenterText {
+  padding: 50px 0 50px 0;
+}
+
+.CtaText {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0 100px 0;
+}
+
+.BodyContainer p {
+  margin-bottom: 50px;
+}
+
+.BodyContainer span {
+  color: var(--color-tertiary);
+  font-weight: bold;
+}
+
+.CtaText h3 {
+  font-size: 1.2em;
+  margin-bottom: 50px;
+}
+
+
+.Footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 300px;
+  padding: 50px 0 100px 0;
+}
+
+.ImageContainer{
+  width: 50%;
+  padding: 5%;
+  height: 100vh;
+  text-align: left;
+  box-sizing: border-box;
+  position:sticky;
+  top:0;
+  left:0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.FeedBackContainer{
+  width: 50%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  margin-left: 50%;
+}

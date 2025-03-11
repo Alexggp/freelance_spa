@@ -1,15 +1,15 @@
 import React from 'react';
-import AboutIntro from './AboutIntro/AboutIntro';
 
 import classes from './About.module.css';
-
+import AboutBody from './AboutBody/AboutBody';
+import AboutIntro from './AboutIntro/AboutIntro';
 
 const About = () => {
 
   return (
     <div className={classes.About}>
      <AboutIntro/>
-     <div className={classes.Body}>a sadf auhsdfjahgsdñfi</div>
+     <div className={classes.Body}><AboutBody/></div>
     </div>
   );
 }

@@ -1,5 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import Lenis from 'lenis';
+import 'lenis/dist/lenis.css'
 
 import classes from './Main.module.css';
 import VideoBg from '../../assets/video_background.mp4';
@@ -11,6 +13,10 @@ import MainBody from './MainBody/MainBody';
 
 const Main = () => {
   const { t } = useTranslation('global');
+  // Initialize Lenis
+const lenis = new Lenis({
+  autoRaf: true,
+});
   return (
     <div className={classes.MainPage}>
 

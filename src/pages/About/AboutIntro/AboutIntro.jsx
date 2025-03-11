@@ -54,15 +54,6 @@ const AboutIntro = () => {
       zIndex: 4
     });
 
-    gsap.set(imageRef.current, { 
-      left: '20%', 
-      top: '50%', 
-      height: '75vh', 
-      width: 'auto', 
-      transform: 'translateY(-50%)',
-      zIndex: 3
-    });
-
     gsap.set(backgroundRef1.current, { 
       left: '50%',
       top: '50%',
@@ -135,9 +126,9 @@ const AboutIntro = () => {
       <h2 ref={storyTextRef} className={classes.StoryText}>Y ESTA ES MI HISTORIA</h2>
       <img ref={imageRef} className={classes.Portrait} src={portrait} alt="Alejandro" />
       <img ref={backgroundRef1} className={classes.Background} src={background1} alt="Background 1" />
-      <img ref={backgroundRef2} className={classes.BackgroundSmall} src={background2} alt="Background 2" />
-      <img ref={backgroundRef3} className={classes.Background} src={background3} alt="Background 3" />
-      <img ref={backgroundRef4} className={classes.BackgroundSmall} src={background4} alt="Background 4" />
+      <img ref={backgroundRef2} className={classes.BackgroundLeft} src={background2} alt="Background 2" />
+      <img ref={backgroundRef3} className={classes.BackgroundRight} src={background3} alt="Background 3" />
+      <img ref={backgroundRef4} className={classes.BackgroundLeft} src={background4} alt="Background 4" />
       <div ref={logoRef} className={classes.Logo}><Logo alternative/></div>      
     </div>
   );
