@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from 'react-i18next';
 
 import classes from './References.module.css';
-
+import LogoBar from "./LogoBar/LogoBar";
 
 import officeImage from '../../../assets/about_images/office.jpg';
 
@@ -38,6 +38,7 @@ const References = () => {
           </p>
         </div>
       </div>
+      <LogoBar/>
     </div>
   );
 }

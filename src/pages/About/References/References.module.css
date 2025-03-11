@@ -6,7 +6,6 @@
   align-items: flex-start;
   position: relative; /* Asegura que el sticky funcione */
   overflow: unset!important;
-  padding-bottom: 100px;
 }
 
 .ImgContainer {

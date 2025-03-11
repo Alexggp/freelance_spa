@@ -1,0 +1,70 @@
+.LogoBarContainer{
+    position: relative;
+    width:100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: var(--color-black);
+    padding: 100px 0;
+    box-sizing: content-box;
+}
+
+.LogoBar{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position:absolute;
+  padding-right: 22px;
+}
+.LogoBar::-webkit-scrollbar {
+  display: none;
+}
+.LogoContainer{
+  flex-shrink: 0;
+  background-color: var(--color-black);
+  width: 400px;
+  height: 200px;
+  padding: 55px 0;
+  box-sizing: border-box;
+  justify-content: center;
+    align-items: center;
+    display: flex
+;
+}
+
+.LogoContainer img{
+  width: auto;
+  height: 100%;
+  filter: brightness(0%) invert(1);
+}
+
+@media (max-width: 1024px) {
+
+  .LogoBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0;
+  }
+  .LogoContainer{
+    flex-shrink: 0;
+    width: 50%;
+    background-color: transparent;
+    padding:30px;
+    height: auto;
+    border: none;
+  }
+  .LogoContainer img{
+    width: 100%;
+    height: auto;
+  }
+  .LogoBarContainer{
+    margin-top: 50px;
+    margin-left: 0px;
+    height: auto;
+  
+  }
+}
