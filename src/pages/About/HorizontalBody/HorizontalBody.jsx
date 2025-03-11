@@ -31,7 +31,7 @@ const HorizontalBody = () => {
         trigger: container,
         pin: true,
         scrub: 1,
-        markers: true,
+        // markers: true,
         start: 'top top',
         end: () => "+=" + totalScroll
 

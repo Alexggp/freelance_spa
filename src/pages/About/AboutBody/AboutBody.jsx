@@ -1,14 +1,13 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
-import { Parallax } from 'react-parallax';
+
 
 import classes from './AboutBody.module.css';
 import HorizontalBody from '../HorizontalBody/HorizontalBody';
 import Container from '../../../components/Container/Container';
-import Button from '../../../components/Button/Button';
 import Logo from '../../../components/Logo/Logo';
-import stepsBg from '../../../assets/steps_bg.jpg';
+import References from '../References/References';
 
 const AboutBody = () => {
   const { t } = useTranslation('global');
@@ -39,25 +38,15 @@ const AboutBody = () => {
          </Container>
          <HorizontalBody/>
          <Container className={classes.BodyContainer}  size={'lg'}>
-         <div className={classes.Studies}>
-          <div className={classes.ImageContainer}>
-
-          </div>
-          <div className={classes.FeedBackContainer}>
-          <p>
-            Ya sabes, ilusiones de adolescente. Siempre se me dió bien arreglar cosas, y cuando se me rompía cualquier aparatito en vez de tirarlo, lo destripaba. Muchas veces se iba a la basura peor de como estaba antes, pero otras, lo ponía a funcionar y me consideraba un genio. 
-          </p>
-          <p>
-            Así que entré en Teleco. 
-          </p>
-
-         </div>
+         <div className={classes.CenterText}>
+          <h1>Pasaron los años...</h1>
          </div>
         
         </Container>
       </div>
+      <References/>
       <div className={classes.Footer}>
-        <Logo alternative/>
+        <Logo />
       </div>
     </>
   );
