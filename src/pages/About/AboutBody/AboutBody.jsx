@@ -22,61 +22,37 @@ const AboutBody = () => {
       <div className={classes.AboutBody}>
         <Container className={classes.BodyContainer} size={'lg'}>
           <div className={classes.CenterText}>
-            <p>
-              Si has llegado hasta aquí ya somos prácticamente amigos.
-            </p>
-            <p>
-              Así que voy a ser sincero contigo.
-            </p>
-            <p>
-              Me metí en <span>Teleco</span> porque quería aprender a piratear el Canal+.
-            </p>
-            <p>
-              Ya sabes, ilusiones de adolescente...
-            </p>
+            {t('aboutBody.intro', { returnObjects: true }).map((text, index) => (
+              <p key={index} dangerouslySetInnerHTML={{ __html: text }} />
+            ))}
           </div>
         </Container>
         <HorizontalBody />
         <Container className={classes.BodyContainer} size={'lg'}>
           <div className={classes.CenterText}>
-            <h1>Pasaron los años...</h1>
+            <h1>{t('aboutBody.titleYearsPassed')}</h1>
           </div>
-
         </Container>
       </div>
       <References />
       <div className={classes.AboutBody}>
         <Container className={classes.BodyContainer} size={'lg'}>
           <div className={classes.CenterText}>
-            <p>Quería crear.</p>
-            <p>
-              Crear <span>algo nuevo</span>, algo que fuese <span>realmente mío</span>.
-            </p>
-            <p>
-              Y <span>ayudar</span> a gente que hubiese creado algo que fuese <span>realmente suyo</span>.
-            </p>
-            <p>
-              Ahí es donde está <span>el mimo</span>.
-            </p>
-            <p>
-              Ahí es donde <span>realmente vale la pena</span> romperse los cuernos.
-            </p>
+            {t('aboutBody.creation', { returnObjects: true }).map((text, index) => (
+              <p key={index} dangerouslySetInnerHTML={{ __html: text }} />
+            ))}
           </div>
           <div className={classes.CtaText}>
-            <p>
-              Si quieres que te ayude a <span>crear lo tuyo</span>, o hacerlo crecer
-            </p>
-            <h3>Agenda una llamada</h3>
-            <Button className={classes.Button}>Agendar</Button>
+            <p dangerouslySetInnerHTML={{ __html: t('aboutBody.cta.text') }} />
+            <h3>{t('aboutBody.cta.scheduleCall')}</h3>
+            <Button className={classes.Button}>{t('aboutBody.cta.button')}</Button>
           </div>
         </Container>
-
-
       </div>
       <div className={classes.Footer}>
         <Logo />
         <div onClick={navigateTo} className={classes.enlaceSubrayado}>
-          Volver al inicio
+          {t('aboutBody.footer.backToHome')}
         </div>
       </div>
     </>

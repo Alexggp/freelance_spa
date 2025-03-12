@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useTranslation } from 'react-i18next';
 
 import classes from './AboutIntro.module.css';
 import portrait from '../../../assets/about_images/portrait.jpg';
@@ -14,6 +15,7 @@ import Logo from '../../../components/Logo/Logo';
 gsap.registerPlugin(ScrollTrigger);
 
 const AboutIntro = () => {
+  const { t } = useTranslation('global');
   const containerRef = useRef(null);
   const portraitRef = useRef(null);
   const textRef = useRef(null);
@@ -76,8 +78,8 @@ const AboutIntro = () => {
 
   return (
     <div ref={containerRef} className={classes.AboutIntro}>
-      <h1 ref={textRef} className={classes.Title}>SOY ALEJANDRO<br/>ARQUITECTO WEB</h1>
-      <h2 ref={storyTextRef} className={classes.StoryText}>Y ESTA ES MI HISTORIA</h2>
+      <h1 ref={textRef} className={classes.Title}>{t('aboutIntro.title')}</h1>
+      <h2 ref={storyTextRef} className={classes.StoryText}>{t('aboutIntro.story')}</h2>
       <img ref={portraitRef} className={classes.Portrait} src={portrait} alt="Alejandro" />
       <img ref={backgroundRef1} className={classes.Background} src={background1} alt="Background 1" />
       <img ref={backgroundRef2} className={classes.BackgroundLeft} src={background2} alt="Background 2" />

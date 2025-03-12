@@ -36,12 +36,7 @@
       "malas noticias",
       "para ti."
     ],
-    "competition": [
-      "En",
-      "internet",
-      "cada uno de tus productos compite",
-      "a nivel global. No te queda más remedio que buscar la excelencia en cada paso del proceso."
-    ],
+    "competition": "En <span>internet</span> cada uno de tus productos <span>compite a nivel global</span>. No te queda más remedio que <span>buscar la excelencia</span> en cada paso del proceso.",
     "reputation": [
       "Tu",
       "reputación está en juego",
@@ -64,7 +59,7 @@
       "Quizá seas un gran empresario, un cocinero de estrella Michelín, el mejor florista de tu barrio o el Rey de la Tortilla."
     ],
     "supportAreas": [
-      "Lo que sí tengo claro es que no estarías aquí si no necesitaras apoyo en:"
+      "Lo que sí tengo claro es que no estarías aquí si no necesitaras <span>apoyo</span> en:"
     ],
     "steps": [
       "Estrategia comercial e identidad de marca",
@@ -72,18 +67,18 @@
       "Automatización con Inteligencia Artificial"
     ],
     "expertise": [
-      "Por suerte, nosotros somos expertos en este sector.",
-      "Te aconsejo que agendes una llamada y nos cuentes tu caso."
+      "Por suerte, nosotros <span>somos expertos</span> en este sector.",
+      "Te aconsejo que agendes una llamada y nos cuentes <span>tu caso</span>."
     ],
     "cta2": {
       "button": "Pincha aquí"
     },
     "solution": [
-      "Porque te ofreceremos la solución que necesitas. Ni más, ni menos. A tu medida. Nos encargaremos de todo."
+      "Porque te ofreceremos <span>la solución que necesitas</span>. Ni más, ni menos. A tu medida. <span>Nos encargaremos de todo</span>."
     ],
     "focus": [
-      "Y así podrás enfocarte, de nuevo, en eso en lo que eres un maestro.",
-      "Eso que te hace sonreír por las mañanas. Tu empresa. Tus creaciones. Tus tortillas..."
+      "Y así podrás enfocarte, de nuevo, en eso en lo que eres <span>un maestro</span>.",
+      "Eso que te hace <span>sonreír por las mañanas</span>. Tu empresa. Tus creaciones. Tus tortillas..."
     ],
     "finalCall": {
       "title": "¿Aún no has agendado?",
@@ -93,5 +88,84 @@
     "footer": {
       "aboutUs": "Sobre nosotros"
     }
+  },
+  "aboutBody": {
+    "intro": [
+      "Si has llegado hasta aquí ya somos prácticamente amigos.",
+      "Así que voy a ser sincero contigo.",
+      "Me metí en <span>Teleco</span> porque quería aprender a piratear el Canal+.",
+      "Ya sabes, ilusiones de adolescente..."
+    ],
+    "titleYearsPassed": "Pasaron los años...",
+    "creation": [
+      "Quería crear.",
+      "Crear <span>algo nuevo</span>, algo que fuese <span>realmente mío</span>.",
+      "Y <span>ayudar</span> a gente que hubiese creado algo que fuese <span>realmente suyo</span>.",
+      "Ahí es donde está <span>el mimo</span>.",
+      "Ahí es donde <span>realmente vale la pena</span> romperse los cuernos."
+    ],
+    "cta": {
+      "text": "Si quieres que te ayude a <span>crear lo tuyo</span>, o hacerlo crecer",
+      "button": "Agendar",
+      "scheduleCall": "Agenda una llamada"
+    },
+    "footer": {
+      "backToHome": "Volver al inicio"
+    }
+  },
+  "aboutIntro": {
+    "title": "SOY ALEJANDRO. ARQUITECTO WEB.",
+    "story": "Y ESTA ES MI HISTORIA"
+  },
+  "horizontalBody": {
+    "sections": [
+      {
+        "text": [
+          "Siempre se me dió bien <span>arreglar cosas</span>.",
+          "Cuando se me rompía cualquier aparatito <span>lo destripaba</span>. Muchas veces se iba a la basura peor que antes, pero otras, <span>lo ponía a funcionar</span> y me consideraba un genio.",
+          "Así que <span>entré en Teleco</span>."
+        ]
+      },
+      {
+        "text": [
+          "<span>¿Y adivinas qué?</span>",
+          "Sólo hacíamos integrales y ecuaciones diferenciales. <span>Un coñazo</span>.",
+          "¡Sorpresa!",
+          "Sinceramente, <span>odiaba aquella carrera</span>."
+        ]
+      },
+      {
+        "text": [
+          "Hasta que en segundo aprendí <span>JavaScript</span>.",
+          "Me quedé perplejo.",
+          "Escribía <span>código</span> en un documento y mágicamente <span>aparecía en la web</span>."
+        ]
+      },
+      {
+        "text": [
+          "Aquello no eran abstracciones matemáticas",
+          "<span>Lo podías ver</span>, estaba allí.",
+          "Por fín algo que le podía <span>mostrar a mi madre</span>.",
+          "Algo tangible, algo <span>fantástico</span>."
+        ]
+      },
+      {
+        "text": [
+          "<span>Me enamoré de aquello</span>.",
+          "El resto de asignaturas las aprobaba a duras penas, pero en las de <span>programar</span>, solo <span>sobresalientes</span>."
+        ]
+      }
+    ]
+  },
+  "references": {
+    "paragraphs": [
+      "Pasé por varias <span>Startups</span>, como desarrollador, obviamente, y <span>acabé en una gran consultora</span>.",
+      "Y entonces, <span>volví a arreglar cosas</span>, como cuando era pequeño.",
+      "Ahí donde había un código que no funcionaba ni para atrás, donde los clientes estaban descontentos, ahí donde se acercaba la fecha límite y no llegaban. Ahí <span>me mandaban a mí</span>.",
+      "Te lo juro, era como <span>el Séptimo de Caballería</span>. Las brigadas especiales que salvan a los rehenes al final de la peli.",
+      "Y al final <span>me quemé.</span>",
+      "Estaba harto de hacer malabares para salvar los trastos a los directivos del Ibex. Y que ellos no supieran ni quién era yo, ni yo saber quiénes son ellos.",
+      "Estaba harto de <span>arreglar el desastre de otros</span>. Quería crear."
+    ]
   }
 }
