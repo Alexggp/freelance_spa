@@ -8,8 +8,7 @@ import RootLayout from "./pages/RootLayout";
 import Main from "./pages/Main/Main";
 import More from "./pages/More/More";
 import About from "./pages/About/About";
-import ScrollManager from "./components/ScrollManager/ScrollManager";
-import SmoothScroll from "./components/SmoothScroll/SmoothScroll";
+import ScrollController from "./components/ScrollController/ScrollController";
 
 import './App.css';
 
@@ -20,8 +19,7 @@ function App() {
 
   return (
     <>
-      <SmoothScroll />
-      <ScrollManager />
+      <ScrollController />
       <Routes>
         <Route path="/" element={<RootLayout />}>
           <Route index element={<Main />} />
