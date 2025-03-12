@@ -62,7 +62,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 300px;
+  gap: 100px;
   padding: 50px 0 100px 0;
 }
 
@@ -90,8 +90,16 @@
   background: var(--color-tertiary);
   animation: moveUnderline 3s infinite linear;
 }
-
-
+.shellContainer{
+  width: 100px;
+  height: 100px;
+  background-image: url(/src/assets/shell-white.png);
+  background-size: contain;
+  cursor: pointer;
+}
+.shellContainer:hover{
+  background-image: url('../../../assets/shell-gold.png');
+}
 
 @keyframes moveUnderline {
   0% {

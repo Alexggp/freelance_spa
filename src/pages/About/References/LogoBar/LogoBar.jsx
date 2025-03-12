@@ -40,7 +40,7 @@ const LogoBar = () => {
       <img src={gobiernoLogo} alt='Gobierno de España'></img>
     </div>
     <div className={classes.LogoContainer} style={{padding: '25px 0'}}>
-      <img src={shellLogo} alt='ShellOil' style={{cursor: 'pointer'}}></img>
+      <img onClick={()=>alert('conchas')} src={shellLogo} alt='ShellOil' style={{cursor: 'pointer'}}></img>
     </div>
     <div className={classes.LogoContainer}>
       <img src={telefonicaLogo} alt='Telefónica'></img>

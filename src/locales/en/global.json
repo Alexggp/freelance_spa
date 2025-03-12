@@ -17,7 +17,8 @@
     ],
     "ocean": [
       "The internet opens up an infinite ocean<br />of <span>opportunities</span>.",
-      "Full of possibilities, full of <span>treasures</span>.",
+      "Full of possibilities, full of ",
+      "treasures",
       "But there are too many fish in the sea...",
       "Which <span>technology</span> to choose? Which <span>provider</span> to hire?"
     ],
@@ -32,7 +33,7 @@
   },
   "moreBody": {
     "intro": [
-      "If you think having a nice website is enough...",
+      "If you think having a nice website is enough... I've got ",
       "bad news",
       "for you."
     ],
@@ -114,7 +115,7 @@
     }
   },
   "aboutIntro": {
-    "title": "I AM ALEJANDRO. WEB ARCHITECT.",
+    "title": "I AM ALEJANDRO WEB ARCHITECT",
     "story": "AND THIS IS MY STORY"
   },
   "horizontalBody": {

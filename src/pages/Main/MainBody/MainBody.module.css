@@ -29,6 +29,14 @@
   color: var(--color-secondary);
   font-weight: bold;
 }
+.TreasuresSpan{
+  color: var(--color-tertiary) !important;
+  cursor: pointer;
+}
+
+.TreasuresSpan:hover{
+  color: var(--color-primary) !important;
+}
 
 .CtaText h3{
   font-size: 1.2em;

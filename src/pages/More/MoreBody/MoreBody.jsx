@@ -80,6 +80,7 @@ const MoreBody = () => {
 
       <div className={classes.Footer}>
         <Logo alternative />
+        <div className={classes.shellContainer} onClick={()=>alert('conchas!')}/>
         <div onClick={navigateTo} className={classes.enlaceSubrayado}>
           {t('moreBody.footer.aboutUs')}
         </div>

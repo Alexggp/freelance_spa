@@ -23,9 +23,17 @@ const MainBody = () => {
           {t('mainBody.intro', { returnObjects: true }).map((text, index) => (
             <p key={index} dangerouslySetInnerHTML={{ __html: text }} />
           ))}
-          {t('mainBody.ocean', { returnObjects: true }).map((text, index) => (
-            <p key={index} dangerouslySetInnerHTML={{ __html: text }} />
-          ))}
+
+          <p dangerouslySetInnerHTML={{ __html: t('mainBody.ocean', { returnObjects: true })[0] }} />
+          <p>
+            {t('mainBody.ocean', { returnObjects: true })[1]}
+            <span className={classes.TreasuresSpan} onClick={()=>alert('conchas!!')}>
+              {t('mainBody.ocean', { returnObjects: true })[2]}
+            </span>.
+          </p>
+          <p dangerouslySetInnerHTML={{ __html: t('mainBody.ocean', { returnObjects: true })[3] }} />
+          <p dangerouslySetInnerHTML={{ __html: t('mainBody.ocean', { returnObjects: true })[4] }} />
+
           <div className={classes.Image}>
             <LighHouse />
           </div>
