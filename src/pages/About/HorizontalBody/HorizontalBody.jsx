@@ -21,7 +21,6 @@ const HorizontalBody = () => {
     const slider = sliderRef.current;
     const container = containerRef.current;
     const totalScroll = container.scrollWidth - container.offsetWidth;
-    console.log(totalScroll)
 
     tl.add(gsap.to(slider, {
       x: () => -totalScroll,

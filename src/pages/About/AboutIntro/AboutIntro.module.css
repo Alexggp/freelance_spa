@@ -23,7 +23,7 @@
 
 .Title { 
   position: fixed;
-  left: 70%;
+  left: 45%;
   top: 50%;
   transform: translateY(-50%);
   font-family: 'Poppins', sans-serif;
@@ -75,9 +75,11 @@
   position: fixed;
   top: 50%;
   height: 75vh;
+  left:50%;
   width: auto;
   max-height: 683px;
   opacity: 0;
+  z-index:2;
 }
 .BackgroundRight { right: 20%; z-index: 2; }
 .BackgroundLeft { left: 20%; z-index: 1; }
