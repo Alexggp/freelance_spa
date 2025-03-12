@@ -64,6 +64,7 @@ const LightHouse = () => {
 
   return (
     <div ref={containerRef} className={classes.Container}>
+      <div className={classes.Trigger} onClick={()=>alert('conchas!')}></div>
       {/* Imagen de fondo (Azul) */}
       <img className={classes.Image} src={FaroImg} alt="Faro Azul" />
 
