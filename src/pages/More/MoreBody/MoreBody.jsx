@@ -9,6 +9,7 @@ import Button from '../../../components/Button/Button';
 import Logo from '../../../components/Logo/Logo';
 import stepsBg from '../../../assets/steps_bg.jpg';
 import { useChallenge } from '../../../contexts/ChallengeContext';
+import PhotoShooter from '../../../components/PhotoShooter/PhotoShooter';
 
 const MoreBody = () => {
   const { t } = useTranslation('global');
@@ -38,7 +39,7 @@ const MoreBody = () => {
             <p>{t('moreBody.uncertainty.0')}</p>
             <p><span>{t('moreBody.uncertainty.1')}</span> {t('moreBody.uncertainty.2')}</p>
             <p dangerouslySetInnerHTML={{ __html: t('moreBody.supportAreas.0') }} />
-
+            <PhotoShooter/>
           </div>
         </Container>
       </div>
