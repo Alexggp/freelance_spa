@@ -1,8 +1,8 @@
 /* Contenedor principal donde aparecen las imágenes */
 .photoShooterContainer {
   position: relative;
-  width: 600px; /* Ajusta según necesidad */
-  height: 600px; /* Ajusta según necesidad */
+  width: 600px;
+  height: 600px;
   overflow: hidden;
   background-color: black; /* Para depuración, quítalo si no es necesario */
 }
@@ -10,29 +10,33 @@
 /* Cada contenedor de imagen */
 .photoContainer {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 200px; /* Reducido de 300px a 200px */
+  width: 200px;
   height: 200px;
   transform-origin: center;
-  opacity: 1;
-  transition: opacity 1s ease-out;
 }
 
-/* Animación combinada de scale + rotate */
+/* Nueva animación que incluye el fade-out */
 @keyframes scaleIn {
-  from {
+  0% {
     transform: translate(-50%, -50%) scale(0) rotate(0deg);
     opacity: 0;
   }
-  to {
+  25% {
     transform: translate(-50%, -50%) scale(1) rotate(var(--rotation));
     opacity: 1;
+  }
+  75% {
+    transform: translate(-50%, -50%) scale(1) rotate(var(--rotation));
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0) rotate(0deg);
+    opacity: 0;
   }
 }
 
 .scaleIn {
-  animation: scaleIn 0.5s ease-out forwards;
+  animation: scaleIn 2s ease-out forwards;
 }
 
 /* Imagen dentro del contenedor */
