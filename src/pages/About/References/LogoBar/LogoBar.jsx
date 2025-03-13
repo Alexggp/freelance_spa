@@ -4,7 +4,7 @@ import { useMediaQuery } from 'react-responsive'
 
 import { useMousePositionSideSlide } from "../../../../hooks/useMousePositionSideSlide";
 import classes from './LogoBar.module.css';
-
+import { useChallenge } from "../../../../contexts/ChallengeContext";
 import cocacolaLogo from './../../../../assets/references/cocacola.png';
 import inditexLogo from './../../../../assets/references/inditex.png';
 import mutuaLogo from './../../../../assets/references/mutua.png';
@@ -21,7 +21,8 @@ const LogoBar = () => {
 
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 820px)' })
   const scrollRef = useMousePositionSideSlide();
-
+  const { activateChallenge } = useChallenge();
+  
 
   const content = <>
     <div className={classes.LogoContainer}>
@@ -40,7 +41,7 @@ const LogoBar = () => {
       <img src={gobiernoLogo} alt='Gobierno de España'></img>
     </div>
     <div className={classes.LogoContainer} style={{padding: '25px 0'}}>
-      <img onClick={()=>alert('conchas')} src={shellLogo} alt='ShellOil' style={{cursor: 'pointer'}}></img>
+      <img onClick={() => activateChallenge('abyss')} src={shellLogo} alt='ShellOil' style={{cursor: 'pointer'}}></img>
     </div>
     <div className={classes.LogoContainer}>
       <img src={telefonicaLogo} alt='Telefónica'></img>

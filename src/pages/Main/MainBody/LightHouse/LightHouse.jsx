@@ -2,12 +2,14 @@ import React, { useRef, useEffect } from 'react';
 import classes from './LightHouse.module.css';
 import FaroImg from '../../../../assets/faro-azul.png';
 import FaroImg2 from '../../../../assets/faro-dorado.png';
+import { useChallenge } from '../../../../contexts/ChallengeContext';
 
 const LightHouse = () => {
   const containerRef = useRef(null);
   const overlayRef = useRef(null);
   const lastMousePos = useRef({ x: 0, y: 0 });
-
+  const { activateChallenge } = useChallenge();
+  
   useEffect(() => {
     const container = containerRef.current;
     const overlay = overlayRef.current;
@@ -64,7 +66,7 @@ const LightHouse = () => {
 
   return (
     <div ref={containerRef} className={classes.Container}>
-      <div className={classes.Trigger} onClick={()=>alert('conchas!')}></div>
+      <div className={classes.Trigger} onClick={() => activateChallenge('lightHouse')}></div>
       {/* Imagen de fondo (Azul) */}
       <img className={classes.Image} src={FaroImg} alt="Faro Azul" />
 

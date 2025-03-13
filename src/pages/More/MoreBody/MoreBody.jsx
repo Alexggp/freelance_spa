@@ -8,10 +8,12 @@ import Container from '../../../components/Container/Container';
 import Button from '../../../components/Button/Button';
 import Logo from '../../../components/Logo/Logo';
 import stepsBg from '../../../assets/steps_bg.jpg';
+import { useChallenge } from '../../../contexts/ChallengeContext';
 
 const MoreBody = () => {
   const { t } = useTranslation('global');
   const navigate = useNavigate();
+  const { activateChallenge } = useChallenge();
 
   const navigateTo = () => {
     navigate('/about');
@@ -80,7 +82,7 @@ const MoreBody = () => {
 
       <div className={classes.Footer}>
         <Logo alternative />
-        <div className={classes.shellContainer} onClick={()=>alert('conchas!')}/>
+        <div className={classes.shellContainer} onClick={() => activateChallenge('seafloor')}/>
         <div onClick={navigateTo} className={classes.enlaceSubrayado}>
           {t('moreBody.footer.aboutUs')}
         </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
+import { useChallenge } from '../../../contexts/ChallengeContext';
 import classes from './MainBody.module.css';
 import Container from '../../../components/Container/Container';
 import LighHouse from './LightHouse/LightHouse';
@@ -11,6 +12,7 @@ import Logo from '../../../components/Logo/Logo';
 const MainBody = () => {
   const { t } = useTranslation('global');
   const navigate = useNavigate();
+  const { setIsModalOpen  } = useChallenge();
 
   const navigateTo = () => {
     navigate('/more');
@@ -27,7 +29,7 @@ const MainBody = () => {
           <p dangerouslySetInnerHTML={{ __html: t('mainBody.ocean', { returnObjects: true })[0] }} />
           <p>
             {t('mainBody.ocean', { returnObjects: true })[1]}
-            <span className={classes.TreasuresSpan} onClick={()=>alert('conchas!!')}>
+            <span className={classes.TreasuresSpan} onClick={()=>setIsModalOpen(true)}>
               {t('mainBody.ocean', { returnObjects: true })[2]}
             </span>.
           </p>

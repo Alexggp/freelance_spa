@@ -168,5 +168,22 @@
       "Estaba harto de hacer malabares para salvar los trastos a los directivos del Ibex. Y que ellos no supieran ni quién era yo, ni yo saber quiénes son ellos.",
       "Estaba harto de <span>arreglar el desastre de otros</span>. Quería crear."
     ]
+  },
+  "challenge":{
+    "title": "No es una corona de plata, ni un cetro de oro, pero en esta web se esconde un gran tesoro",
+    "subtitle": "Para descubrirlo encuentra las tres conchas",
+    "clue": "Pista",
+    "accept": "Aceptar",
+    "clues":{
+      "lighthouse": "En la noche una luz te guía",
+      "seafloor": "Los secretos se encuentran en lo profundo",
+      "abyss": "Conoce las perlas del pasado"
+    },
+    "price": {
+      "title": "¡Ehorabuena, has encontrado el tesoro!",
+      "subtitle": "Para conseguir tu primera sesión de consultoria TOTALMENTE GRATUITA envíanos tu email",
+      "email": "Tu mejor email",
+      "send": "Enviar"
+    }
   }
 }
