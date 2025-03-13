@@ -17,20 +17,17 @@ const shuffleArray = (array) => {
 
 const shuffledPhotos = shuffleArray(photos); // Desordenamos las imágenes al cargar
 
-const INTERVAL_MS = 500; // 800ms entre cada imagen
-const FADE_OUT_MS = 2000; // Tiempo de la animación antes de eliminar la imagen
+const INTERVAL_MS = 400; // 800ms entre cada imagen
+const FADE_OUT_MS = 2000; // 2 segundos antes de desaparecer
 const ROTATION_RANGE = 20; // Rango de -20° a 20°
-
-const getSinusoidalRotation = (index) => {
-  return Math.sin(index * (Math.PI / 6)) * ROTATION_RANGE; // Oscila suavemente entre -20° y 20°
-};
 
 const PhotoShooter = () => {
   const [visiblePhotos, setVisiblePhotos] = useState([]);
   const [isAnimating, setIsAnimating] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
   const containerRef = useRef(null);
-  const mousePos = useRef({ x: 0, y: 0 }); // Eliminamos useState y usamos useRef
+  const mousePos = useRef({ x: 0, y: 0 });
+  const prevMouseX = useRef(0); // Guardar la posición anterior del ratón
   const intervalRef = useRef(null);
 
   // Guardar la posición del ratón en la referencia sin hacer re-render
@@ -42,13 +39,29 @@ const PhotoShooter = () => {
     mousePos.current.y = event.clientY - rect.top;
   };
 
+  const getRotationByMouseDirection = () => {
+    const deltaX = mousePos.current.x - prevMouseX.current; // Diferencia de posición del ratón
+
+    let rotation;
+    if (deltaX > 0) {
+      // Movimiento a la derecha (entre 0° y 20°)
+      rotation = Math.random() * ROTATION_RANGE;
+    } else {
+      // Movimiento a la izquierda (entre 0° y -20°)
+      rotation = -Math.random() * ROTATION_RANGE;
+    }
+
+    prevMouseX.current = mousePos.current.x; // Guardamos la posición actual como referencia
+    return rotation;
+  };
+
   useEffect(() => {
     if (isAnimating) {
       intervalRef.current = setInterval(() => {
         const newPhoto = { 
           src: shuffledPhotos[photoIndex], 
           id: photoIndex, 
-          rotation: getSinusoidalRotation(photoIndex),
+          rotation: getRotationByMouseDirection(), // Se usa la dirección del ratón
           left: mousePos.current.x, // Posición exacta del ratón
           top: mousePos.current.y,
         };
