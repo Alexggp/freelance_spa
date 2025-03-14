@@ -17,7 +17,7 @@ const shuffleArray = (array) => {
 
 const shuffledPhotos = shuffleArray(photos); // Desordenamos las imágenes al cargar
 
-const INTERVAL_MS = 400; // 800ms entre cada imagen
+const INTERVAL_MS = 300; // 800ms entre cada imagen
 const FADE_OUT_MS = 2000; // 2 segundos antes de desaparecer
 const ROTATION_RANGE = 20; // Rango de -20° a 20°
 
