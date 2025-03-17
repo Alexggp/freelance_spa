@@ -8,12 +8,54 @@
   mix-blend-mode: difference;
   will-change: transform, left, top;
   transition: left 0s linear, top 0s linear, transform 0.15s ease-out;
+  z-index: 999999;
 }
 
-.special {
-  width: 40px;
-  height: 40px;
-  background-color: red;
-  border-radius: 0;
+/* Cursor Play Video */
+.playVideo {
+  width: 0;
+  height: 0;
   mix-blend-mode: normal;
+  border: 15px solid transparent;
+  border-right: 0;
+  border-left: 30px solid var(--color-secondary);
+  border-radius: 0;
+  background-color: transparent;
+  position: fixed; /* Para que el ::after no mueva nada */
+}
+
+/* Cursor Play Video */
+.pauseVideo {
+  width: 25px;
+  height: 30px;
+  mix-blend-mode: normal;
+  border-right: 7px solid var(--color-secondary);;
+  border-left: 7px solid var(--color-secondary);
+  border-radius: 0;
+  background-color: transparent;
+  position: fixed; /* Para que el ::after no mueva nada */
+}
+
+.playVideo::after, .pauseVideo::after {
+  content: "";
+  position: absolute;
+  width: 50px; /* Tamaño del círculo */
+  height: 50px;
+  border: 2px solid var(--color-secondary);
+  border-radius: 50%;
+  top: -27px;
+  left: -45px;
+
+}
+
+.pauseVideo::after {
+  top: -12px;
+  left: -22px;
+
+}
+
+@media (max-width: 768px) {
+  .cursor {
+    display: none !important;
+  }
 }

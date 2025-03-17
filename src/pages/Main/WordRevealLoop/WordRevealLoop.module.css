@@ -27,16 +27,12 @@
 
 @media (max-width: 768px) { /* Solo en móviles */
 
-  .word {
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-  }
   .container{
-    justify-content: flex-start;
+    justify-content: center;
     padding-top: 10vh;
-    font-size: 12vh;
-    height: 100vh;
-    letter-spacing: 0;
+    font-size: 17vw;
+    height: 60vh;
+    letter-spacing: 2vw;
     box-sizing: border-box;
   }
 
