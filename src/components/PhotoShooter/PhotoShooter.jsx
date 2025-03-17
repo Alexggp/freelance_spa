@@ -17,7 +17,7 @@ const shuffleArray = (array) => {
 
 const shuffledPhotos = shuffleArray(photos); // Desordenamos las imágenes al cargar
 
-const INTERVAL_MS = 300; // 800ms entre cada imagen
+const INTERVAL_MS = 300; // 300ms entre cada imagen
 const FADE_OUT_MS = 2000; // 2 segundos antes de desaparecer
 const ROTATION_RANGE = 20; // Rango de -20° a 20°
 
@@ -29,6 +29,7 @@ const PhotoShooter = () => {
   const mousePos = useRef({ x: 0, y: 0 });
   const prevMouseX = useRef(0); // Guardar la posición anterior del ratón
   const intervalRef = useRef(null);
+  const globalZIndex = useRef(1); // Z-index global que siempre aumenta
 
   // Guardar la posición del ratón en la referencia sin hacer re-render
   const handleMouseMove = (event) => {
@@ -64,6 +65,7 @@ const PhotoShooter = () => {
           rotation: getRotationByMouseDirection(), // Se usa la dirección del ratón
           left: mousePos.current.x, // Posición exacta del ratón
           top: mousePos.current.y,
+          zIndex: globalZIndex.current++, // Incrementar el Z-index global
         };
 
         setVisiblePhotos((prev) => [...prev, newPhoto]);
@@ -96,7 +98,7 @@ const PhotoShooter = () => {
             "--rotation": `${photo.rotation}deg`,
             top: `${photo.top}px`,
             left: `${photo.left}px`,
-            zIndex: photo.id + 1,
+            zIndex: photo.zIndex, // Se usa el Z-index global
           }}
         >
           <img src={photo.src} alt="Photo" className={classes.image} />
