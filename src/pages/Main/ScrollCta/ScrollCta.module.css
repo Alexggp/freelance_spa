@@ -8,6 +8,8 @@
   color: var(--color-white);
   height: 2em;
   overflow: hidden;
+  cursor: none;
+  pointer-events: none;
 }
 .Chevron{
   width:0;
@@ -27,10 +29,10 @@
 	width: 0.45em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) and (hover: none) {
   .ScrollCta {
     top: 90vh;
     left: 5vw;
-    font-size: 9vw;
+    font-size: 4vh;
   }
 }

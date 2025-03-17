@@ -18,7 +18,8 @@
   mix-blend-mode: normal;
   border: 15px solid transparent;
   border-right: 0;
-  border-left: 30px solid var(--color-secondary);
+  border-left: 30px solid var(--color-white);
+  mix-blend-mode: difference;
   border-radius: 0;
   background-color: transparent;
   position: fixed; /* Para que el ::after no mueva nada */
@@ -29,8 +30,10 @@
   width: 25px;
   height: 30px;
   mix-blend-mode: normal;
-  border-right: 7px solid var(--color-secondary);;
-  border-left: 7px solid var(--color-secondary);
+  border-right: 7px solid var(--color-white);
+  mix-blend-mode: difference;;
+  border-left: 7px solid var(--color-white);
+  mix-blend-mode: difference;
   border-radius: 0;
   background-color: transparent;
   position: fixed; /* Para que el ::after no mueva nada */
@@ -41,7 +44,8 @@
   position: absolute;
   width: 50px; /* Tamaño del círculo */
   height: 50px;
-  border: 2px solid var(--color-secondary);
+  border: 2px solid var(--color-white);
+  mix-blend-mode: difference;
   border-radius: 50%;
   top: -27px;
   left: -45px;
@@ -53,8 +57,7 @@
   left: -22px;
 
 }
-
-@media (max-width: 768px) {
+@media (max-width: 1024px) and (hover: none) {
   .cursor {
     display: none !important;
   }

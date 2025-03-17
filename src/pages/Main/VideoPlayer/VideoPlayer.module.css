@@ -16,30 +16,32 @@
   /* Ajusta el video al contenedor */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) and (hover: none) {
 
   /* Cursor Play Video */
   .playVideo {
     width: 0;
     height: 0;
-    mix-blend-mode: normal;
+    mix-blend-mode: difference;
     border: 15px solid transparent;
     border-right: 0;
-    border-left: 30px solid var(--color-secondary);
+    border-left: 30px solid var(--color-white);
     border-radius: 0;
     background-color: transparent;
     position: absolute;
+    pointer-events: none;
     /* Para que el ::after no mueva nada */
   }
   .pauseVideo {
     width: 25px;
     height: 30px;
-    mix-blend-mode: normal;
-    border-right: 7px solid var(--color-secondary);;
-    border-left: 7px solid var(--color-secondary);
+    mix-blend-mode: difference;
+    border-right: 7px solid var(--color-white);
+    border-left: 7px solid var(--color-white);
     border-radius: 0;
     background-color: transparent;
     position: absolute; /* Para que el ::after no mueva nada */
+    pointer-events: none;
   }
   
   .playVideo::after, .pauseVideo::after {
@@ -47,8 +49,9 @@
     position: absolute;
     width: 50px; /* Tamaño del círculo */
     height: 50px;
-    border: 2px solid var(--color-secondary);
+    border: 2px solid var(--color-white);
     border-radius: 50%;
+    mix-blend-mode: difference;
     top: -27px;
     left: -45px;
   
