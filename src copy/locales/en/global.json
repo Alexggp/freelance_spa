@@ -1,0 +1,172 @@
+{
+  "logo": "The art of doing things right.",
+  "main": {
+    "cover": {
+      "title": "Bring your project to a safe harbor.",
+      "subtitle": "The digital ocean is infinite.",
+      "button": "Contact us"
+    }
+  },
+  "mainBody": {
+    "intro": [
+      "You need to be very clear about one thing.",
+      "A <span>business</span> without a strong <span>digital identity</span> is a <span>ship adrift</span>, in the night, with its lights off.",
+      "No one sees you, no one is looking for you, and worst of all...",
+      "You <span>sink</span>.",
+      "Don't worry, don't let that bring you down."
+    ],
+    "ocean": [
+      "The internet opens up an infinite ocean<br />of <span>opportunities</span>.",
+      "Full of possibilities, full of ",
+      "treasures",
+      "But there are too many fish in the sea...",
+      "Which <span>technology</span> to choose? Which <span>provider</span> to hire?"
+    ],
+    "cta": {
+      "warning": "Don't be seduced by sirens leading you onto the rocks.",
+      "action": "Step onto solid ground",
+      "button": "Contact us"
+    },
+    "footer": {
+      "explore": "I want to explore further"
+    }
+  },
+  "moreBody": {
+    "intro": [
+      "If you think having a nice website is enough... I've got ",
+      "bad news",
+      "for you."
+    ],
+    "competition": "On the <span>internet</span>, each of your products <span>competes on a global level</span>. You have no choice but to <span>seek excellence</span> in every step of the process.",
+    "reputation": [
+      "Your",
+      "reputation is at stake",
+      "every second, with every interaction."
+    ],
+    "quality": [
+      "That's why things must be done right. With",
+      "love",
+      "and with",
+      "soul."
+    ],
+    "callToAction": {
+      "title": "So I recommend scheduling a call.",
+      "text": "Here's the link, I'm making it easy for you...",
+      "button": "Schedule a call"
+    },
+    "uncertainty": [
+      "Because, you see.",
+      "I don't know what you're good at.",
+      "Maybe you're a great entrepreneur, a Michelin-starred chef, the best florist in your neighborhood, or the King of the Omelet."
+    ],
+    "supportAreas": [
+      "What I do know is that you wouldn't be here if you didn't need <span>support</span> in:"
+    ],
+    "steps": [
+      "Business strategy and brand identity",
+      "Web application development",
+      "Automation with Artificial Intelligence"
+    ],
+    "expertise": [
+      "Fortunately, we <span>are experts</span> in this field.",
+      "I recommend you schedule a call and tell us <span>your case</span>."
+    ],
+    "cta2": {
+      "button": "Click here"
+    },
+    "solution": [
+      "Because we will offer you <span>the solution you need</span>. No more, no less. Tailored to you. <span>We will take care of everything</span>."
+    ],
+    "focus": [
+      "And that way, you can focus again on what you are <span>a master</span> at.",
+      "That which makes you <span>smile in the mornings</span>. Your business. Your creations. Your omelets..."
+    ],
+    "finalCall": {
+      "title": "Haven't scheduled yet?",
+      "text": "Come on, take the plunge. Click.",
+      "button": "Smile again"
+    },
+    "footer": {
+      "aboutUs": "About us"
+    }
+  },
+  "aboutBody": {
+    "intro": [
+      "If you've made it this far, we're practically friends already.",
+      "So I'm going to be honest with you.",
+      "I got into <span>Telecommunications</span> because I wanted to learn how to hack Canal+.",
+      "You know, teenage dreams..."
+    ],
+    "titleYearsPassed": "Years passed...",
+    "creation": [
+      "I wanted to create.",
+      "To create <span>something new</span>, something that was <span>truly mine</span>.",
+      "And <span>help</span> people who had created something that was <span>truly theirs</span>.",
+      "That is where <span>care</span> is.",
+      "That is where <span>it's truly worth</span> breaking your back."
+    ],
+    "cta": {
+      "text": "If you want me to help you <span>create yours</span>, or make it grow",
+      "button": "Schedule",
+      "scheduleCall": "Schedule a call"
+    },
+    "footer": {
+      "backToHome": "Back to home"
+    }
+  },
+  "aboutIntro": {
+    "title": "I AM ALEJANDRO WEB ARCHITECT",
+    "story": "AND THIS IS MY STORY"
+  },
+  "horizontalBody": {
+    "sections": [
+      {
+        "text": [
+          "I've always been good at <span>fixing things</span>.",
+          "Whenever a gadget broke, I would <span>take it apart</span>. Many times it ended up worse than before, but other times, <span>I got it working</span> and considered myself a genius.",
+          "So I <span>got into Telecommunications</span>."
+        ]
+      },
+      {
+        "text": [
+          "<span>And guess what?</span>",
+          "We only did integrals and differential equations. <span>A total bore</span>.",
+          "Surprise!",
+          "Honestly, <span>I hated that degree</span>."
+        ]
+      },
+      {
+        "text": [
+          "Until in my second year, I learned <span>JavaScript</span>.",
+          "I was amazed.",
+          "I wrote <span>code</span> in a document and magically <span>it appeared on the web</span>."
+        ]
+      },
+      {
+        "text": [
+          "It wasn't just mathematical abstractions.",
+          "<span>You could see it</span>, it was there.",
+          "Finally, something I could <span>show my mother</span>.",
+          "Something tangible, something <span>fantastic</span>."
+        ]
+      },
+      {
+        "text": [
+          "<span>I fell in love with it</span>.",
+          "I barely passed other subjects, but in <span>programming</span>, I only got <span>top grades</span>."
+        ]
+      }
+    ]
+  },
+  "references": {
+    "paragraphs": [
+      "I went through several <span>startups</span>, as a developer, obviously, and <span>ended up in a big consulting firm</span>.",
+      "And then, <span>I went back to fixing things</span>, just like when I was a kid.",
+      "Where there was code that didn't work at all, where clients were unhappy, where deadlines were looming and the team wasn't ready. That's where <span>they sent me</span>.",
+      "I swear, it was like <span>the Seventh Cavalry</span>. The special forces that rescue hostages at the end of the movie.",
+      "And in the end, <span>I burned out.</span>",
+      "I was tired of juggling to save the day for IBEX executives. And them not even knowing who I was, and me not knowing who they were.",
+      "I was tired of <span>fixing other people's messes</span>. I wanted to create."
+    ]
+  }
+}

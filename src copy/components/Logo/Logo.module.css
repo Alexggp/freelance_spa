@@ -1,0 +1,35 @@
+.Container{
+  text-align: center;
+}
+.Main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px
+}
+
+.Icon{
+  width: 55px;
+  height: 55px;
+  background-image: url('../../assets/eutecnia_logo.png');
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.Title{
+  color: var(--color-primary);
+  font-size: 45px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.SubTitle{
+  font-family: 'Allura', sans-serif;
+  color: var(--color-primary);
+  font-size: 25px;
+}
+
+.Alternative *{
+  color: var(--color-white);
+}

@@ -1,0 +1,97 @@
+.MainPage{
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.BackgroundContainer{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top:0;
+  left:0;
+  overflow: hidden;
+}
+
+
+.Video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; 
+  z-index: -1; 
+}
+
+.Cover{
+  padding: 40px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+}
+
+.Title{
+  position: absolute;
+  text-align: left;
+  left: 10vh;
+  bottom: 10vh;
+}
+
+h2{
+  font-family: 'Playfair Display', serif;
+  font-size: 3vh;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+  color: var(--color-white);
+  position:relative
+}
+
+h1{
+  font-family: 'Playfair Display SC', serif;
+  font-size: 3.5vh;
+  margin-bottom: 0.5em;
+  font-weight: 900;
+  color: var(--color-white);
+  position: relative;
+  margin-bottom: 30px;
+} 
+
+
+.LogoContainer{
+  transform: scale(2);
+  margin-top: 15vh
+}
+
+
+
+.Body{
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  margin-top: 100vh;
+  margin-bottom: 100vh;
+}
+
+.Bottom{
+  height:1px;
+  background-color: transparent;
+}
+
+
+@media (max-width: 750px) {
+
+  .LogoContainer{
+    transform: scale(1);
+    margin-top: 15vh
+  }
+  
+  
+}

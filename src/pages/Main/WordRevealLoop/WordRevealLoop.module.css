@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: start;
+  height: 60vh;
+  max-width: 100vw;
+  font-size: 13vw;
+  margin: 0vh 5vw;
+  font-weight: 700;
+  overflow: hidden;
+  text-align: left;
+  letter-spacing: 2vw;
+  box-sizing: content-box;
+}
+
+.word {
+  display: inline-block;
+  /* Asegura que ocupe espacio */
+  opacity: 1;
+  transition: opacity 0.3s linear;
+}
+
+.fadeOut {
+  opacity: 0;
+}

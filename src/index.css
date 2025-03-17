@@ -1,17 +1,13 @@
 /* App.css */
-@import '@fontsource/poppins';
-@import '@fontsource/allura';
-@import '@fontsource/playfair-display';
-@import '@fontsource/playfair-display-sc';
-@import '@fontsource/cormorant';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 :root{
   --color-primary: #0f172a;
   --color-secondary: #1e3a8a;
   --color-tertiary: #c79557;
-  --color-white: #f0f0f0;
-  --color-black: #121212;
+  --color-white: #f5f5f5;
+  --color-black: #000;
 
   --color-aux-primary: #0f172a;
   --color-aux-secondary: #c79557;
@@ -19,7 +15,7 @@
   --color-aux-success: #0ba10b;
   --color-aux-error: #f13434;
   --color-aux-text-secondary: #19c2ba;
-  --color-aux-text-primary:#f0f0f0; 
+  --color-aux-text-primary:#f5f5f5; 
 
   --color-gradiente-primary: #fff;
   --color-gradient-secondary: #f1f1f1;
@@ -34,7 +30,7 @@
   --tablet-breakpoint: 991px;
   --desktop-breakpoint: 1199px;
 
-  --primary-font: 'Poppins', sans-serif;
+  --primary-font: 'Montserrat', sans-serif;
 
 }
 #root{
@@ -55,8 +51,8 @@ html, body {
 }
 
 body {
-  font-family: Arial, sans-serif; /* Sets a base font */
-  color: var(--color-primary); /* Default text color */
+  font-family: var(--primary-font);
+  color: var(--color-black); /* Default text color */
   background-color: var(--color-white); /* Default background color */
   overflow-x: hidden;
   display: flex !important;

@@ -1,0 +1,23 @@
+
+@import '@fontsource/poppins';
+
+#mainContainer{
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(144deg, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 100%) !important;
+  justify-content: start;
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+#backgroundImage{
+  position: absolute;
+  opacity: 0.3;
+}
+

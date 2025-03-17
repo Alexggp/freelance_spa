@@ -1,0 +1,22 @@
+.Header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.Box{
+  height: 75%;
+  border-top: 1px solid var(--color-black);
+  border-bottom: 4px solid var(--color-black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: content-box;
+  padding: 0 3vw;
+}

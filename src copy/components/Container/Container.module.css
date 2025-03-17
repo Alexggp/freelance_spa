@@ -1,0 +1,38 @@
+.Container {
+  width: 100%;
+  height:100%;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
+.Centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MaxWidthSm {
+  max-width: 600px;
+}
+
+.MaxWidthMd {
+  max-width: 800px;
+}
+
+.MaxWidthLg {
+  max-width: 1200px;
+}
+
+.MaxWidthXl {
+  max-width: 1600px;
+}
+.FullSize{
+  display: flex;
+  flex:1;
+  flex-direction: column;
+}
