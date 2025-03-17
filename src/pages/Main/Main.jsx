@@ -5,14 +5,18 @@ import classes from './Main.module.css';
 import WordRevealLoop from './WordRevealLoop/WordRevealLoop';
 import VideoPlayer from './VideoPlayer/VideoPlayer';
 import sampleVideo from '../../assets/video/main_video.mov';
+import ScrollCta from './ScrollCta/ScrollCta';
 
 const Main = () => {
   const { t } = useTranslation('global');
 
   return (
     <div className={classes.MainPage}>
-      <WordRevealLoop />
-      <VideoPlayer src={sampleVideo} />
+      <div className={classes.CoverSection}>
+        <WordRevealLoop />
+        <VideoPlayer src={sampleVideo} />
+        <ScrollCta />
+      </div>
     </div>
   );
 
