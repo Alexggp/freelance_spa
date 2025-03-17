@@ -42,6 +42,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: none !important;
 }
 
 /* Basic styling for html and body */
@@ -104,7 +105,6 @@ input[type="text"], input[type="email"], textarea {
 }
 
 button {
-  cursor: pointer; /* Shows pointer cursor on buttons */
   background-color: var(--color-primary); /* Default button background color */
   color: var(--color-white); /* Default button text color */
   border: none; /* No border by default */

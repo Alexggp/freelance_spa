@@ -7,6 +7,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import RootLayout from "./pages/RootLayout/RootLayout";
 import Main from "./pages/Main/Main";
 import ScrollController from "./components/ScrollController/ScrollController";
+import CustomCursorfrom from "./components/CustomCursor/CustomCursor";
 
 import './App.css';
 
@@ -18,6 +19,7 @@ function App() {
   return (
     <>
       <ScrollController />
+      <CustomCursorfrom />
       <Routes>
         <Route path="/" element={<RootLayout />}>
           <Route index element={<Main />} />

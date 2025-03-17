@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import './index.css'
 import App from './App.jsx'
-import { ChallengeProvider } from './contexts/ChallengeContext.jsx';
+import { CursorProvider } from './contexts/CursorContext.jsx';
 
 // Internationalization
 import { I18nextProvider } from 'react-i18next';
@@ -32,9 +32,9 @@ createRoot(document.getElementById('root')).render(
   <>
     <I18nextProvider i18n={i18next}>
       <BrowserRouter>
-        <ChallengeProvider>
+        <CursorProvider>
           <App />
-        </ChallengeProvider>
+        </CursorProvider>
       </BrowserRouter>
     </I18nextProvider>
   </>,
