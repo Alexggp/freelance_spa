@@ -18,6 +18,8 @@ const Main = () => {
         <VideoPlayer src={sampleVideo} />
         <ScrollCta />
         <StretchedTitle />
+        <WordRevealLoop />
+
       </div>
     </div>
   );
