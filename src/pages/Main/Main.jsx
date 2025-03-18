@@ -7,6 +7,7 @@ import VideoPlayer from './VideoPlayer/VideoPlayer';
 import sampleVideo from '../../assets/video/main_video.mp4';
 import ScrollCta from './ScrollCta/ScrollCta';
 import StretchedTitle from './StretchedTitle/StretchedTitle';
+import Introduction from './Introduction/Introduction';
 
 const Main = () => {
   const { t } = useTranslation('global');
@@ -17,10 +18,9 @@ const Main = () => {
         <WordRevealLoop />
         <VideoPlayer src={sampleVideo} />
         <ScrollCta />
-        <StretchedTitle />
-        <WordRevealLoop />
-
       </div>
+      <StretchedTitle />
+      <Introduction />
     </div>
   );
 

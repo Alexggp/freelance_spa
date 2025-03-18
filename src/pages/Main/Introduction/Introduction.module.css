@@ -1,0 +1,32 @@
+.Introduction{
+  font-size: 2.5vw;
+  letter-spacing: 0.2em;
+  line-height: 1.7em;
+  width: 100vw;
+  background-color: antiquewhite;
+  padding: 2em;
+}
+
+.Introduction p{
+  margin:0;
+  padding:0;
+  width: 100%;
+}
+
+.Title{
+  text-align: center;
+}
+
+.Text{
+  text-align: justify;
+}
+
+@media (max-width: 1024px) and (hover: none) {
+  .Introduction{
+    font-size: 2.5vh;
+
+  }
+  .Text{
+    text-align: center;
+  }
+}
