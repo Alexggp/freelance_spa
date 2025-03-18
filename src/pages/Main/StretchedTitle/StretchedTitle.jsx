@@ -10,26 +10,29 @@ gsap.registerPlugin(ScrollTrigger);
 const StretchedTitle = () => {
   const { t } = useTranslation('global');
   const containerRef = useRef(null);
-  const spacerRef = useRef(null); // Espaciador dinámico para mantener el flujo del documento
+  const spacerRef = useRef(null);
 
   useEffect(() => {
     const container = containerRef.current;
     const spacer = spacerRef.current;
 
     const originalHeight = container.offsetHeight;
-    const scaledHeight = originalHeight * 3; // Calculamos la altura real después del scaleY
+    const viewportHeight = window.innerHeight;
+    const scaleFactor = (viewportHeight / originalHeight)*1.2; // Factor de escalado
+    const scrollDuration = viewportHeight*1.2; // Duración del scroll basada en la altura de la pantalla
 
-    // Ajustamos dinámicamente el espaciador para que el contenido siguiente no se solape
-    spacer.style.height = `${scaledHeight - originalHeight}px`;
+    // Ajustamos el espaciador para que el contenido siguiente no se solape
+    spacer.style.height = `${viewportHeight - originalHeight}px`;
 
     gsap.to(container, {
-      scaleY: 3,
+      scaleY: scaleFactor, // Escala hasta ocupar el alto de la pantalla
       transformOrigin: "top",
       scrollTrigger: {
         id: 'StretchingTitle',
         trigger: container,
         start: "top center",
-        end: "bottom center",
+        start: originalHeight,
+        end: `+=${scrollDuration}`, // Duración del scroll
         scrub: true,
         markers: true
       }
