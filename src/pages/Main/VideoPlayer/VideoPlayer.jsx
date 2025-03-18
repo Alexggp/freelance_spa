@@ -1,11 +1,13 @@
-import { useRef, useState} from "react";
+import { useRef } from "react";
 import classes from "./VideoPlayer.module.css";
 import { useCursor } from "../../../contexts/CursorContext";
+import { Parallax, Background } from 'react-parallax';
 
 
 const VideoPlayer = ({ src }) => {
   const videoRef = useRef(null);
   const { cursorType, setCursorType } = useCursor();
+
 
 
   const togglePlayPause = () => {
@@ -20,19 +22,26 @@ const VideoPlayer = ({ src }) => {
   };
 
   return (
-    <div className={classes.videoContainer}>
-      <video
-        ref={videoRef}
-        className={classes.video}
-        src={src}
-        loop
-        onClick={togglePlayPause}
-        onMouseEnter={() => setCursorType(videoRef.current.paused ? "playVideo" : "pauseVideo")}
-        onMouseLeave={() => setCursorType("default")}
-      />
-      {<div className={classes[cursorType === "default" ? "playVideo" : cursorType]}/>}
-      
+    <div className={classes.VideoPlayer} >
+      <Parallax className={classes.ParallaxContainer} strength={200}>
+        <Background className={classes.CustomBackground}>
+          <div className={classes.BackgroundContainer}>
+            <video
+              ref={videoRef}
+              className={classes.Video}
+              src={src}
+              loop
+              onClick={togglePlayPause}
+              onMouseEnter={() => setCursorType(videoRef.current.paused ? "playVideo" : "pauseVideo")}
+              onMouseLeave={() => setCursorType("default")}
+            />
+          </div>
+        </Background>
+      </Parallax>
+      <div className={classes[cursorType === "default" ? "playVideo" : cursorType]} />
+
     </div>
+
   );
 };
 
