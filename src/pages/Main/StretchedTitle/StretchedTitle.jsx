@@ -16,10 +16,11 @@ const StretchedTitle = () => {
     const container = containerRef.current;
     const spacer = spacerRef.current;
 
+    const scaleConstant = 1.2;
     const originalHeight = container.offsetHeight;
     const viewportHeight = window.innerHeight;
-    const scaleFactor = (viewportHeight / originalHeight)*1.2; // Factor de escalado
-    const scrollDuration = viewportHeight*1.2; // Duración del scroll basada en la altura de la pantalla
+    const scaleFactor = (viewportHeight / originalHeight)*scaleConstant; // Factor de escalado
+    const scrollDuration = viewportHeight*scaleConstant; // Duración del scroll basada en la altura de la pantalla
 
     // Ajustamos el espaciador para que el contenido siguiente no se solape
     spacer.style.height = `${viewportHeight - originalHeight}px`;
