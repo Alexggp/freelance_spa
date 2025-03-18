@@ -55,6 +55,7 @@
 html, body {
   font-size: 100%; /* Ensures font sizes scale correctly */
   line-height: 1.6; /* Increases readability */
+  overflow-y: hidden;
 }
 
 body {
