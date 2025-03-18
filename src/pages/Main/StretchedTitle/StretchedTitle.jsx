@@ -18,25 +18,28 @@ const StretchedTitle = () => {
     const container = containerRef.current;
     const spacer = spacerRef.current;
 
-    const scaleConstant = isDesktop ? 1.5 : 1.2;
+
     const originalHeight = container.offsetHeight;
     const viewportHeight = window.innerHeight;
-    const scaleFactor = (viewportHeight / originalHeight)*scaleConstant; // Factor de escalado
-    const scrollDuration = viewportHeight - (viewportHeight*(scaleConstant/10)); // Duración del scroll basada en la altura de la pantalla
-   
 
+
+    const mobileStart = `${-viewportHeight/2+originalHeight} center`;
+    const mobileEnd = 'top';
+    const desktopStart = 'top center';
+    const desktopEnd= viewportHeight + originalHeight;
+
+    console.log(viewportHeight, originalHeight, mobileStart, mobileEnd)
     // Ajustamos el espaciador para que el contenido siguiente no se solape
-    spacer.style.height = `${scrollDuration}px`;
+    spacer.style.height = `${originalHeight*1.5}px`;
 
     gsap.to(container, {
-      scaleY: scaleFactor, // Escala hasta ocupar el alto de la pantalla
+      scaleY: 2.8, // Escala hasta ocupar el alto de la pantalla
       transformOrigin: "top",
       scrollTrigger: {
         id: 'StretchingTitle',
         trigger: container,
-        start: "top center",
-        start: originalHeight,
-        end: `+=${scrollDuration}`, // Duración del scroll
+        start: isDesktop ? desktopStart : mobileStart,
+        end: isDesktop ? desktopEnd : mobileEnd, // Duración del scroll
         scrub: true,
         markers: false
       }
