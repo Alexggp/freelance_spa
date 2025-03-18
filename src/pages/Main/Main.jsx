@@ -8,12 +8,13 @@ import sampleVideo from '../../assets/video/main_video.mp4';
 import ScrollCta from './ScrollCta/ScrollCta';
 import StretchedTitle from './StretchedTitle/StretchedTitle';
 import Introduction from './Introduction/Introduction';
-
+import PasionSection from './PasionSection/PasionSection';
 const Main = () => {
   const { t } = useTranslation('global');
 
   return (
     <div className={classes.MainPage}>
+
       <div className={classes.CoverSection}>
         <WordRevealLoop />
         <VideoPlayer src={sampleVideo} />
@@ -21,6 +22,7 @@ const Main = () => {
       </div>
       <StretchedTitle />
       <Introduction />
+      <PasionSection />
     </div>
   );
 

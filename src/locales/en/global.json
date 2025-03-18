@@ -1,10 +1,16 @@
 {
   "main":{
     "WordRevealLoop": ["CREATE", "BELIEVE", "GROW"],
-    "StretchedTitle": "PASION",
+    "StretchedTitle": "PASSION",
     "Introduction":{
       "title": "My name is Alejandro.",
       "text": "And my passion is CREATING. Creating anything: furniture, stories, photographs, dishes, songs... But I get paid to create WEB APPS. So I create them. Because I'm good at them. Not only that. I put my whole SOUL into it. And this is how I live creating. And I'm happy. I wake up every day with a smile."
-    }
+    },
+    "PasionSection":{
+      "smile":"And you... what makes you smile?",
+      "question1": "What is your",
+      "question2": "passion?"
+
+    } 
   }
 }

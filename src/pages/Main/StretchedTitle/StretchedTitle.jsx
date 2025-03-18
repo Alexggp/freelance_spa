@@ -28,7 +28,6 @@ const StretchedTitle = () => {
     const desktopStart = 'top center';
     const desktopEnd= viewportHeight + originalHeight;
 
-    console.log(viewportHeight, originalHeight, mobileStart, mobileEnd)
     // Ajustamos el espaciador para que el contenido siguiente no se solape
     spacer.style.height = `${originalHeight*1.5}px`;
 

@@ -70,7 +70,7 @@ const PhotoShooter = () => {
 
         setVisiblePhotos((prev) => [...prev, newPhoto]);
 
-        // 🔴 ELIMINAR la imagen después de FADE_OUT_MS
+        // ELIMINAR la imagen después de FADE_OUT_MS
         setTimeout(() => {
           setVisiblePhotos((current) => current.filter((photo) => photo.id !== newPhoto.id));
         }, FADE_OUT_MS);

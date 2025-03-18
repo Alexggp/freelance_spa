@@ -1,0 +1,60 @@
+.PasionSection{
+   border-top: 4px solid var(--color-black);
+  width: 100vw;
+  height: 80vh;
+  padding: 2em;
+  position: relative;
+  background-color: var(--color-white);
+   opacity: 1; 
+  background-image: radial-gradient(circle at bottom left, #000000, #f5f5f5), repeating-radial-gradient(circle at bottom left, #000000, #000000, 35px, transparent 150px, transparent 35px);
+  background-blend-mode: overlay; 
+}
+
+.PasionSection p{
+  margin:0;
+  padding:0;
+  width: 100%;
+  font-size: 2.5vw;
+  letter-spacing: 0.2em;
+  line-height: 1.7em;
+  color: var(--color-black);
+  text-align: left;
+}
+
+.Smile{
+  color: var(--color-black)
+}
+
+.Question{
+  position: absolute;
+  bottom: -5vh;
+  left: 0;
+  line-height: 1;
+  font-weight: 700;
+  z-index: 100;
+  color: var(--color-black);
+  pointer-events: none; 
+}
+
+.Question span{
+  letter-spacing: -0.05em;
+  font-size: 14vw;
+}
+
+.Question span:first-of-type{
+  font-size: 7vw;
+    margin-left: 0.15em;
+}
+
+
+.DarkSection{
+  background-color: var(--color-black);
+  width: 100vw;
+  height: 100vh;
+}
+
+@media (max-width: 1024px) and (hover: none) {
+  .PasionSection{
+    font-size: 2.5vh;
+  }
+}
