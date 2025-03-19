@@ -57,6 +57,23 @@
   left: -22px;
 
 }
+
+
+.heart {
+  border-radius: 0;
+  --c: rgba(255, 255, 255, 0.8);
+  width: 20px;
+  height:20px;
+  aspect-ratio: 1;
+  background:
+   /* 1 */ radial-gradient(circle at 60% 65%,var(--c) 64%,#0000 65%) top left/50% 50%,
+   /* 2 */ radial-gradient(circle at 40% 65%,var(--c) 64%,#0000 65%) top right/50% 50%,
+   /* 3 */ conic-gradient(from -45deg at 50% 85.5%,var(--c) 90deg,#0000 0) bottom/100% 50%;
+  background-repeat: no-repeat;
+}
+
+
+
 @media (max-width: 1024px) and (hover: none) {
   .cursor {
     display: none !important;
