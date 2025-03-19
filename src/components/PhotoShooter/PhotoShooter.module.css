@@ -1,16 +1,15 @@
-/* Contenedor principal donde aparecen las imágenes */
 .photoShooterContainer {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
-  left:0;
+  left: 0;
   overflow: hidden;
-  background-color: transparent; /* Para depuración, quítalo si no es necesario */
-  z-index:99;
+  background-color: transparent;
+  z-index: 99;
 }
 
-/* Cada contenedor de imagen */
+/* Contenedor de cada foto */
 .photoContainer {
   position: absolute;
   width: 200px;
@@ -18,7 +17,13 @@
   transform-origin: center;
 }
 
-/* Nueva animación que incluye el fade-out */
+.photoContainer.Fixed{
+  width:  100%;
+  max-width: 300px;
+  height:  auto;
+}
+
+/* Animación con fade-out */
 @keyframes scaleIn {
   0% {
     transform: translate(-50%, -50%) scale(0) rotate(0deg);

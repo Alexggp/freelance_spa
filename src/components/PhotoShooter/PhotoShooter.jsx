@@ -15,62 +15,71 @@ const shuffleArray = (array) => {
   return shuffled;
 };
 
-const shuffledPhotos = shuffleArray(photos); // Desordenamos las imágenes al cargar
+const shuffledPhotos = shuffleArray(photos);
 
-const INTERVAL_MS = 300; // 300ms entre cada imagen
-const FADE_OUT_MS = 2000; // 2 segundos antes de desaparecer
-const ROTATION_RANGE = 20; // Rango de -20° a 20°
 
-const PhotoShooter = () => {
+
+const PhotoShooter = ({ fixed = false }) => {
+
+  const INTERVAL_MS = fixed ? 800 : 300; // 300ms entre cada imagen
+  const FADE_OUT_MS = 2000; // 2 segundos antes de desaparecer
+  const ROTATION_RANGE = 20; // Rango de -20° a 20°
+
+
   const [visiblePhotos, setVisiblePhotos] = useState([]);
-  const [isAnimating, setIsAnimating] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(fixed); // Si fixed, siempre animado
   const [photoIndex, setPhotoIndex] = useState(0);
   const containerRef = useRef(null);
   const mousePos = useRef({ x: 0, y: 0 });
-  const prevMouseX = useRef(0); // Guardar la posición anterior del ratón
+  const prevMouseX = useRef(0);
   const intervalRef = useRef(null);
-  const globalZIndex = useRef(1); // Z-index global que siempre aumenta
+  const globalZIndex = useRef(1);
 
-  // Guardar la posición del ratón en la referencia sin hacer re-render
+  // Si fixed es true, el centro del contenedor es la posición fija
+  const getFixedPosition = () => {
+    if (!containerRef.current) return { x: 0, y: 0 };
+    const rect = containerRef.current.getBoundingClientRect();
+    return { x: rect.width / 2, y: rect.height / 2 };
+  };
+
+  // Captura la posición del mouse si fixed es false
   const handleMouseMove = (event) => {
-    if (!containerRef.current) return;
-
+    if (fixed || !containerRef.current) return;
     const rect = containerRef.current.getBoundingClientRect();
     mousePos.current.x = event.clientX - rect.left;
     mousePos.current.y = event.clientY - rect.top;
   };
 
   const getRotationByMouseDirection = () => {
-    const deltaX = mousePos.current.x - prevMouseX.current; // Diferencia de posición del ratón
-
-    let rotation;
-    if (deltaX > 0) {
-      // Movimiento a la derecha (entre 0° y 20°)
-      rotation = Math.random() * ROTATION_RANGE;
-    } else {
-      // Movimiento a la izquierda (entre 0° y -20°)
-      rotation = -Math.random() * ROTATION_RANGE;
+    if (fixed) {
+      return Math.random() * (ROTATION_RANGE * 2) - ROTATION_RANGE; // Rotación aleatoria en fixed
     }
 
-    prevMouseX.current = mousePos.current.x; // Guardamos la posición actual como referencia
+    const deltaX = mousePos.current.x - prevMouseX.current;
+    let rotation = deltaX > 0
+      ? Math.random() * ROTATION_RANGE
+      : -Math.random() * ROTATION_RANGE;
+
+    prevMouseX.current = mousePos.current.x;
     return rotation;
   };
 
   useEffect(() => {
     if (isAnimating) {
       intervalRef.current = setInterval(() => {
+        const position = fixed ? getFixedPosition() : mousePos.current;
+
         const newPhoto = { 
           src: shuffledPhotos[photoIndex], 
           id: photoIndex, 
-          rotation: getRotationByMouseDirection(), // Se usa la dirección del ratón
-          left: mousePos.current.x, // Posición exacta del ratón
-          top: mousePos.current.y,
-          zIndex: globalZIndex.current++, // Incrementar el Z-index global
+          rotation: getRotationByMouseDirection(),
+          left: position.x,
+          top: position.y,
+          zIndex: globalZIndex.current++,
         };
 
         setVisiblePhotos((prev) => [...prev, newPhoto]);
 
-        // ELIMINAR la imagen después de FADE_OUT_MS
         setTimeout(() => {
           setVisiblePhotos((current) => current.filter((photo) => photo.id !== newPhoto.id));
         }, FADE_OUT_MS);
@@ -80,25 +89,25 @@ const PhotoShooter = () => {
     }
 
     return () => clearInterval(intervalRef.current);
-  }, [isAnimating, photoIndex]); // Eliminamos mousePos del array de dependencias
+  }, [isAnimating, photoIndex, fixed]);
 
   return (
     <div
       ref={containerRef}
       className={classes.photoShooterContainer}
-      onMouseEnter={() => setIsAnimating(true)}
-      onMouseLeave={() => setIsAnimating(false)}
-      onMouseMove={handleMouseMove} // Solo actualiza el ref, sin causar renders
+      onMouseEnter={() => !fixed && setIsAnimating(true)}
+      onMouseLeave={() => !fixed && setIsAnimating(false)}
+      onMouseMove={handleMouseMove}
     >
       {visiblePhotos.map((photo) => (
         <div
           key={photo.id}
-          className={`${classes.photoContainer} ${classes.scaleIn}`}
+          className={`${classes.photoContainer} ${classes.scaleIn} ${fixed && classes.Fixed}`}
           style={{
             "--rotation": `${photo.rotation}deg`,
             top: `${photo.top}px`,
             left: `${photo.left}px`,
-            zIndex: photo.zIndex, // Se usa el Z-index global
+            zIndex: photo.zIndex,
           }}
         >
           <img src={photo.src} alt="Photo" className={classes.image} />
