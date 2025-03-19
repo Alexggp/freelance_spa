@@ -18,6 +18,9 @@
       "dark2": "I just need to know what genuinely inspires you.",
       "quote": "Inspiration exists, but it has to find you working"
     },
-    "Inspiration": "Inspiration"
+    "Inspiration": {
+      "title": "Inspiration",
+      "subtitle": "And how I can help you."
+    }
   }
 }

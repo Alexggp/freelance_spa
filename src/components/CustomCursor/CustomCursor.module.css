@@ -72,6 +72,10 @@
   background-repeat: no-repeat;
 }
 
+.none{
+  display: none !important;
+}
+
 
 
 @media (max-width: 1024px) and (hover: none) {
