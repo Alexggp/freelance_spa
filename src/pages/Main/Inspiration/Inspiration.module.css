@@ -2,11 +2,14 @@
   width: 100vw;
   position: relative;
 }
-.ImagesContainer{
+.ImagesContainer, .ParallaxContainer, .CustomBackground  {
   width:100vw;
   height: 80vh;
   position: relative;
 }
+
+
+
 
 .Title{
   position: absolute;
@@ -38,7 +41,7 @@
     text-align: center;
     justify-content: center;
   }
-  .ImagesContainer{
+  .ImagesContainer, .ParallaxContainer, .CustomBackground{
     width:100vw;
     height: 40vh;
     position: relative;
