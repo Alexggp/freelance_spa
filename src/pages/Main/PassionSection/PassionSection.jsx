@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import PhotoShooter from '../../../components/PhotoShooter/PhotoShooter';
 import useScreenSize from '../../../hooks/useScreenSize';
 import { useCursor } from '../../../contexts/CursorContext';
+import MouseBar from '../../../components/MouseBar/MouseBar';
 
 const PassionSection = () => {
   const { t } = useTranslation('global');
@@ -28,6 +29,12 @@ const PassionSection = () => {
     </div>
     <div className={classes.DarkSection}>
     <p>{t('main.PassionSection.dark1')}</p>
+    <MouseBar>
+    <div className={classes.Quote}>
+      {t('main.PassionSection.quote')}
+    </div>
+    </MouseBar>
+
     <p>{t('main.PassionSection.dark2')}</p>
     </div>
     </>
