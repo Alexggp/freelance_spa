@@ -9,6 +9,8 @@ import ScrollCta from './ScrollCta/ScrollCta';
 import StretchedTitle from './StretchedTitle/StretchedTitle';
 import Introduction from './Introduction/Introduction';
 import PassionSection from './PassionSection/PassionSection';
+import Inspiration from './Inspiration/Inspiration';
+
 const Main = () => {
   const { t } = useTranslation('global');
 
@@ -23,6 +25,7 @@ const Main = () => {
       <StretchedTitle />
       <Introduction />
       <PassionSection />
+      <Inspiration />
     </div>
   );
 

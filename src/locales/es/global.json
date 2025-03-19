@@ -13,6 +13,10 @@
       "dark1": "Dedícate a ello en cuerpo y alma, y déjame a mi ayudarte con esto.",
       "dark2": "Sólo necesito saber que te inspira realmente.",
       "quote": "La inspiración existe, pero tiene que encontrarte trabajando."
-    } 
+    },
+    "Inspiration": {
+      "title": "Inspiración",
+      "subtitle": "Y en qué puedo ayudarte."
+    }
   }
 }
