@@ -1,26 +1,23 @@
 .MouseBarContainer {
-  position: relative;
+  position: relative; /* Se mantiene relative */
   width: 100%;
-  height: 16vw;
+  min-height: fit-content; /* Se ajusta a la altura del contenido */
   overflow: hidden;
   background-color: transparent;
   box-sizing: content-box;
+  display: flex; /* Asegura que respeta la altura del contenido */
+  align-items: center;
 }
 
 .MouseBar {
-  display: flex;
+  display: flex; /* Ya no es inline-flex, esto evita problemas con flexbox */
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  position: absolute;
-  /* padding-right: 22px; */
+  position: relative; /* Cambio de absolute a relative */
+  white-space: nowrap;
 }
 
 .MouseBar::-webkit-scrollbar {
   display: none;
-}
-@media (max-width: 1024px) and (hover: none) {
-  .MouseBarContainer {
-    display: none;
-  }
 }
