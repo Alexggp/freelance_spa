@@ -8,7 +8,7 @@ import sampleVideo from '../../assets/video/main_video.mp4';
 import ScrollCta from './ScrollCta/ScrollCta';
 import StretchedTitle from './StretchedTitle/StretchedTitle';
 import Introduction from './Introduction/Introduction';
-import PasionSection from './PasionSection/PasionSection';
+import PassionSection from './PassionSection/PassionSection';
 const Main = () => {
   const { t } = useTranslation('global');
 
@@ -22,7 +22,7 @@ const Main = () => {
       </div>
       <StretchedTitle />
       <Introduction />
-      <PasionSection />
+      <PassionSection />
     </div>
   );
 
