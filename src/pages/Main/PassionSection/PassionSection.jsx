@@ -26,7 +26,10 @@ const PassionSection = () => {
       </div>
       
     </div>
-    <div className={classes.DarkSection}></div>
+    <div className={classes.DarkSection}>
+    <p>{t('main.PassionSection.dark1')}</p>
+    <p>{t('main.PassionSection.dark2')}</p>
+    </div>
     </>
 
   );

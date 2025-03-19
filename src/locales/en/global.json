@@ -1,16 +1,21 @@
 {
-  "main":{
-    "WordRevealLoop": ["CREATE", "BELIEVE", "GROW"],
+  "main": {
+    "WordRevealLoop": [
+      "CREATE",
+      "BELIEVE",
+      "GROW"
+    ],
     "StretchedTitle": "PASSION",
-    "Introduction":{
+    "Introduction": {
       "title": "My name is Alejandro.",
       "text": "And my passion is CREATING. Creating anything: furniture, stories, photographs, dishes, songs... But I get paid to create WEB APPS. So I create them. Because I'm good at them. Not just that. I put my whole SOUL into it. And this is how I live creating. And I'm happy. I wake up every day with a smile."
     },
-    "PassionSection":{
-      "smile":"And you... what makes you smile?",
+    "PassionSection": {
+      "smile": "And you... what makes you smile?",
       "question1": "What is your",
-      "question2": "passion?"
-
-    } 
+      "question2": "passion?",
+      "dark1": "Put your heart and soul into it, and let me help you with this.",
+      "dark2": "I just need to know what genuinely inspires you."
+    }
   }
 }

@@ -9,8 +9,9 @@
     "PassionSection":{
       "smile":"Y a ti... ¿Qué te hace sonreir?",
       "question1": "¿Cuál es tu",
-      "question2": "pasión?"
-
+      "question2": "pasión?",
+      "dark1": "Dedícate a ello en cuerpo y alma, y déjame a mi ayudarte con esto.",
+      "dark2": "Sólo necesito saber que te inspira realmente."
     } 
   }
 }
