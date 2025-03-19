@@ -19,3 +19,8 @@
 .MouseBar::-webkit-scrollbar {
   display: none;
 }
+@media (max-width: 1024px) and (hover: none) {
+  .MouseBarContainer {
+    display: none;
+  }
+}

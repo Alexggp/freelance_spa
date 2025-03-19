@@ -4,7 +4,7 @@
   height: 20px;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 50%;
-  pointer-events: none;
+  /* pointer-events: none; */
   mix-blend-mode: difference;
   will-change: transform, left, top;
   transition: left 0s linear, top 0s linear, transform 0.15s ease-out;

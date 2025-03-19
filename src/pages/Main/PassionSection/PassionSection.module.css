@@ -95,5 +95,6 @@
   }
   .DarkSection{
     font-size: 2.5vh;
+    height: auto;
   }
 }
