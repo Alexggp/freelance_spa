@@ -25,6 +25,7 @@ const Feature = () => {
         className={classes.ActiveArea}
         onMouseEnter={() => handleImageVisibility(true)}
         onMouseLeave={() => handleImageVisibility(false)}
+        onClick={!isDesktop && (() => alert('feature mobile'))}
       >
         <div className={classes.FeatureContainer}>
           <div className={classes.Title}>
