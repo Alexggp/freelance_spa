@@ -23,7 +23,7 @@ const Feature = () => {
       {imageIsVisible && (
         <div className={classes.ImageContainer}
           onClick={() => alert('feature')}
-          onMouseEnter={() => setCursorType("heart")}
+          onMouseEnter={() => setCursorType("pointer")}
           onMouseLeave={() => setCursorType("default")}
         >
           <img src={image} />
