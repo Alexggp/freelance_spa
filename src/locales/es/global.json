@@ -17,6 +17,20 @@
     "Inspiration": {
       "title": "Inspiración",
       "subtitle": "¿En qué puedo ayudarte?"
+    },
+    "Features":{
+      "marketing": {
+        "title": "Marketing digital"
+      },
+      "design": {
+        "title": "diseño web"
+      },
+      "development": {
+        "title": "desarrollo de apps"
+      },
+      "responsive": {
+        "title": "diseño responsive"
+      }
     }
   }
 }

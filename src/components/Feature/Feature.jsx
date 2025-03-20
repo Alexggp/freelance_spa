@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import classes from './Feature.module.css';
 import { useTranslation } from 'react-i18next';
-import image from '../../assets/features/web_design.jpg';
 import { useCursor } from '../../contexts/CursorContext';
 import { useMouseParallax } from '../../hooks/useMouseParallax';
 import useScreenSize from '../../hooks/useScreenSize';
 
 
-const Feature = () => {
+const Feature = ({title, image, selected}) => {
   const [imageIsVisible, setImageIsVisible] = useState(false);
   const { t } = useTranslation('global');
   const { setCursorType } = useCursor();
@@ -25,11 +24,11 @@ const Feature = () => {
         className={classes.ActiveArea}
         onMouseEnter={() => handleImageVisibility(true)}
         onMouseLeave={() => handleImageVisibility(false)}
-        onClick={!isDesktop && (() => alert('feature mobile'))}
+        onClick={!isDesktop ? selected : undefined}
       >
         <div className={classes.FeatureContainer}>
           <div className={classes.Title}>
-            Diseño WEB
+            {title}
           </div>
         </div>
 
@@ -37,11 +36,11 @@ const Feature = () => {
           <div
             ref={parallaxRef} // Aplica el efecto de parallax a esta imagen
             className={classes.ImageContainer}
-            onClick={() => alert('feature')}
+            onClick={selected}
             onMouseEnter={() => setCursorType("pointer")}
             onMouseLeave={() => setCursorType("default")}
           >
-            <img src={image} alt="Web Design" />
+            <img src={image} alt={title} />
           </div>
         )}
       </div>

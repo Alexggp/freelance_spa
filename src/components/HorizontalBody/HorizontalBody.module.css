@@ -1,0 +1,25 @@
+.HorizontalBody {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.HorizontalContainer {
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.HorizontalSlider {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: max-content;
+}
+
+.SectionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+}

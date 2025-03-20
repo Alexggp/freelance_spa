@@ -10,7 +10,7 @@ import StretchedTitle from './StretchedTitle/StretchedTitle';
 import Introduction from './Introduction/Introduction';
 import PassionSection from './PassionSection/PassionSection';
 import Inspiration from './Inspiration/Inspiration';
-import Feature from '../../components/Feature/Feature';
+import FeaturesSlide from './FeaturesSlide/FeaturesSlide';
 
 const Main = () => {
   const { t } = useTranslation('global');
@@ -18,7 +18,7 @@ const Main = () => {
   return (
     <div className={classes.MainPage}>
 
-      {/* <div className={classes.CoverSection}>
+      <div className={classes.CoverSection}>
         <WordRevealLoop />
         <VideoPlayer src={sampleVideo} />
         <ScrollCta />
@@ -26,10 +26,8 @@ const Main = () => {
       <StretchedTitle />
       <Introduction />
       <PassionSection />
-      <Inspiration /> */}
-      <Feature/>
-      <Feature/>
-      <Feature/>
+      <Inspiration />
+      <FeaturesSlide />
 
     </div>
   );
