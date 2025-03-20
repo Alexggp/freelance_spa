@@ -55,4 +55,8 @@
   .Title{
     font-size: 12vw;
   }
+  .ImageContainer{
+    width: 75vw;
+    opacity: 0.5;
+  }
 }

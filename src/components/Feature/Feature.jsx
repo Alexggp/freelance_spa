@@ -32,7 +32,7 @@ const Feature = ({title, image, selected}) => {
           </div>
         </div>
 
-        {imageIsVisible && (
+        {(!isDesktop || imageIsVisible) && (
           <div
             ref={parallaxRef} // Aplica el efecto de parallax a esta imagen
             className={classes.ImageContainer}
