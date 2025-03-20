@@ -1,0 +1,50 @@
+.Feature{ 
+  background-color: lightblue;
+  border: 2px solid black;
+  max-width: 45vw;
+  min-width: 35vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  
+}
+
+.FeatureContainer{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2em;
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.Title{
+  font-weight: 700;
+  font-size: 7vw;
+  color: var(--color-black);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.ImageContainer{
+  width: 25vw;
+  max-width: 300px;
+  height: auto;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+}
+
+.ImageContainer img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
