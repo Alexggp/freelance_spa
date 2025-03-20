@@ -11,10 +11,11 @@ const Feature = () => {
   const { setCursorType } = useCursor();
 
   return (
-    <div className={classes.Feature}
-    onMouseEnter={() => setImageIsVisible(true)}
-    onMouseLeave={() => setImageIsVisible(false)}
-    >
+    <div className={classes.Feature}>
+      <div className={classes.ActiveArea}
+      onMouseEnter={() => setImageIsVisible(true)}
+      onMouseLeave={() => setImageIsVisible(false)}
+      >
       <div className={classes.FeatureContainer}>
         <div className={classes.Title}>
           Diseño WEB
@@ -29,6 +30,8 @@ const Feature = () => {
           <img src={image} />
         </div>
       )}
+      </div>
+
 
     </div >
   );
