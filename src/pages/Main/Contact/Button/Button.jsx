@@ -8,6 +8,7 @@ const Button = () => {
   const { setCursorType } = useCursor();
   const [isHover, setIsHover] = useState(false);
 
+  const linkToCalendar = ()=> window.open("https://calendar.app.google/VhiRqbK1hoXmENiQA", "_blank")
 
   const handleEnter = ()=>{
     setCursorType("pointer");
@@ -21,7 +22,7 @@ const Button = () => {
 
   return (
     <button className={classes.Button}
-    onClick={()=>alert('contactar')}
+    onClick={linkToCalendar}
     onMouseEnter={handleEnter}
     onMouseLeave={handleLeave}
     >
