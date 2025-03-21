@@ -15,7 +15,7 @@ const Header = ({toggleMenu, menuIsVisible}) => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+      if (!menuIsVisible && currentScrollY > lastScrollY && currentScrollY > 50) {
         // Scrolling Down - Oculta el Header
         setIsVisible(false);
       } else {

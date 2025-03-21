@@ -1,0 +1,39 @@
+.Menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+  display: flex;
+  transform: rotate(90deg);
+  transform-origin: 100% 100%;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 1.5s ease-in-out;
+  z-index: 99996;
+  background-color: var(--color-secondary);
+  color: var(--color-black);
+  font-size: 7vw;
+  text-align: center;
+  line-height: normal;
+}
+
+.isVisible{
+  transform: rotate(0);
+  
+}
+
+@media (max-width: 1024px) and (hover: none) {
+  .Menu {
+    font-size: 14vw;
+    transform: translateY(-100%);
+  }
+  .Menu p{
+    margin-top: 4vh;
+  }
+  .isVisible{
+    transform: translateY(0);
+    
+  }
+}
