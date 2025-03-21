@@ -31,3 +31,14 @@
 .hidden {
   transform: translateY(-100%);
 }
+
+.IconContainer{
+  all: unset;
+  margin-right:1em;
+  width: 4vh;
+  height: 4vh;
+}
+.IconContainer img{
+  width: 100%;
+  height: auto;
+}
