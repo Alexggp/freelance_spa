@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react';
 import classes from './Header.module.css';
 import Logo from '../Logo/Logo';
 import MenuIcon from '../../../assets/icons/svg/menu.svg';
+import CloseIcon from '../../../assets/icons/svg/close.svg';
+
 import { useCursor } from '../../../contexts/CursorContext';
 
-const Header = ({toggleMenu}) => {
+const Header = ({toggleMenu, menuIsVisible}) => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const { setCursorType } = useCursor();
@@ -40,7 +42,7 @@ const Header = ({toggleMenu}) => {
           onMouseEnter={() => setCursorType("pointer")}
           onMouseLeave={() => setCursorType("default")}
         >
-          <img src={MenuIcon}/>
+          <img src={menuIsVisible ? CloseIcon : MenuIcon}/>
         </button>
       </div>
     </header>
