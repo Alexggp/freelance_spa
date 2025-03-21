@@ -11,6 +11,7 @@ import Introduction from './Introduction/Introduction';
 import PassionSection from './PassionSection/PassionSection';
 import Inspiration from './Inspiration/Inspiration';
 import FeaturesSlide from './FeaturesSlide/FeaturesSlide';
+import Contact from './Contact/Contact';
 
 const Main = () => {
   const { t } = useTranslation('global');
@@ -28,7 +29,7 @@ const Main = () => {
       <PassionSection />
       <Inspiration />
       <FeaturesSlide />
-
+      <Contact />
     </div>
   );
 

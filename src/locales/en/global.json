@@ -35,6 +35,13 @@
       "responsive": {
         "title": "responsive design"
       }
+    },
+    "Contact": {
+      "text": "Do you have any project in mind?",
+      "title": "Let's Talk",
+      "button1": "Set",
+      "button2": "a",
+      "button3": "call"
     }
   }
 }

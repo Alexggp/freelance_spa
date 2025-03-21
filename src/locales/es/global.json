@@ -31,6 +31,13 @@
       "responsive": {
         "title": "diseño responsive"
       }
+    },
+    "Contact": {
+      "text": "¿Tienes algún proyecto en mente?",
+      "title": "Hablemos",
+      "button1": "Agenda",
+      "button2": "una",
+      "button3": "llamada"
     }
   }
 }

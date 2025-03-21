@@ -1,0 +1,48 @@
+.Button {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 18em;
+}
+
+.Chunck {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-size: 2vw;
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  padding: 0 1em;
+  z-index: 2;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+  transform: rotate(90deg);
+}
+
+.Chunk1 {
+  justify-content: start;
+}
+
+.Chunk2 {
+  padding: 0 1.5em;
+  margin: 0 -1.5em;
+  z-index: 1;
+  transform: rotate(-90deg)
+}
+
+.Chunk3 {
+  justify-content: end;
+}
+.Hover{
+  transform: rotate(0deg);
+}
+
+@media (max-width: 1024px) and (hover: none) {
+  .Chunck {
+    font-size: 7vw;
+    transform: rotate(0deg)
+  }
+  .Button{
+    height:20vh;
+  }
+}
