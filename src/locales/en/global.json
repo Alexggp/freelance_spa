@@ -1,7 +1,16 @@
 {
-  "root":{
+  "root": {
     "Footer": {
       "copied": "Copied to the clipboard"
+    },
+    "Menu": {
+      "about": "About me & Projects",
+      "contact": "Contact",
+      "home": "Home",
+      "locales": {
+        "english": "English",
+        "spanish": "Español"
+      }
     }
   },
   "main": {

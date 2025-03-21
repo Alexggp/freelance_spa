@@ -10,7 +10,8 @@
   transform-origin: 100% 100%;
   flex-direction: column;
   justify-content: center;
-  transition: transform 1.5s ease-in-out;
+  align-items: center;
+  transition: transform 1s ease-in-out;
   z-index: 99996;
   background-color: var(--color-secondary);
   color: var(--color-black);
@@ -19,6 +20,25 @@
   line-height: normal;
 }
 
+.Selectable{
+  transition: font-size 0.3s ease-in-out;
+  font-size: 7vw;
+  width: fit-content;
+}
+
+.Selectable:hover{
+  font-size: 8vw;
+}
+.LocaleSelected{
+  text-decoration: underline;
+}
+.LanguageSelector{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .isVisible{
   transform: rotate(0);
   
@@ -26,10 +46,13 @@
 
 @media (max-width: 1024px) and (hover: none) {
   .Menu {
-    font-size: 14vw;
     transform: translateY(-100%);
+    font-size: 14vw;
   }
-  .Menu p{
+  .Selectable{
+    font-size: 14vw;
+  }
+  .Menu>.Selectable, .LanguageSelector{
     margin-top: 4vh;
   }
   .isVisible{

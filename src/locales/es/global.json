@@ -1,18 +1,31 @@
 {
-  "root":{
+  "root": {
     "Footer": {
       "copied": "Copiado al portapeles"
+    },
+    "Menu": {
+      "about": "Sobre mí & Proyectos",
+      "contact": "Contacto",
+      "home": "Inicio",
+      "locales": {
+        "english": "English",
+        "spanish": "Español"
+      }
     }
   },
-  "main":{
-    "WordRevealLoop": ["CREAR", "CREER", "CRECER"],
+  "main": {
+    "WordRevealLoop": [
+      "CREAR",
+      "CREER",
+      "CRECER"
+    ],
     "StretchedTitle": "PASIÓN",
-    "Introduction":{
+    "Introduction": {
       "title": "Mi nombre es Alejandro.",
       "text": "Y mi pasión es CREAR. Crear cualquier cosa: muebles, historias, fotografías, comida, canciones... Pero me pagan por crear APLICACIONES WEB. Así que las creo. Porque soy bueno haciéndolas. No sólo eso. Pongo todo mi ALMA en ello. Y de esta forma, vivo creando. Y soy felíz. Me despierto todos los días con una sonrisa."
     },
-    "PassionSection":{
-      "smile":"Y a ti... ¿Qué te hace sonreir?",
+    "PassionSection": {
+      "smile": "Y a ti... ¿Qué te hace sonreir?",
       "question1": "¿Cuál es tu",
       "question2": "pasión?",
       "dark1": "Dedícate a ello en cuerpo y alma, y déjame a mi ayudarte con esto.",
@@ -23,7 +36,7 @@
       "title": "Inspiración",
       "subtitle": "¿En qué puedo ayudarte?"
     },
-    "Features":{
+    "Features": {
       "marketing": {
         "title": "Marketing digital"
       },
