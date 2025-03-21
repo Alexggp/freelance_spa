@@ -1,22 +1,34 @@
-import React from 'react';
+import React, {useState} from 'react';
 import classes from './Button.module.css';
 import { useTranslation } from 'react-i18next';
 import { useCursor } from '../../../../contexts/CursorContext';
 
 const Button = () => {
   const { t } = useTranslation('global');
-  const { cursorType, setCursorType } = useCursor();
+  const { setCursorType } = useCursor();
+  const [isHover, setIsHover] = useState(false);
+
+
+  const handleEnter = ()=>{
+    setCursorType("pointer");
+    setIsHover(true);
+  }
+
+  const handleLeave = ()=>{
+    setCursorType("default")
+    setIsHover(false);
+  }
 
   return (
-    <div className={classes.Button}
+    <button className={classes.Button}
     onClick={()=>alert('contactar')}
-    onMouseEnter={() => setCursorType("pointer")}
-    onMouseLeave={() => setCursorType("default")}
+    onMouseEnter={handleEnter}
+    onMouseLeave={handleLeave}
     >
-      <div className={`${classes.Chunck} ${classes.Chunk1} ${cursorType==='pointer' ? classes.Hover : ''}`}>{t('main.Contact.button1')}</div>
-      <div className={`${classes.Chunck} ${classes.Chunk2} ${cursorType==='pointer' ? classes.Hover : ''}`}>{t('main.Contact.button2')}</div>
-      <div className={`${classes.Chunck} ${classes.Chunk3} ${cursorType==='pointer' ? classes.Hover : ''}`}>{t('main.Contact.button3')}</div>
-    </div>
+      <div className={`${classes.Chunck} ${classes.Chunk1} ${isHover ? classes.Hover : ''}`}>{t('main.Contact.button1')}</div>
+      <div className={`${classes.Chunck} ${classes.Chunk2} ${isHover ? classes.Hover : ''}`}>{t('main.Contact.button2')}</div>
+      <div className={`${classes.Chunck} ${classes.Chunk3} ${isHover ? classes.Hover : ''}`}>{t('main.Contact.button3')}</div>
+    </button>
   );
 
 }

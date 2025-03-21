@@ -1,4 +1,9 @@
 {
+  "root":{
+    "Footer": {
+      "copied": "Copied to the clipboard"
+    }
+  },
   "main": {
     "WordRevealLoop": [
       "CREATE",

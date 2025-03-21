@@ -1,4 +1,9 @@
 {
+  "root":{
+    "Footer": {
+      "copied": "Copiado al portapeles"
+    }
+  },
   "main":{
     "WordRevealLoop": ["CREAR", "CREER", "CRECER"],
     "StretchedTitle": "PASIÓN",

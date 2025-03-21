@@ -89,7 +89,16 @@
   background-position: center;
   background-size: contain;
 }
-
+.copy{
+  border-radius: 0;
+  background: transparent;
+  width: 40px;
+  height:40px;
+  mix-blend-mode:difference;
+  background-image: url('../../assets/icons/svg/copy-pointer.svg');
+  background-position: center;
+  background-size: contain;
+}
 
 
 

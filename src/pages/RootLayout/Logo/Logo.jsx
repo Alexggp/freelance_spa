@@ -14,13 +14,13 @@ const Logo = () => {
 
 
   return (
-    <div className={classes.Logo}
+    <button className={classes.Logo}
     onClick={navigateTo}
     onMouseEnter={() => setCursorType("pointer")}
     onMouseLeave={() => setCursorType("default")}
     >
       A.
-    </div>
+    </button>
   );
 
 }

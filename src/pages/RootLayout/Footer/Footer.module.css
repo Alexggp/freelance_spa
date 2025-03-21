@@ -23,21 +23,61 @@
   padding: 0 3vw;
 }
 
-.Footer span{
+.Email{
   font-size:2vw;
 }
 
 .LeftStack, .RigthStack{
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .LeftStack{
   gap: 2em;
 }
 
+.IconContainer{
+  margin-right:1em;
+  width: 5vh;
+  height: 5vh;
+}
+.IconContainer img{
+  width: 100%;
+  height: auto;
+}
+
+.CopiedSpan {
+  font-size: 1.5vw;
+  position: absolute;
+  top: 0;
+  left: 5em;
+  opacity: 0;
+  transform: translateY(0);
+  pointer-events: none;
+  color: gray
+}
+
+.Animate {
+  animation: fadeUp 1.5s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+}
 @media (max-width: 1024px) and (hover: none) {
-  .Footer span{
+  .Email{
     font-size:3vw;
+  }
+  .CopiedSpan{
+    font-size: 2vw;
+    left: 10em;
   }
 }

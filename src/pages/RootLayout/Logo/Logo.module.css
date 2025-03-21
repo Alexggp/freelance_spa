@@ -1,4 +1,5 @@
 .Logo{
+  all: unset;
   font-weight: 700;
   font-size: 5vh;
   width: fit-content;
