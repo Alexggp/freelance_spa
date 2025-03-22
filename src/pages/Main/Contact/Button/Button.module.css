@@ -40,7 +40,7 @@
 
 @media (max-width: 1024px) and (hover: none) {
   .Chunck {
-    font-size: 7vw;
+    font-size: 5vw;
     transform: rotate(0deg)
   }
   .Button{

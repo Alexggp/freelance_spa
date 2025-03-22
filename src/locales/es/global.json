@@ -47,7 +47,13 @@
         "title": "desarrollo de apps"
       },
       "responsive": {
-        "title": "diseño responsive"
+        "title": "multi plataforma"
+      },
+      "a11y": {
+        "title": "Acceso inclusivo"
+      },
+      "ai":{
+        "title": "IA"
       }
     },
     "Contact": {

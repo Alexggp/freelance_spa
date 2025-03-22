@@ -50,8 +50,14 @@
     font-size: 14vw;
   }
   .Selectable{
+    transition: none;
     font-size: 14vw;
   }
+  .Selectable:hover{
+    all: unset;
+  }
+
+
   .Menu>.Selectable, .LanguageSelector{
     margin-top: 4vh;
   }

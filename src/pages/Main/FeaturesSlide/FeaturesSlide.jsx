@@ -6,6 +6,8 @@ import Feature from '../../../components/Feature/Feature';
 import marketing from '../../../assets/features/marketing.jpg';
 import design from '../../../assets/features/design.jpg';
 import development from '../../../assets/features/development.jpg';
+import a11y from '../../../assets/features/a11y.jpg';
+import ai from '../../../assets/features/ai.jpg';
 import responsive from '../../../assets/features/responsive.jpg'
 import HorizontalBody from '../../../components/HorizontalBody/HorizontalBody';
 
@@ -28,9 +30,17 @@ const FeaturesSlide = () => {
       image: development
     },
     {
+      title: t('main.Features.a11y.title'),
+      image: a11y
+    },
+    {
       title: t('main.Features.responsive.title'),
       image: responsive
-    }
+    },
+    {
+      title: t('main.Features.ai.title'),
+      image: ai
+    },
   ]
 
   const handleSelected = (x)=>{
