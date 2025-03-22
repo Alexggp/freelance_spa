@@ -1,0 +1,44 @@
+.AboutCta {
+  all: unset;
+  display: inline-block;
+}
+
+.Container {
+  display: flex;
+  align-items: center;
+  height: 1.5em; /* altura fija para evitar que cambie */
+  overflow: hidden;
+}
+
+.IconContainer {
+  width: 1.2em;
+  height: 1.2em;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.IconContainer img {
+  width: 100%;
+  height: auto;
+}
+
+.Title {
+  max-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: max-width 0.4s ease;
+}
+
+.AboutCta:hover .Title {
+  max-width: 500px; /* suficientemente grande para cualquier texto */
+}
+
+
+
+@media (max-width: 1024px) and (hover: none) {
+  .Title {
+    max-width: 500px;
+    transition: none;
+  }
+}
