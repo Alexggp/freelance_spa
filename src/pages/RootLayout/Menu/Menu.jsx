@@ -7,7 +7,7 @@ import { useLocation } from 'react-router-dom';
 import Footer from '../Footer/Footer';
 import classes from './Menu.module.css';
 
-const Menu = ({ isVisible }) => {
+const Menu = ({ isVisible, toggleMenu }) => {
   const { i18n, t } = useTranslation('global');
   const { setCursorType } = useCursor();
   const navigate = useNavigate();
@@ -23,6 +23,8 @@ const Menu = ({ isVisible }) => {
 
   const navigateTo = (url) => {
     navigate('/'+url);
+    setCursorType("default")
+    toggleMenu();
   };
 
   const Selectable = ({ children, onClick, className }) => (
@@ -36,8 +38,8 @@ const Menu = ({ isVisible }) => {
   return (
     <div className={`${classes.Menu} ${isVisible && classes.isVisible}`}>
       {pathname!=='/' && <Selectable onClick={()=>navigateTo('')}>{t('root.Menu.home')}</Selectable>}
-      {pathname!=='about' && <Selectable onClick={()=>navigateTo('about')}>{t('root.Menu.about')}</Selectable>}
-      {pathname!=='contact' && <Selectable onClick={()=>navigateTo('contact')}>{t('root.Menu.contact')}</Selectable>}
+      {pathname!=='/about' && <Selectable onClick={()=>navigateTo('about')}>{t('root.Menu.about')}</Selectable>}
+      {pathname!=='/contact' && <Selectable onClick={()=>navigateTo('contact')}>{t('root.Menu.contact')}</Selectable>}
       <div className={classes.LanguageSelector}>
         <Selectable className={i18n.language === 'es' ? classes.LocaleSelected : ''} onClick={()=>handleClick('es')}>{t('root.Menu.locales.spanish')}</Selectable>
         -

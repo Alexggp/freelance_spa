@@ -13,7 +13,7 @@ const RootLayout = () => {
   return (
     <div style={{position:'relative'}}>
       <Header toggleMenu={toggleMenu} menuIsVisible={isMenuVisible}/>
-      <Menu isVisible={isMenuVisible}/>
+      <Menu toggleMenu={toggleMenu} isVisible={isMenuVisible}/>
       <Outlet />
       {!isMenuVisible && <Footer />}
     </div>
