@@ -1,13 +1,22 @@
 {
   "projects": {
     "title": "Proyectos",
+    "fields": {
+      "period": "Periodo",
+      "tech": "Tecnología",
+      "role": "Rol",
+      "contract": "Contrato",
+      "company": "Compañía",
+      "status": "Estado",
+      "url": "URL"
+    },
     "projects": [
       {
         "title": "Centre Balmes",
         "description": "Aplicacion de gestion de citas para un centro de psicología, donde los pacientes pueden elegir entre un catálogo de diferentes terapeutas, agendar sus citas, reservar salas, recibir comunicaciones directas e informes por parte de los profesionales, y mucho más.",
         "period": "2025",
         "tech": "React, Node.js, PostgreSQL",
-        "role": "Fullstack Developer",
+        "role": "Jefe de Proyecto & Fullstack Developer",
         "contract": "Freelance",
         "url": "https://www.centrebalmes.com",
         "status": "Conceptualización",
@@ -18,7 +27,7 @@
         "description": "Tienda online de productos de diseño exclusivo y de autor, donde firmas de arquitectura pueden crear, con ayuda de IA generativa,  diseños que se ajusten a sus necesidades y encontrar a los artesanos locales que puedan realizar el encargo.",
         "period": "2024-2025",
         "tech": "React",
-        "role": "Frontend Developer",
+        "role": "Jefe de Proyecto & Frontend Developer",
         "contract": "Freelance",
         "url": "https://www.unicobyiconico.com",
         "status": "En desarrollo",
@@ -28,10 +37,10 @@
         "title": "Revita",
         "description": "Aplicación médica para el seguimiento de salud de pacientes. Permite registrar síntomas, tratamientos y rutinas diarias, conectándose directamente con la plataforma clínica. Facilita la monitorización remota por parte del equipo médico, mejorando la atención personalizada. Está orientada a optimizar la comunicación entre paciente y profesional sanitario.",
         "period": "2023-2024",
-        "tech": "React Native, Node.js, MongoDB",
-        "role": "Jefe de Equipo",
+        "tech": "React, Node.js, MongoDB",
+        "role": "Jefe de Proyecto",
         "contract": "Contrato a tiempo completo",
-        "empresa": "HI-Iberia",
+        "company": "HI-Iberia",
         "status": "En producción",
         "image": "revita.png",
         "url": "https://revita.hi-iberia.es/"
@@ -43,7 +52,7 @@
         "tech": "React",
         "role": "Jefe de Equipo",
         "contract": "Contrato a tiempo completo",
-        "empresa": "NTT-Data",
+        "company": "NTT-Data",
         "status": "En producción",
         "image": "inditex.svg"
       },
@@ -54,19 +63,19 @@
         "tech": "React, Node.js, Google Claud Platform, Dialogflow",
         "role": "Fullstack Developer",
         "contract": "Contrato a tiempo completo",
-        "empresa": "NTT-Data",
+        "company": "NTT-Data",
         "status": "En producción",
         "image": "carpeta_ciudadana.png",
         "url": "https://carpetaciudadana.gob.es/carpeta/clave.html"
       },
       {
         "title": "Ibot - Iberia",
-        "description": "asistente virtual de Iberia diseñado para ofrecer soporte rápido y automatizado a los viajeros. Permite consultar vuelos, gestionar reservas y resolver dudas frecuentes. Está disponible en múltiples canales como la web, WhatsApp y redes sociales.",
+        "description": "Asistente virtual de Iberia diseñado para ofrecer soporte rápido y automatizado a los viajeros. Permite consultar vuelos, gestionar reservas y resolver dudas frecuentes. Está disponible en múltiples canales como la web, WhatsApp y redes sociales.",
         "period": "2021",
         "tech": "React, Node.js, Google Cloud Platform, MySQL",
         "role": "Frontend Developer",
         "contract": "Contrato a tiempo completo",
-        "empresa": "NTT-Data",
+        "company": "NTT-Data",
         "status": "En producción",
         "image": "ibot.png",
         "url": "https://www.iberia.com/es"
@@ -78,7 +87,7 @@
         "tech": "Node.js, Typescript, MySql, MongoDB, Dialogflow, Amazon Web Services",
         "role": "Fullstack Developer",
         "contract": "Contrato a tiempo completo",
-        "empresa": "Everis",
+        "company": "Everis",
         "status": "En producción",
         "image": "opv.png",
         "url": "https://orientacionprofesionalvirtual.fundaciontelefonica.com/"
@@ -90,7 +99,7 @@
         "tech": "Typescript",
         "role": "Frontend Developer",
         "contract": "Contrato a tiempo completo",
-        "empresa": "Everis",
+        "company": "Everis",
         "status": "En producción",
         "image": "eme.png",
         "url": "https://www.mutua.es/"
@@ -102,7 +111,7 @@
         "tech": "Node.js, PosgreSQL",
         "role": "Backend Developer",
         "contract": "Contrato a tiempo completo",
-        "empresa": "Everis",
+        "company": "Everis",
         "status": "En producción",
         "image": "santander_sgcb.png",
         "url": "https://www.santander.com/es/sobre-nosotros/donde-estamos/santander-corporate---investment-banking"
@@ -114,6 +123,7 @@
       "tech": "Angular.js, Node.js, MongoDB, MySQL",
       "role": "Fullstack Developer",
       "status": "Finalizado",
+      "contract": "Contrato a tiempo completo",
       "image": "interaction_mobile.png"
       }, 
       {
@@ -123,6 +133,7 @@
         "tech": "Angular.js, Node.js, MongoDB",
         "role": "Fullstack Developer",
         "status": "Finalizado",
+        "contract": "Contrato a tiempo parcial",
         "image": "fidiliti.png"
       }
     ]

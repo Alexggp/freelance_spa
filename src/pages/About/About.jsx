@@ -11,12 +11,12 @@ const About = () => {
 
   return (
     <div className={classes.AboutPage}>
-      {/* <Cover />
+      <Cover />
       <ScrollCta/>
       <Mountain />
-      <Introduction /> */}
+      <Introduction />
       <Projects />
-      {/* <Contact /> */}
+      <Contact />
     </div>
   );
 }

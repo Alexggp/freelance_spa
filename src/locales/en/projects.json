@@ -1,13 +1,22 @@
 {
   "projects": {
     "title": "Projects",
+    "fields": {
+      "period": "Period",
+      "tech": "Tech",
+      "role": "Role",
+      "contract": "Contract",
+      "company": "Company",
+      "status": "Status",
+      "url": "URL"
+    },
     "projects": [
       {
         "title": "Centre Balmes",
         "description": "Appointment management application for a psychology center, where patients can choose from a catalog of different therapists, schedule their appointments, book rooms, receive direct communications and reports from professionals, and much more.",
         "period": "2025",
         "tech": "React, Node.js, PostgreSQL",
-        "role": "Fullstack Developer",
+        "role": "Project Leader & Fullstack Developer",
         "contract": "Freelance",
         "url": "https://www.centrebalmes.com",
         "status": "Conceptualization",
@@ -18,7 +27,7 @@
         "description": "Online store of exclusive and designer products, where architecture firms can create designs that suit their needs with the help of generative AI and find local artisans who can fulfill the order.",
         "period": "2024-2025",
         "tech": "React",
-        "role": "Frontend Developer",
+        "role": "Project Leader & Frontend Developer",
         "contract": "Freelance",
         "url": "https://www.unicobyiconico.com",
         "status": "In development",
@@ -28,8 +37,8 @@
         "title": "Revita",
         "description": "Medical application for patient health monitoring. It allows recording symptoms, treatments, and daily routines, connecting directly with the clinical platform. It facilitates remote monitoring by the medical team, improving personalized care. It is aimed at optimizing communication between patient and healthcare professional.",
         "period": "2023-2024",
-        "tech": "React Native, Node.js, MongoDB",
-        "role": "Team Leader",
+        "tech": "React, Node.js, PostgreSQL, Amazon Web Services",
+        "role": "Project Leader",
         "contract": "Full-time contract",
         "company": "HI-Iberia",
         "status": "In production",
@@ -114,6 +123,7 @@
         "tech": "Angular.js, Node.js, MongoDB, MySQL",
         "role": "Fullstack Developer",
         "status": "Completed",
+        "contract": "Full-time contract",
         "image": "interaction_mobile.png"
       },
       {
@@ -122,6 +132,7 @@
         "period": "2015",
         "tech": "Angular.js, Node.js, MongoDB",
         "role": "Fullstack Developer",
+        "contract": "Part-time contract",
         "status": "Completed",
         "image": "fidiliti.png"
       }
