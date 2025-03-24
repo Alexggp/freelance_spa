@@ -17,7 +17,6 @@
 .PhotosContainer, .EmojiContainer{
   width: 15vw;
   height: 15vw;
-  background-color: lightblue;
   position: relative;
   overflow:visible;
 }

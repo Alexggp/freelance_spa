@@ -1,14 +1,14 @@
 import React from 'react';
 import classes from './Cover.module.css';
-
 import PhotoShooter from '../../../components/PhotoShooter/PhotoShooter';
+import Smilie from '../../../components/Smilie/Smilie';
 
 const Cover = () => {
   return (
     <div className={classes.Cover}>
       <div className={classes.UpperSection}>
         <div className={classes.EmojiContainer}>
-          <span role="img" aria-label="smilie">🙂</span>
+          <Smilie />
         </div>
         <div className={classes.PhotosContainer} >
           <PhotoShooter
