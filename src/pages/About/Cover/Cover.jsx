@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './Cover.module.css';
 import PhotoShooter from '../../../components/PhotoShooter/PhotoShooter';
 import Smilie from '../../../components/Smilie/Smilie';
+import Marquee from './Marquee/Marquee'; 
 
 const Cover = () => {
   return (
@@ -19,6 +20,7 @@ const Cover = () => {
         </div>
       </div>
       <div className={classes.LowerSection}>
+        <Marquee /> 
       </div>
     </div>
   );

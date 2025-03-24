@@ -53,7 +53,7 @@
       "a11y": {
         "title": "Acceso inclusivo"
       },
-      "ai":{
+      "ai": {
         "title": "IA"
       }
     },
@@ -63,6 +63,12 @@
       "button1": "Agenda",
       "button2": "una",
       "button3": "llamada"
+    }
+  },
+  "about": {
+    "Introduction": {
+      "title": "Soy Alejandro.",
+      "text": "Me titulé como ingeniero de Telecominicaciones, me formé como desarrollador en startups y me consolidé como jefe de equipo en consultoría. Ahora trabajo como freelance desde la montaña. Aquí he encontrado la paz y la inspiración que necesito para crear. Y me encantaría poner esta energía al servicio de tu proyecto."
     }
   }
 }
