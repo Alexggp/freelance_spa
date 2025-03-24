@@ -1,18 +1,19 @@
 .Cover {
   width: 100vw;
   height: 100vh;
-  padding-top: 15vh;
+  padding-top: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5vh;
+  gap: 10vh;
 }
 
 .UpperSection{
-  padding-left: 10vw;
+  padding: 5vh 0  0 10vw;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  position: relative
 }
 .PhotosContainer, .EmojiContainer{
   width: 15vw;
@@ -24,4 +25,30 @@
 .LowerSection{
   height: 15vw;
   width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1024px) and (hover: none) {
+  .EmojiContainer{
+    width: 10vh;
+    height: 10vh;
+    margin-top: 5vh;
+    z-index: 99999;
+    position: relative;
+  }
+  .UpperSection{
+    padding: 0;
+    flex-direction: column;
+  }
+  .PhotosContainer{
+    width: 40vh;
+    height: 40vh;
+  }
+  .LowerSection{
+    height: 35vh;
+  }
+  .Cover{
+    gap:0;
+  }
 }
