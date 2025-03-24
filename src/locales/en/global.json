@@ -63,6 +63,16 @@
       "button1": "Set",
       "button2": "a",
       "button3": "call"
+    },
+    "about": {
+      "Introduction": {
+        "title": "I am Alejandro.",
+        "text1": "I graduated as a Telecommunications engineer, trained as a developer in startups, and established myself as a team leader in consulting.",
+        "text2": "Now I work as a freelancer from Asturias. Here I have found the peace and inspiration I need to create.",
+        "text3": "And I would love to put this energy at the service of your project.",
+        "cta": "Get in touch"
+      },
+      "Mountain": "Coding from the mountains"
     }
   }
 }

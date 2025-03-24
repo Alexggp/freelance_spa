@@ -5,6 +5,7 @@ import Cover from './Cover/Cover';
 import ScrollCta from '../Main/ScrollCta/ScrollCta';
 import Introduction from './Introduction/Introduction';
 import Contact from '../Main/Contact/Contact';
+import Mountain from './Mountain/Mountain';
 
 const About = () => {
   const { t } = useTranslation('global');
@@ -13,6 +14,7 @@ const About = () => {
     <div className={classes.AboutPage}>
       <Cover />
       <ScrollCta/>
+      <Mountain />
       <Introduction />
       <Contact />
     </div>

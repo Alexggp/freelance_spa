@@ -4,13 +4,13 @@
   line-height: 1.7em;
   width: 100vw;
   padding: 2em;
-  
+  border-bottom: 4px solid var(--color-black);
   background-color: var(--color-white);
 }
 
 .Introduction p{
   margin:0;
-  padding:0;
+  padding:0 0 1em 0;
   width: 100%;
 }
 
@@ -19,6 +19,14 @@
   padding:0.5em;
   font-size: 1.5em;
   font-weight: bold;
+}
+
+.ImageContainer{
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Title{

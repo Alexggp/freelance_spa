@@ -68,7 +68,11 @@
   "about": {
     "Introduction": {
       "title": "Soy Alejandro.",
-      "text": "Me titulé como ingeniero de Telecominicaciones, me formé como desarrollador en startups y me consolidé como jefe de equipo en consultoría. Ahora trabajo como freelance desde la montaña. Aquí he encontrado la paz y la inspiración que necesito para crear. Y me encantaría poner esta energía al servicio de tu proyecto."
-    }
+      "text1": "Me titulé como ingeniero de Telecominicaciones, me formé como desarrollador en startups y me consolidé como jefe de equipo en consultoría.",
+      "text2": "Ahora trabajo como freelance desde Asturias. Aquí he encontrado la paz y la inspiración que necesito para crear.",
+      "text3": "Y me encantaría poner esta energía al servicio de tu proyecto.",
+      "cta": "Escríbeme"
+    }, 
+    "Mountain": "Código desde las montañas"
   }
 }

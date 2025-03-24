@@ -1,0 +1,32 @@
+.Mountain, .CustomBackground {
+  height: 75vh;
+  width: 100vw;
+  position: relative;
+}
+
+ .CustomBackground img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.Title{
+  position: absolute;
+  width: 100vw;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vw;
+  text-transform: UPPERCASE;
+  font-weight: 700;
+  color: var(--color-white);
+  pointer-events: none;
+}
+
+@media (max-width: 1024px) and (hover: none) {
+  .Mountain, .Title, .CustomBackground {
+    height: 40vh;
+  }
+}
