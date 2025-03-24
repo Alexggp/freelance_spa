@@ -22,12 +22,12 @@
 
 .Selectable{
   transition: font-size 0.3s ease-in-out;
-  font-size: 7vw;
+  font-size: 5vw;
   width: fit-content;
 }
 
 .Selectable:hover{
-  font-size: 8vw;
+  font-size: 7vw;
 }
 .LocaleSelected{
   text-decoration: underline;
