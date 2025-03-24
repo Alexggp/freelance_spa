@@ -1,0 +1,130 @@
+{
+  "projects": {
+    "title": "Projects",
+    "projects": [
+      {
+        "title": "Centre Balmes",
+        "description": "Appointment management application for a psychology center, where patients can choose from a catalog of different therapists, schedule their appointments, book rooms, receive direct communications and reports from professionals, and much more.",
+        "period": "2025",
+        "tech": "React, Node.js, PostgreSQL",
+        "role": "Fullstack Developer",
+        "contract": "Freelance",
+        "url": "https://www.centrebalmes.com",
+        "status": "Conceptualization",
+        "image": "centre_balmes.png"
+      },
+      {
+        "title": "ÚnicoByIcónico",
+        "description": "Online store of exclusive and designer products, where architecture firms can create designs that suit their needs with the help of generative AI and find local artisans who can fulfill the order.",
+        "period": "2024-2025",
+        "tech": "React",
+        "role": "Frontend Developer",
+        "contract": "Freelance",
+        "url": "https://www.unicobyiconico.com",
+        "status": "In development",
+        "image": "unico_by_iconico.png"
+      },
+      {
+        "title": "Revita",
+        "description": "Medical application for patient health monitoring. It allows recording symptoms, treatments, and daily routines, connecting directly with the clinical platform. It facilitates remote monitoring by the medical team, improving personalized care. It is aimed at optimizing communication between patient and healthcare professional.",
+        "period": "2023-2024",
+        "tech": "React Native, Node.js, MongoDB",
+        "role": "Team Leader",
+        "contract": "Full-time contract",
+        "company": "HI-Iberia",
+        "status": "In production",
+        "image": "revita.png",
+        "url": "https://revita.hi-iberia.es/"
+      },
+      {
+        "title": "GAMMA - Inditex",
+        "description": "Internal stock and order management application for fashion stores. It allows store employees to place restocking orders, manage returns and exchanges, and receive notifications of promotions and events. The application connects with the warehouse management system and the sales system, enabling efficient resource management.",
+        "period": "2022-2023",
+        "tech": "React",
+        "role": "Team Leader",
+        "contract": "Full-time contract",
+        "company": "NTT-Data",
+        "status": "In production",
+        "image": "inditex.svg"
+      },
+      {
+        "title": "Ada - Mi Carpeta Ciudadana",
+        "description": "Virtual assistant for the State's administrative procedure management application for Spanish citizens. It allows performing procedures easily and securely without the need to go to offices. The application connects with public administration databases, enabling digital document signing and receiving official notifications.",
+        "period": "2021-2022",
+        "tech": "React, Node.js, Google Cloud Platform, Dialogflow",
+        "role": "Fullstack Developer",
+        "contract": "Full-time contract",
+        "company": "NTT-Data",
+        "status": "In production",
+        "image": "carpeta_ciudadana.png",
+        "url": "https://carpetaciudadana.gob.es/carpeta/clave.html"
+      },
+      {
+        "title": "Ibot - Iberia",
+        "description": "Iberia's virtual assistant designed to offer quick and automated support to travelers. It allows checking flights, managing reservations, and resolving frequent questions. It is available on multiple channels such as the web, WhatsApp, and social networks.",
+        "period": "2021",
+        "tech": "React, Node.js, Google Cloud Platform, MySQL",
+        "role": "Frontend Developer",
+        "contract": "Full-time contract",
+        "company": "NTT-Data",
+        "status": "In production",
+        "image": "ibot.png",
+        "url": "https://www.iberia.com/es"
+      },
+      {
+        "title": "OPV - Fundación Telefónica",
+        "description": "OPV (Virtual Professional Advisor) is a program by Fundación Telefónica that offers online support to people seeking employment or wanting to reorient their careers. It provides personalized sessions, employability resources, and training advice. Its goal is to improve job opportunities, especially for vulnerable groups.",
+        "period": "2019-2021",
+        "tech": "Node.js, Typescript, MySql, MongoDB, Dialogflow, Amazon Web Services",
+        "role": "Fullstack Developer",
+        "contract": "Full-time contract",
+        "company": "Everis",
+        "status": "In production",
+        "image": "opv.png",
+        "url": "https://orientacionprofesionalvirtual.fundaciontelefonica.com/"
+      },
+      {
+        "title": "EME - Mutua Madrileña",
+        "description": "EME is Mutua Madrileña's virtual assistant that helps users manage procedures and resolve doubts automatically. It offers 24/7 support on insurance, policies, claims, and other services. It provides a more agile and personalized experience from the company's website.",
+        "period": "2019",
+        "tech": "Typescript",
+        "role": "Frontend Developer",
+        "contract": "Full-time contract",
+        "company": "Everis",
+        "status": "In production",
+        "image": "eme.png",
+        "url": "https://www.mutua.es/"
+      },
+      {
+        "title": "Santander SGCB",
+        "description": "Santander SGCB (Santander Global Corporate Banking) is a financial services platform for companies. It offers financing solutions, treasury management, foreign trade, and other banking services. The platform allows companies to manage their operations securely and efficiently.",
+        "period": "2017-2018",
+        "tech": "Node.js, PosgreSQL",
+        "role": "Backend Developer",
+        "contract": "Full-time contract",
+        "company": "Everis",
+        "status": "In production",
+        "image": "santander_sgcb.png",
+        "url": "https://www.santander.com/es/sobre-nosotros/donde-estamos/santander-corporate---investment-banking"
+      },
+      {
+        "title": "Interaction Mobile",
+        "description": "Interaction Mobile was a company specialized in developing mobile applications synchronized with TV programs. Its apps allowed users to participate live in contests, voting, and surveys during broadcasts. It was a pioneer in connecting the TV experience with audience interaction through mobile devices.",
+        "period": "2015-2017",
+        "tech": "Angular.js, Node.js, MongoDB, MySQL",
+        "role": "Fullstack Developer",
+        "status": "Completed",
+        "image": "interaction_mobile.png"
+      },
+      {
+        "title": "Fidiliti",
+        "description": "Fidiliti was a loyalty app that allowed users to group and manage their points and discount cards from various brands on their mobile devices. It facilitated access to promotions, code scanning, and benefit tracking without the need to carry physical cards. Its goal was to digitize and simplify the loyalty experience for businesses and customers.",
+        "period": "2015",
+        "tech": "Angular.js, Node.js, MongoDB",
+        "role": "Fullstack Developer",
+        "status": "Completed",
+        "image": "fidiliti.png"
+      }
+    ]
+  }
+}

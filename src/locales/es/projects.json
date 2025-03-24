@@ -1,0 +1,130 @@
+{
+  "projects": {
+    "title": "Proyectos",
+    "projects": [
+      {
+        "title": "Centre Balmes",
+        "description": "Aplicacion de gestion de citas para un centro de psicología, donde los pacientes pueden elegir entre un catálogo de diferentes terapeutas, agendar sus citas, reservar salas, recibir comunicaciones directas e informes por parte de los profesionales, y mucho más.",
+        "period": "2025",
+        "tech": "React, Node.js, PostgreSQL",
+        "role": "Fullstack Developer",
+        "contract": "Freelance",
+        "url": "https://www.centrebalmes.com",
+        "status": "Conceptualización",
+        "image": "centre_balmes.png"
+      },
+      {
+        "title": "ÚnicoByIcónico",
+        "description": "Tienda online de productos de diseño exclusivo y de autor, donde firmas de arquitectura pueden crear, con ayuda de IA generativa,  diseños que se ajusten a sus necesidades y encontrar a los artesanos locales que puedan realizar el encargo.",
+        "period": "2024-2025",
+        "tech": "React",
+        "role": "Frontend Developer",
+        "contract": "Freelance",
+        "url": "https://www.unicobyiconico.com",
+        "status": "En desarrollo",
+        "image": "unico_by_iconico.png"
+      },
+      {
+        "title": "Revita",
+        "description": "Aplicación médica para el seguimiento de salud de pacientes. Permite registrar síntomas, tratamientos y rutinas diarias, conectándose directamente con la plataforma clínica. Facilita la monitorización remota por parte del equipo médico, mejorando la atención personalizada. Está orientada a optimizar la comunicación entre paciente y profesional sanitario.",
+        "period": "2023-2024",
+        "tech": "React Native, Node.js, MongoDB",
+        "role": "Jefe de Equipo",
+        "contract": "Contrato a tiempo completo",
+        "empresa": "HI-Iberia",
+        "status": "En producción",
+        "image": "revita.png",
+        "url": "https://revita.hi-iberia.es/"
+      },
+      {
+        "title": "GAMMA - Inditex",
+        "description": "Aplicación interna de gestión de stock y pedidos para tiendas de moda. Permite a los empleados de tienda realizar pedidos de reposición de stock, gestionar devoluciones y cambios, y recibir notificaciones de promociones y eventos. La aplicación se conecta con el sistema de gestión de almacenes y con el sistema de ventas, permitiendo una gestión eficiente de los recursos.",
+        "period": "2022-2023",
+        "tech": "React",
+        "role": "Jefe de Equipo",
+        "contract": "Contrato a tiempo completo",
+        "empresa": "NTT-Data",
+        "status": "En producción",
+        "image": "inditex.svg"
+      },
+      {
+        "title": "Ada - Mi Carpeta Ciudadana",
+        "description": "Asistente virtual para la aplicación de gestión de trámites administrativos del Estado para ciudadanos de España. Permite realizar trámites de forma sencilla y segura, sin necesidad de desplazarse a las oficinas. La aplicación se conecta con las bases de datos de las administraciones públicas, permitiendo la firma digital de documentos y la recepción de notificaciones oficiales.",
+        "period": "2021-2022",
+        "tech": "React, Node.js, Google Claud Platform, Dialogflow",
+        "role": "Fullstack Developer",
+        "contract": "Contrato a tiempo completo",
+        "empresa": "NTT-Data",
+        "status": "En producción",
+        "image": "carpeta_ciudadana.png",
+        "url": "https://carpetaciudadana.gob.es/carpeta/clave.html"
+      },
+      {
+        "title": "Ibot - Iberia",
+        "description": "asistente virtual de Iberia diseñado para ofrecer soporte rápido y automatizado a los viajeros. Permite consultar vuelos, gestionar reservas y resolver dudas frecuentes. Está disponible en múltiples canales como la web, WhatsApp y redes sociales.",
+        "period": "2021",
+        "tech": "React, Node.js, Google Cloud Platform, MySQL",
+        "role": "Frontend Developer",
+        "contract": "Contrato a tiempo completo",
+        "empresa": "NTT-Data",
+        "status": "En producción",
+        "image": "ibot.png",
+        "url": "https://www.iberia.com/es"
+      },
+      {
+        "title": "OPV - Fundación Telefónica",
+        "description": "OPV (Orientador Profesional Virtual) es un programa de Fundación Telefónica que ofrece acompañamiento online a personas que buscan empleo o quieren reorientar su carrera. Brinda sesiones personalizadas, recursos de empleabilidad y asesoramiento formativo. Su objetivo es mejorar las oportunidades laborales, especialmente en colectivos vulnerables.",
+        "period": "2019-2021",
+        "tech": "Node.js, Typescript, MySql, MongoDB, Dialogflow, Amazon Web Services",
+        "role": "Fullstack Developer",
+        "contract": "Contrato a tiempo completo",
+        "empresa": "Everis",
+        "status": "En producción",
+        "image": "opv.png",
+        "url": "https://orientacionprofesionalvirtual.fundaciontelefonica.com/"
+      },
+      {
+        "title": "EME - Mutua Madrileña",
+        "description": "EME es el asistente virtual de Mutua Madrileña que ayuda a los usuarios a gestionar trámites y resolver dudas de forma automática. Ofrece atención 24/7 sobre seguros, pólizas, partes y otros servicios. Facilita una experiencia más ágil y personalizada desde la web de la compañía.",
+        "period": "2019",
+        "tech": "Typescript",
+        "role": "Frontend Developer",
+        "contract": "Contrato a tiempo completo",
+        "empresa": "Everis",
+        "status": "En producción",
+        "image": "eme.png",
+        "url": "https://www.mutua.es/"
+      },
+      {
+        "title": "Santander SGCB",
+        "description": "Santander SGCB (Santander Global Corporate Banking) es una plataforma de servicios financieros para empresas. Ofrece soluciones de financiación, gestión de tesorería, comercio exterior y otros servicios bancarios. La plataforma permite a las empresas gestionar sus operaciones de forma segura y eficiente.",
+        "period": "2017-2018",
+        "tech": "Node.js, PosgreSQL",
+        "role": "Backend Developer",
+        "contract": "Contrato a tiempo completo",
+        "empresa": "Everis",
+        "status": "En producción",
+        "image": "santander_sgcb.png",
+        "url": "https://www.santander.com/es/sobre-nosotros/donde-estamos/santander-corporate---investment-banking"
+      },
+      {
+      "title": "Interaction Mobile",
+      "description": "Interaction Mobile fue una empresa especializada en el desarrollo de aplicaciones móviles sincronizadas con programas de televisión. Sus apps permitían a los usuarios participar en directo en concursos, votaciones y encuestas durante las emisiones. Fue pionera en conectar la experiencia televisiva con la interacción del público a través del móvil.",
+      "period": "2015-2017",
+      "tech": "Angular.js, Node.js, MongoDB, MySQL",
+      "role": "Fullstack Developer",
+      "status": "Finalizado",
+      "image": "interaction_mobile.png"
+      }, 
+      {
+        "title": "Fidiliti",
+        "description": "Fidiliti era una app de fidelización que permitía a los usuarios agrupar y gestionar en el móvil sus tarjetas de puntos y descuentos de distintas marcas. Facilitaba el acceso a promociones, escaneo de códigos y seguimiento de beneficios sin necesidad de llevar las tarjetas físicas. Su objetivo era digitalizar y simplificar la experiencia de fidelización para comercios y clientes.",
+        "period": "2015",
+        "tech": "Angular.js, Node.js, MongoDB",
+        "role": "Fullstack Developer",
+        "status": "Finalizado",
+        "image": "fidiliti.png"
+      }
+    ]
+  }
+}

@@ -1,22 +1,22 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import classes from './About.module.css';
 import Cover from './Cover/Cover';
 import ScrollCta from '../Main/ScrollCta/ScrollCta';
 import Introduction from './Introduction/Introduction';
 import Contact from '../Main/Contact/Contact';
 import Mountain from './Mountain/Mountain';
+import Projects from './Projects/Projects';
 
 const About = () => {
-  const { t } = useTranslation('global');
 
   return (
     <div className={classes.AboutPage}>
-      <Cover />
+      {/* <Cover />
       <ScrollCta/>
       <Mountain />
-      <Introduction />
-      <Contact />
+      <Introduction /> */}
+      <Projects />
+      {/* <Contact /> */}
     </div>
   );
 }

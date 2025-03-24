@@ -1,0 +1,22 @@
+.Projects {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.InfoContainer{
+  width: 50vw;
+  height: 100vh;
+  background-color: lightcoral;
+}
+
+.ProjectsContainer{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+}

@@ -10,6 +10,8 @@ import { I18nextProvider } from 'react-i18next';
 import i18next from 'i18next';
 import global_es from './locales/es/global.json';
 import global_en from './locales/en/global.json';
+import projects_es from './locales/es/projects.json';
+import projects_en from './locales/en/projects.json';
 
 const locales = ['en', 'es'];
 let userLang = window.navigator.userLanguage || window.navigator.language;
@@ -20,10 +22,12 @@ i18next.init({
   lng: userLang,
   resources: {
     es: {
-      global: global_es
+      global: global_es,
+      projects: projects_es
     },
     en: {
-      global: global_en
+      global: global_en,
+      projects: projects_en
     }
   }
 });
