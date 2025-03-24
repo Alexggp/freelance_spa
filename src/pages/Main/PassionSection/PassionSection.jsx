@@ -11,7 +11,6 @@ const PassionSection = () => {
   const {isDesktop} = useScreenSize();
   const { setCursorType } = useCursor();
 
-
   return (
     <>
       <div 
@@ -19,7 +18,11 @@ const PassionSection = () => {
       onMouseEnter={() => setCursorType("heart")}
       onMouseLeave={() => setCursorType("default")}
       >
-      <PhotoShooter fixed={!isDesktop}/>
+      <PhotoShooter 
+        fixed={!isDesktop} 
+        photosUrl="/src/assets/photo_lake/*.jpg" 
+        intervalMs={!isDesktop ? 800 : 300} 
+      />
       <p className={classes.Smile}>{t('main.PassionSection.smile')}</p>
       <div className={classes.Question}>
         <span>{t('main.PassionSection.question1').toUpperCase()}</span><br/>

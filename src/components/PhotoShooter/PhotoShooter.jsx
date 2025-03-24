@@ -1,10 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import classes from "./PhotoShooter.module.css";
 
-// Importar todas las imágenes de la carpeta automáticamente
-const photos = Object.values(import.meta.glob("/src/assets/photo_lake/*.jpg", { eager: true }))
-  .map((mod) => mod.default);
-
 // Función para desordenar un array con Fisher-Yates
 const shuffleArray = (array) => {
   let shuffled = [...array];
@@ -15,16 +11,20 @@ const shuffleArray = (array) => {
   return shuffled;
 };
 
-const shuffledPhotos = shuffleArray(photos);
+const PhotoShooter = ({ fixed = false, photosUrl, intervalMs = 300 }) => {
+  const [photos, setPhotos] = useState([]);
+  
+  useEffect(() => {
+    const importPhotos = async () => {
+      const importedPhotos = Object.values(await import.meta.glob('/src/assets/photo_lake/*.jpg', { eager: true }))
+        .map((mod) => mod.default);
+      setPhotos(shuffleArray(importedPhotos));
+    };
+    importPhotos();
+  }, [photosUrl]);
 
-
-
-const PhotoShooter = ({ fixed = false }) => {
-
-  const INTERVAL_MS = fixed ? 800 : 300; // 300ms entre cada imagen
   const FADE_OUT_MS = 2000; // 2 segundos antes de desaparecer
   const ROTATION_RANGE = 20; // Rango de -20° a 20°
-
 
   const [visiblePhotos, setVisiblePhotos] = useState([]);
   const [isAnimating, setIsAnimating] = useState(fixed); // Si fixed, siempre animado
@@ -70,7 +70,7 @@ const PhotoShooter = ({ fixed = false }) => {
         const position = fixed ? getFixedPosition() : mousePos.current;
 
         const newPhoto = { 
-          src: shuffledPhotos[photoIndex], 
+          src: photos[photoIndex], 
           id: photoIndex, 
           rotation: getRotationByMouseDirection(),
           left: position.x,
@@ -84,12 +84,12 @@ const PhotoShooter = ({ fixed = false }) => {
           setVisiblePhotos((current) => current.filter((photo) => photo.id !== newPhoto.id));
         }, FADE_OUT_MS);
 
-        setPhotoIndex((prevIndex) => (prevIndex + 1) % shuffledPhotos.length);
-      }, INTERVAL_MS);
+        setPhotoIndex((prevIndex) => (prevIndex + 1) % photos.length);
+      }, intervalMs);
     }
 
     return () => clearInterval(intervalRef.current);
-  }, [isAnimating, photoIndex, fixed]);
+  }, [isAnimating, photoIndex, fixed, photos, intervalMs]);
 
   return (
     <div
