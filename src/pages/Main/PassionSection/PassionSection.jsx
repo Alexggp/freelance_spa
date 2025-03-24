@@ -20,7 +20,7 @@ const PassionSection = () => {
       >
       <PhotoShooter 
         fixed={!isDesktop} 
-        photosUrl="/src/assets/photo_lake/*.jpg" 
+        photosUrl="main" 
         intervalMs={!isDesktop ? 800 : 300} 
       />
       <p className={classes.Smile}>{t('main.PassionSection.smile')}</p>

@@ -2,4 +2,28 @@
   width: 100vw;
   height: 100vh;
   background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5vh;
+}
+
+.UpperSection{
+  padding-left: 10vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.PhotosContainer, .EmojiContainer{
+  width: 15vw;
+  height: 15vw;
+  background-color: lightblue;
+  position: relative;
+  overflow:visible;
+}
+
+.LowerSection{
+  height: 15vw;
+  width: 100vw;
+  background-color: lightcoral;
 }

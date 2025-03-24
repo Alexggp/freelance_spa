@@ -11,16 +11,31 @@ const shuffleArray = (array) => {
   return shuffled;
 };
 
+const importPhotos = async (photosUrl) => {
+  let images;
+  switch (photosUrl) {
+    case "main":
+      images = import.meta.glob('/src/assets/photo_lake/*.jpg', { eager: true });
+      break;
+    case "about":
+      images = import.meta.glob('/src/assets/about_photo_lake/*.jpg', { eager: true });
+      break;
+    // Add more cases as needed
+    default:
+      images = {};
+  }
+  return shuffleArray(Object.values(images).map((mod) => mod.default));
+};
+
 const PhotoShooter = ({ fixed = false, photosUrl, intervalMs = 300 }) => {
   const [photos, setPhotos] = useState([]);
   
   useEffect(() => {
-    const importPhotos = async () => {
-      const importedPhotos = Object.values(await import.meta.glob('/src/assets/photo_lake/*.jpg', { eager: true }))
-        .map((mod) => mod.default);
-      setPhotos(shuffleArray(importedPhotos));
+    const loadPhotos = async () => {
+      const importedPhotos = await importPhotos(photosUrl);
+      setPhotos(importedPhotos);
     };
-    importPhotos();
+    loadPhotos();
   }, [photosUrl]);
 
   const FADE_OUT_MS = 2000; // 2 segundos antes de desaparecer
