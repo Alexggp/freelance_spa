@@ -1,6 +1,5 @@
-import React from "react";
-
-import { Route, Routes } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { Route, Routes, useNavigate } from 'react-router-dom';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -14,8 +13,16 @@ import './App.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
-
 function App() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const redirectPath = sessionStorage.redirect;
+    if (redirectPath) {
+      sessionStorage.removeItem("redirect");
+      navigate(redirectPath, { replace: true });
+    }
+  }, [navigate]);
 
   return (
     <>
@@ -30,9 +37,7 @@ function App() {
         <Route path='/*' element={<div>Not found</div>} />
       </Routes>
     </>
-
-
-  )
+  );
 }
 
-export default App
+export default App;

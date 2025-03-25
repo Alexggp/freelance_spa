@@ -4,7 +4,7 @@ import { useCursor } from "../../../contexts/CursorContext";
 import { Parallax, Background } from 'react-parallax';
 
 
-const VideoPlayer = ({ src }) => {
+const VideoPlayer = ({ src, poster }) => {
   const videoRef = useRef(null);
   const { cursorType, setCursorType } = useCursor();
 
@@ -30,6 +30,7 @@ const VideoPlayer = ({ src }) => {
               ref={videoRef}
               className={classes.Video}
               src={src}
+              poster={poster}
               loop
               onClick={togglePlayPause}
               onMouseEnter={() => setCursorType(videoRef.current.paused ? "playVideo" : "pauseVideo")}

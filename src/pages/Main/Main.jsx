@@ -5,6 +5,7 @@ import classes from './Main.module.css';
 import WordRevealLoop from './WordRevealLoop/WordRevealLoop';
 import VideoPlayer from './VideoPlayer/VideoPlayer';
 import sampleVideo from '../../assets/video/spa_compressed.mp4';
+import videoPoster from '../../assets/video/video_poster.jpg';
 import ScrollCta from './ScrollCta/ScrollCta';
 import StretchedTitle from './StretchedTitle/StretchedTitle';
 import Introduction from './Introduction/Introduction';
@@ -21,7 +22,7 @@ const Main = () => {
 
       <div className={classes.CoverSection}>
         <WordRevealLoop />
-        <VideoPlayer src={sampleVideo} />
+        <VideoPlayer src={sampleVideo} poster={videoPoster}/>
         <ScrollCta />
       </div>
       <StretchedTitle />
