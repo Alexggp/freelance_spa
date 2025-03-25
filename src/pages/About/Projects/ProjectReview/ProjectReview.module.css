@@ -39,3 +39,23 @@
   font-weight: bold;
 }
 
+
+@media (max-width: 1024px) and (hover: none) {
+  .ProjectReview{
+    padding: 1em;
+  }
+  .ImageContainer{
+    max-width: 90%;
+  }
+
+
+  .ProjectReview p{
+    font-size: 5vw;
+    width: 90%;
+  }
+
+  .InfoContainer{
+    font-size: 3vw;
+    width: 90%;
+  }
+}
