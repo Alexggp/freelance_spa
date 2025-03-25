@@ -1,6 +1,6 @@
 import { useRef, useEffect } from "react";
 import { useCursor } from "../../contexts/CursorContext";
-import useMouseSpeed from "../../../src copy/hooks/useMouseSpeed";
+import useMouseSpeed from "../../hooks/useMouseSpeed";
 import styles from "./CustomCursor.module.css";
 
 const CustomCursor = () => {
