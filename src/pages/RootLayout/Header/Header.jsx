@@ -4,12 +4,16 @@ import Logo from '../Logo/Logo';
 import MenuIcon from '../../../assets/icons/svg/menu.svg';
 import CloseIcon from '../../../assets/icons/svg/close.svg';
 
-import { useCursor } from '../../../contexts/CursorContext';
+import { useCursorOnHoverArea } from '../../../hooks/useCursorOnHoverArea';
 
 const Header = ({toggleMenu, menuIsVisible}) => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const { setCursorType } = useCursor();
+
+  const refCursor = useCursorOnHoverArea({
+    enterType: "pointer",
+    leaveType: "default"
+  });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,8 +43,7 @@ const Header = ({toggleMenu, menuIsVisible}) => {
         <Logo />
         <button className={classes.IconContainer}
           onClick={toggleMenu}
-          onMouseEnter={() => setCursorType("pointer")}
-          onMouseLeave={() => setCursorType("default")}
+          ref={refCursor}
         >
           <img src={menuIsVisible ? CloseIcon : MenuIcon}/>
         </button>

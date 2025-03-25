@@ -6,17 +6,27 @@ import Logo from '../Logo/Logo';
 import inIcon from '../../../assets/icons/svg/linkedin.svg';
 import inIconWhite from '../../../assets/icons/svg/linkedin_white.svg';
 
-import { useCursor } from '../../../contexts/CursorContext';
+import { useCursorOnHoverArea } from '../../../hooks/useCursorOnHoverArea';
 
 const EMAIL = 'alejandro.gg.perez@gmail.com';
 
 
 const Footer = ({alternative}) => {
-  const { setCursorType } = useCursor();
   const { t } = useTranslation('global');
   const [showCopied, setShowCopied] = useState(false);
   const timeoutRef = useRef(null);
 
+  const refCopy = useCursorOnHoverArea({
+    enterType: "copy",
+    leaveType: "default"
+  });
+
+  const refCursor = useCursorOnHoverArea({
+    enterType: "pointer",
+    leaveType: "default"
+  });
+
+  
   const handleEmailClick = () => {
     navigator.clipboard.writeText(EMAIL);
 
@@ -40,8 +50,7 @@ const Footer = ({alternative}) => {
           <Logo />
           <div className={classes.Email}
             onClick={handleEmailClick}
-            onMouseEnter={() => setCursorType("copy")}
-            onMouseLeave={() => setCursorType("default")}
+            ref={refCopy}
           >
             <span>{EMAIL}</span>
           </div>
@@ -53,8 +62,7 @@ const Footer = ({alternative}) => {
         </div>
         <div className={classes.RightStack}>
           <div className={classes.IconContainer}
-            onMouseEnter={() => setCursorType("pointer")}
-            onMouseLeave={() => setCursorType("default")}
+            ref={refCursor}
           >
             <a href="https://www.linkedin.com/in/alejandro-garc%C3%ADa-gasco-p%C3%A9rez-919265132/" target="_blank">
               <img src={alternative ? inIconWhite : inIcon}/>

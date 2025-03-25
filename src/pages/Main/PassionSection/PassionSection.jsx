@@ -3,20 +3,24 @@ import classes from './PassionSection.module.css';
 import { useTranslation } from 'react-i18next';
 import PhotoShooter from '../../../components/PhotoShooter/PhotoShooter';
 import useScreenSize from '../../../hooks/useScreenSize';
-import { useCursor } from '../../../contexts/CursorContext';
 import MouseBar from '../../../components/MouseBar/MouseBar';
+import { useCursorOnHoverArea } from '../../../hooks/useCursorOnHoverArea';
 
 const PassionSection = () => {
   const { t } = useTranslation('global');
   const {isDesktop} = useScreenSize();
-  const { setCursorType } = useCursor();
+
+  const refCursor = useCursorOnHoverArea({
+    enterType: "heart",
+    leaveType: "default"
+  });
+
 
   return (
     <>
       <div 
       className={classes.PassionSection}
-      onMouseEnter={() => setCursorType("heart")}
-      onMouseLeave={() => setCursorType("default")}
+      ref={refCursor}
       >
       <PhotoShooter 
         fixed={!isDesktop} 

@@ -1,5 +1,4 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 
 import classes from './Main.module.css';
 import WordRevealLoop from './WordRevealLoop/WordRevealLoop';
@@ -15,7 +14,6 @@ import FeaturesSlide from './FeaturesSlide/FeaturesSlide';
 import Contact from './Contact/Contact';
 
 const Main = () => {
-  const { t } = useTranslation('global');
 
   return (
     <div className={classes.MainPage}>

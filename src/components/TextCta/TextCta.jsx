@@ -2,12 +2,18 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import classes from './TextCta.module.css';
-import { useCursor } from '../../contexts/CursorContext';
 import ctaImage from '../../assets/icons/svg/enter.svg';
+import { useCursorOnHoverArea } from '../../hooks/useCursorOnHoverArea';
+
 
 const TextCta = ({text, url}) => {
-  const { setCursorType } = useCursor();
   const navigate = useNavigate();
+
+  const refCursor = useCursorOnHoverArea({
+    enterType: "pointer",
+    leaveType: "default"
+  });
+
 
   const navigateTo = () => {
     navigate(url);
@@ -17,8 +23,7 @@ const TextCta = ({text, url}) => {
     <button
       className={classes.TextCta}
       onClick={navigateTo}
-      onMouseEnter={() => setCursorType("pointer")}
-      onMouseLeave={() => setCursorType("default")}
+      ref={refCursor}
       aria-label={text}
     >
       <div className={classes.Container}>

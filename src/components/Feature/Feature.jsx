@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import classes from './Feature.module.css';
-import { useTranslation } from 'react-i18next';
 import { useCursor } from '../../contexts/CursorContext';
 import { useMouseParallax } from '../../hooks/useMouseParallax';
 import useScreenSize from '../../hooks/useScreenSize';
-
+import { useCursorOnHoverArea } from '../../hooks/useCursorOnHoverArea';
 
 const Feature = ({title, image, selected}) => {
   const [imageIsVisible, setImageIsVisible] = useState(false);
-  const { t } = useTranslation('global');
   const { setCursorType } = useCursor();
   const parallaxRef = useMouseParallax(imageIsVisible, 60); 
   const {isDesktop} = useScreenSize();
@@ -17,6 +15,11 @@ const Feature = ({title, image, selected}) => {
     if (!isDesktop) return;
     setImageIsVisible(val)
   }
+
+  const ref = useCursorOnHoverArea({
+    enterType: () => videoRef.current?.paused ? "playVideo" : "pauseVideo",
+    leaveType: "default"
+  });
 
   return (
     <div className={classes.Feature}>
