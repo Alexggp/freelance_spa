@@ -31,7 +31,7 @@
       "question2": "passion?",
       "dark1": "Put your heart and soul into it, and let me help you with this.",
       "dark2": "I just need to know what genuinely inspires you.",
-      "quote": "Inspiration exists, but it has to find you working"
+      "quote": "Inspiration exists, but it has to find you working."
     },
     "Inspiration": {
       "title": "Inspiration",
@@ -43,7 +43,8 @@
       "button1": "Set",
       "button2": "a",
       "button3": "call"
-    },
+    }
+  },
     "about": {
       "Introduction": {
         "title": "I am Alejandro.",
@@ -54,5 +55,5 @@
       },
       "Mountain": "Coding from the mountains"
     }
-  }
+  
 }

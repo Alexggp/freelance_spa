@@ -51,4 +51,36 @@
   text-align: justify;
 }
 
+@media (max-width: 1024px) and (hover: none) {
+  .Container{
+    padding: 0;
+    overflow: hidden;
+  }
+  .TextSection{
+    position:absolute;
+    top: 0;
+    left: 0;
+    height:100vh;
+    width: 100vw;
+    padding: 15vh 5vw;
+    flex: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .TextSection h1 {
+    font-size: 7vw;
+  text-align: center;
+  }
+  .TextSection p {
+    font-size: 5vw;
+  text-align: center;
 
+  }
+  .ImageSection {
+   opacity: 0.2;
+   /* display: none; */
+  }
+  
+}

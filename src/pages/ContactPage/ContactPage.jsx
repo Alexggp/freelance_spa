@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import FeatureDescription from './FeatureDescription'; 
+import FeatureDescription from './FeatureDescription/FeatureDescription'; 
 import Contact from '../Main/Contact/Contact';
 
 const ContactPage = () => {

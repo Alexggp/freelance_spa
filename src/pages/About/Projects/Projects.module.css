@@ -5,11 +5,14 @@
   position: relative;
   overflow: unset !important;
   background-color: #282828;
-  opacity: 1;
+  /* opacity: 1;
   background-image: linear-gradient(135deg, #2f2f2f 25%, transparent 25%), linear-gradient(225deg, #2f2f2f 25%, transparent 25%), linear-gradient(45deg, #2f2f2f 25%, transparent 25%), linear-gradient(315deg, #2f2f2f 25%, #282828 25%);
   background-position: 24px 0, 24px 0, 0 0, 0 0;
   background-size: 48px 48px;
+  background-repeat: repeat; */
+  background-image: url('/src/assets/backgrounds/noise.png');
   background-repeat: repeat;
+  background-size: auto; /* Cambiado de 'contain' a 'auto' */
 }
 
 .InfoContainer {
@@ -67,6 +70,9 @@
   margin: 1vw;
   background-color: var(--color-white);
   overflow: hidden;
+  background-image: url('/src/assets/backgrounds/noise.png');
+  background-repeat: repeat;
+  background-size: auto; /* Cambiado de 'contain' a 'auto' */
 }
 
 .ProjectsList li:hover, .ProjectsList li.Active {

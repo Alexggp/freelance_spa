@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './FeatureDescription.module.css';
-import Button from '../Main/Contact/Button/Button';
+import Button from '../../Main/Contact/Button/Button';
 
 const FeatureDescription = ({ feature }) => {
   return (
