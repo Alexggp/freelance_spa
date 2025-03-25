@@ -15,7 +15,7 @@ const Inspiration = () => {
 
   return (
     <div className={classes.Inspiration}>
-      <Parallax className={classes.ParallaxContainer} strength={200}>
+      <Parallax className={classes.ParallaxContainer}>
         <Background className={classes.CustomBackground}>
           <div className={classes.ImagesContainer}
             onMouseEnter={() => setCursorType("none")}
