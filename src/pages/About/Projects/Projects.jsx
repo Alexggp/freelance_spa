@@ -41,7 +41,7 @@ const Projects = () => {
       <div className={classes.InfoContainer}>
         {activeProject ?
           <ProjectReview project={activeProject} />
-          : <p className={classes.Title}>{t('projects.title')}</p> 
+          : <div className={classes.TitleContainer}> <p className={classes.Title}>{t('projects.title')}</p> </div>
         }
       </div>
       <div className={classes.ProjectsContainer}>

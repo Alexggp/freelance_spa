@@ -2,15 +2,23 @@
   width: 100vw;
   display: flex;
   align-items: flex-start;
-  position: relative; /* Asegura que el sticky funcione */
-  overflow: unset!important;
+  position: relative;
+  /* Asegura que el sticky funcione */
+  overflow: unset !important;
+  background-color: #282828;
+  opacity: 1;
+  background-image: linear-gradient(135deg, #2f2f2f 25%, transparent 25%), linear-gradient(225deg, #2f2f2f 25%, transparent 25%), linear-gradient(45deg, #2f2f2f 25%, transparent 25%), linear-gradient(315deg, #2f2f2f 25%, #282828 25%);
+  background-position: 24px 0, 24px 0, 0 0, 0 0;
+  background-size: 48px 48px;
+  background-repeat: repeat;
 }
 
-.InfoContainer{
+.InfoContainer {
   width: 50vw;
   height: 100vh;
   position: sticky;
-  top: 0; /* Se mantiene pegado al top de la ventana */
+  top: 0;
+  /* Se mantiene pegado al top de la ventana */
   left: 0;
   overflow: hidden;
   display: flex;
@@ -18,45 +26,56 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-top: 1px solid var(--color-black);
-  border-bottom: 1px solid var(--color-black);
 }
 
-.InfoContainer>.Title{
+
+.TitleContainer {
   font-size: 3vw;
   font-weight: bold;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1vw 0 1vw 2vw;
 }
 
-.ProjectsContainer{
-  width: 50vw;  display: flex;
+.ProjectsContainer {
+  width: 50vw;
+  display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
 }
 
-.ProjectsList{
+.ProjectsList {
   list-style: none;
   width: 100%;
   padding: 0;
 }
 
-.ProjectsList li{
+.ProjectsList li {
   font-size: 2.5vw;
   height: 15vh;
-  width: 100%;
+  width: 47vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-top: 1px solid var(--color-black);
-  border-bottom: 1px solid var(--color-black);
-  border-left: 2px solid var(--color-black);
-  border-right: 2px solid var(--color-black);
+  /* border-top: 1px solid var(--color-secondary);
+  border-bottom: 1px solid var(--color-secondary);
+  border-left: 2px solid var(--color-secondary);
+  border-right: 2px solid var(--color-secondary); */
+  margin: 1vw;
+  background-color: var(--color-white);
 }
 
-.ProjectsList li:hover{
-  background-color: var(--color-secondary) !important;
-  border-left: 2px solid var(--color-secondary) !important;
+.ProjectsList li:hover {
+  background-color: transparent !important;
+  border-left: none !important;
   color: var(--color-white) !important;
 }

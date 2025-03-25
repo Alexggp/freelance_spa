@@ -4,7 +4,6 @@
   line-height: 1.7em;
   width: 100vw;
   padding: 2em;
-  border-bottom: 4px solid var(--color-black);
   background-color: var(--color-white);
 }
 
