@@ -1,0 +1,40 @@
+{
+  "features": {
+    "marketing": {
+      "title": "Digital Marketing",
+      "image": "marketing.jpg",
+      "description": "Digital marketing is key to making your project visible and attracting the right customers. From SEO to social media, I design strategies that grow your brand.",
+      "cta": "Shall we talk about how to launch your project?"
+    },
+    "design": {
+      "title": "web design",
+      "image": "design.jpg",
+      "description": "Your website is the first impression your customers will have of your business. That's why I make sure it's attractive, functional, and accessible to everyone. There are no second chances for a first impression.",
+      "cta": "Do you want your website to reflect the essence of your brand?"
+    },
+    "development": {
+      "title": "app development",
+      "image": "development.jpg",
+      "description": "Web applications are a powerful tool to connect with your customers and grow your business. I develop custom applications that adapt to your needs and those of your users.",
+      "cta": "Do you want your business to be just a click away?"
+    },
+    "responsive": {
+      "title": "any platform",
+      "image": "responsive.jpg",
+      "description": "Nowadays, your customers look for you from any device. That's why I develop websites that adapt to any screen, so your business is always just a click away.",
+      "cta": "Do you want your website to be available anywhere?"
+    },
+    "a11y": {
+      "title": "Inclusive access",
+      "image": "a11y.jpg",
+      "description": "Accessibility is a right, not a privilege. That's why I develop websites that meet accessibility standards, so all your customers can enjoy your content.",
+      "cta": "Do you want your website to be accessible to everyone?"
+    },
+    "ai": {
+      "title": "AI",
+      "image": "ai.jpg",
+      "description": "Artificial intelligence is already the present. I develop AI-based solutions that help you automate tasks, analyze data, and improve your users' experience.",
+      "cta": "Are you ready to enter the AI era?"
+    }
+  }
+}

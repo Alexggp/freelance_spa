@@ -12,6 +12,9 @@ import global_es from './locales/es/global.json';
 import global_en from './locales/en/global.json';
 import projects_es from './locales/es/projects.json';
 import projects_en from './locales/en/projects.json';
+import features_en from './locales/en/features.json';
+import features_es from './locales/es/features.json';
+
 
 const locales = ['en', 'es'];
 let userLang = window.navigator.userLanguage || window.navigator.language;
@@ -23,11 +26,13 @@ i18next.init({
   resources: {
     es: {
       global: global_es,
-      projects: projects_es
+      projects: projects_es,
+      features: features_es
     },
     en: {
       global: global_en,
-      projects: projects_en
+      projects: projects_en,
+      features: features_en
     }
   }
 });

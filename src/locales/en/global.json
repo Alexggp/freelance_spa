@@ -37,26 +37,6 @@
       "title": "Inspiration",
       "subtitle": "So how can I help you?"
     },
-    "Features": {
-      "marketing": {
-        "title": "Digital Marketing"
-      },
-      "design": {
-        "title": "web design"
-      },
-      "development": {
-        "title": "app development"
-      },
-      "responsive": {
-        "title": "any platform"
-      },
-      "a11y": {
-        "title": "Inclusive access"
-      },
-      "ai": {
-        "title": "AI"
-      }
-    },
     "Contact": {
       "text": "Do you want to make your project come true?",
       "title": "Let's Talk",

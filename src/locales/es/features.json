@@ -1,0 +1,40 @@
+{
+  "features": {
+    "marketing": {
+      "title": "Marketing digital",
+      "image": "marketing.jpg",
+      "description": "El marketing digital es clave para que tu proyecto gane visibilidad y atraiga a los clientes adecuados. Desde SEO hasta redes sociales, diseño estrategias que hacen crecer tu marca.",
+      "cta": "¿Hablamos sobre cómo hacer despegar tu proyecto?"
+    },
+    "design": {
+      "title": "diseño web",
+      "image": "design.jpg",
+      "description": "Tu web es la primera impresión que tus clientes tendrán de tu negocio. Por eso, me aseguro de que sea atractiva, funcional y accesible para todos. No hay segundas oportunidades para una primera impresión.",
+      "cta": "¿Quieres que tu web refleje la esencia de tu marca?"
+    },
+    "development": {
+      "title": "desarrollo de apps",
+      "image": "development.jpg",
+      "description": "Las aplicaciones web son una herramienta poderosa para conectar con tus clientes y hacer crecer tu negocio. Desarrollo aplicaciones a medida que se adaptan a tus necesidades y las de tus usuarios.",
+      "cta": "¿Quieres que tu negocio esté a un clic de distancia?"
+    },
+    "responsive": {
+      "title": "multi plataforma",
+      "image": "responsive.jpg",
+      "description": "Hoy en día, tus clientes te buscan desde cualquier dispositivo. Por eso, desarrollo webs que se adaptan a cualquier pantalla, para que tu negocio esté siempre a un clic de distancia.",
+      "cta": "¿Quieres que tu web esté disponible en cualquier lugar?"
+    },
+    "a11y": {
+      "title": "Acceso inclusivo",
+      "image": "a11y.jpg",
+      "description": "La accesibilidad es un derecho, no un privilegio. Por eso, desarrollo webs que cumplen con los estándares de accesibilidad, para que todos tus clientes puedan disfrutar de tu contenido.",
+      "cta": "¿Quieres que tu web sea accesible para todos?"
+    },
+    "ai": {
+      "title": "IA",
+      "image": "ai.jpg",
+      "description": "La inteligencia artificial ya es el presente. Desarrollo soluciones basadas en IA que te ayudan a automatizar tareas, analizar datos y mejorar la experiencia de tus usuarios.",
+      "cta": "¿Estás preparado para entrar en la era de la IA?"
+    }
+  }
+}

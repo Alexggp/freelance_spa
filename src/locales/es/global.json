@@ -37,26 +37,6 @@
       "title": "Inspiración",
       "subtitle": "¿En qué puedo ayudarte?"
     },
-    "Features": {
-      "marketing": {
-        "title": "Marketing digital"
-      },
-      "design": {
-        "title": "diseño web"
-      },
-      "development": {
-        "title": "desarrollo de apps"
-      },
-      "responsive": {
-        "title": "multi plataforma"
-      },
-      "a11y": {
-        "title": "Acceso inclusivo"
-      },
-      "ai": {
-        "title": "IA"
-      }
-    },
     "Contact": {
       "text": "¿Quieres hacer tu proyecto realidad?",
       "title": "Hablemos",

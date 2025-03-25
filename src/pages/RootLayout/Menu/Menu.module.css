@@ -27,6 +27,7 @@
   transition: font-size 0.3s ease-in-out;
   font-size: 5vw;
   width: fit-content;
+  text-align: center;
 }
 
 .Selectable:hover {
@@ -57,6 +58,12 @@
     font-size: 14vw;
   }
 
+  .Menu>.Selectable,
+  .LanguageSelector {
+    margin-top: 4vh;
+    font-size: 14vw;
+  }
+
   .Selectable {
     transition: none;
     font-size: 14vw;
@@ -67,10 +74,7 @@
   }
 
 
-  .Menu>.Selectable,
-  .LanguageSelector {
-    margin-top: 4vh;
-  }
+  
 
   .isVisible {
     transform: translateY(0);
