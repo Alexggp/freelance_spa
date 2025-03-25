@@ -45,7 +45,7 @@ const Menu = ({ isVisible, toggleMenu }) => {
         -
         <Selectable className={i18n.language === 'en' ? classes.LocaleSelected : ''} onClick={()=>handleClick('en')}>{t('root.Menu.locales.english')}</Selectable>
       </div>
-      <Footer />
+      <Footer alternative={true}/>
     </div>
   );
 

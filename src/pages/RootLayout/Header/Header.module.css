@@ -42,3 +42,9 @@
   width: 100%;
   height: auto;
 }
+
+
+.MenuStyle .Box{
+  border-color: var(--color-white);
+  color: var(--color-white);
+}

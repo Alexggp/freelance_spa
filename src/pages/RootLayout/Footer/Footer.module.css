@@ -66,6 +66,11 @@
   animation: fadeUp 1.5s ease-out forwards;
 }
 
+.AltStyle .Box{
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
 @keyframes fadeUp {
   0% {
     opacity: 1;

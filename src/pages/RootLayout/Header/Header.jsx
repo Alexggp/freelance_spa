@@ -34,7 +34,7 @@ const Header = ({toggleMenu, menuIsVisible}) => {
   }, [lastScrollY]);
 
   return (
-    <header className={`${classes.Header} ${isVisible ? classes.visible : classes.hidden}`}>
+    <header className={`${classes.Header} ${isVisible ? classes.visible : classes.hidden} ${menuIsVisible ? classes.MenuStyle : null}`}>
       <div className={classes.Box}>
         <Logo />
         <button className={classes.IconContainer}
