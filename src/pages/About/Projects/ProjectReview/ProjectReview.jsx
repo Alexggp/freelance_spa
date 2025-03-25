@@ -2,6 +2,13 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import styles from './ProjectReview.module.css';
 
+/**
+ * Displays detailed information of a project, including dynamic image loading.
+ *
+ * @param {Object} project - Project data including metadata and image filename.
+ * @example
+ * <ProjectReview project={{ title: 'App', image: 'app.png', tech: 'React', ... }} />
+ */
 const ProjectReview = ({ project }) => {
   const { t } = useTranslation('projects');
 
@@ -18,10 +25,18 @@ const ProjectReview = ({ project }) => {
     url
   } = project;
 
+  // Load all images in /src/assets/projects
+  const images = import.meta.glob('/src/assets/projects/*', {
+    eager: true,
+    import: 'default'
+  });
+
+  const imageSrc = images[`/src/assets/projects/${image}`];
+
   return (
     <div className={styles.ProjectReview}>
       <div className={styles.ImageContainer}>
-        <img src={`/src/assets/projects/${image}`} alt={title} />
+        <img src={imageSrc} alt={title} />
       </div>
       <p>{description}</p>
       <div className={styles.InfoContainer}>
@@ -37,3 +52,4 @@ const ProjectReview = ({ project }) => {
 };
 
 export default ProjectReview;
+
