@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import classes from './Main.module.css';
 import WordRevealLoop from './WordRevealLoop/WordRevealLoop';
 import VideoPlayer from './VideoPlayer/VideoPlayer';
-import sampleVideo from '../../assets/video/main_video.mp4';
+import sampleVideo from '../../assets/video/spa_compressed.mp4';
 import ScrollCta from './ScrollCta/ScrollCta';
 import StretchedTitle from './StretchedTitle/StretchedTitle';
 import Introduction from './Introduction/Introduction';
