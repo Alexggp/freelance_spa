@@ -1,11 +1,14 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Lenis from "lenis";
+import { useCursor } from "../../contexts/CursorContext";
 
 const ScrollController = () => {
   const { pathname } = useLocation();
+  const { setCursorType } = useCursor();
 
   useEffect(() => {
+    setCursorType("default"); // Restaura el cursor al cambiar de ruta
     // Desactiva la restauración automática del navegador
     if ("scrollRestoration" in window.history) {
       window.history.scrollRestoration = "manual";
