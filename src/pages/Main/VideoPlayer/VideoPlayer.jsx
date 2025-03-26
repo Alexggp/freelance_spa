@@ -36,12 +36,6 @@ const VideoPlayer = ({ src, poster }) => {
     }
   };
 
-  // En caso de que el hook entre antes de que videoRef esté listo
-  useEffect(() => {
-    if (videoRef.current && cursorType === "default") {
-      setCursorType("playVideo");
-    }
-  }, [videoRef.current]);
 
   return (
     <div ref={ref} className={classes.VideoPlayer}>
