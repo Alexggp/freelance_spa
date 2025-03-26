@@ -14,10 +14,12 @@ import Contact from './Contact/Contact';
 import ProjectsCta from './ProjectsCta/ProjectsCta';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import useIsIos from '../../hooks/useIsIos';
+import usePageReady from '../../hooks/usePageReady';
 
 const Main = () => {
   const [videoLoaded, setVideoLoaded] = useState(false);
   const isIOS = useIsIos();
+  const pageReady = usePageReady();
 
   useEffect(() => {
     if (isIOS) {
@@ -26,17 +28,17 @@ const Main = () => {
   }, [isIOS]);
 
   useEffect(() => {
-    if (videoLoaded) {
+    if (videoLoaded || pageReady) {
       ScrollTrigger.refresh();
     }
-  }, [videoLoaded]);
+  }, [videoLoaded, pageReady]);
 
   return (
     <div className={classes.MainPage}>
       <div className={classes.CoverSection}>
         <WordRevealLoop />
 
-        {isIOS ? (
+        {isIOS && pageReady ? (
           <>
             <div className={classes.PosterImageContainer}>
             <img
@@ -51,7 +53,7 @@ const Main = () => {
         ) : (
           <div
             className={`${classes.VideoBlockFadeIn} ${
-              videoLoaded ? classes.Visible : classes.Hidden
+              videoLoaded && pageReady ? classes.Visible : classes.Hidden
             }`}
           >
             <VideoPlayer
@@ -64,7 +66,7 @@ const Main = () => {
         )}
       </div>
 
-      {videoLoaded && (
+      {videoLoaded && pageReady && (
         <>
           <StretchedTitle />
           <Introduction />
