@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import classes from './Main.module.css';
 import WordRevealLoop from './WordRevealLoop/WordRevealLoop';
@@ -13,26 +13,47 @@ import Inspiration from './Inspiration/Inspiration';
 import FeaturesSlide from './FeaturesSlide/FeaturesSlide';
 import Contact from './Contact/Contact';
 import ProjectsCta from './ProjectsCta/ProjectsCta';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const Main = () => {
+  const [videoLoaded, setVideoLoaded] = useState(false);
+
+  useEffect(() => {
+    if (videoLoaded) {
+      ScrollTrigger.refresh();
+    }
+  }, [videoLoaded]);
 
   return (
     <div className={classes.MainPage}>
       <div className={classes.CoverSection}>
         <WordRevealLoop />
-        <VideoPlayer src={sampleVideo} poster={videoPoster}/>
-        <ScrollCta />
+
+        <div
+          className={videoLoaded ? classes.VideoBlockFadeIn : classes.HiddenBlock}
+        >
+          <VideoPlayer
+            src={sampleVideo}
+            poster={videoPoster}
+            onLoadedData={() => setVideoLoaded(true)}
+          />
+          <ScrollCta />
+        </div>
       </div>
-      <StretchedTitle />
-      <Introduction />
-      <PassionSection />
-      <Inspiration />
-      <FeaturesSlide />
-      <ProjectsCta />
-      <Contact />
+
+      {videoLoaded && (
+        <>
+          <StretchedTitle />
+          <Introduction />
+          <PassionSection />
+          <Inspiration />
+          <FeaturesSlide />
+          <ProjectsCta />
+          <Contact />
+        </>
+      )}
     </div>
   );
-
-}
+};
 
 export default Main;

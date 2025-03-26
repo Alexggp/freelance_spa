@@ -1,4 +1,20 @@
 .MainPage{
   width: 100vw;
-  height: auto;
+  min-height: 110vh;
+}
+
+
+.VideoBlockFadeIn {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.HiddenBlock {
+  display: none;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }

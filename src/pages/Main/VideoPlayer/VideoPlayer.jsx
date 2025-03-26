@@ -14,7 +14,7 @@ import { useCursorOnHoverArea } from "../../../hooks/useCursorOnHoverArea";
  * @example
  * <VideoPlayer src="/video.mp4" poster="/poster.jpg" />
  */
-const VideoPlayer = ({ src, poster }) => {
+const VideoPlayer = ({ src, poster, onLoadedData }) => {
   const videoRef = useRef(null);
   const { cursorType, setCursorType } = useCursor();
 
@@ -49,6 +49,7 @@ const VideoPlayer = ({ src, poster }) => {
               poster={poster}
               loop
               onClick={togglePlayPause}
+              onLoadedData={onLoadedData}
             />
           </div>
         </Background>
