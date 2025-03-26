@@ -1,0 +1,34 @@
+/* Marquee.module.css */
+
+.Marquee {
+  overflow: hidden;
+  width: 100%;
+}
+
+.MarqueeTrack {
+  display: flex;
+  animation: scroll 15s linear infinite;
+  width: fit-content;
+}
+
+.MarqueeContent {
+  display: flex;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 1024px) and (hover: none) {
+  .MarqueeTrack {
+    animation-duration: 10s;
+  }
+}

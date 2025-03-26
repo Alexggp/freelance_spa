@@ -1,5 +1,15 @@
 {
   "root": {
+    "StickyBar":{
+      "bannerText": "Consigue tu primera sesión de consultoría para tu proyecto",
+      "title": "¿Quieres que analicemos tu caso sin ningún compromiso?",	
+      "cta": "Déjame tu email y me pondré en contacto contigo.",
+      "placeholder": "Tu mejor email",
+      "textareaPlaceholder": "Si quieres, me puedes hacer una consulta",
+      "button": "Enviar",
+      "unknownError": "Ha ocurrido un error inesperado. Por favor, inténtalo de nuevo más tarde.",
+      "success": "Gracias por escribir. En breve me pondré en contacto contigo."
+    },
     "Footer": {
       "copied": "Copiado al portapeles"
     },

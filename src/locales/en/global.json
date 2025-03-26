@@ -11,6 +11,16 @@
         "english": "English",
         "spanish": "Español"
       }
+    },
+    "StickyBar": {
+      "bannerText": "Get your first consulting session for your proyect",
+      "title": "Do you want me to analyze your case with no commitment?",
+      "cta": "Leave me your email and I will get in touch with you.",
+      "placeholder": "Your best email",
+      "textareaPlaceholder": "If you want, you can ask me a question",
+      "button": "Send",
+      "unknownError": "An unexpected error has occurred. Please try again later.",
+      "success": "Thank you for writing. I will get in touch with you shortly."
     }
   },
   "main": {
@@ -45,15 +55,14 @@
       "button3": "call"
     }
   },
-    "about": {
-      "Introduction": {
-        "title": "I am Alejandro.",
-        "text1": "I graduated as a Telecommunications engineer, trained as a developer in startups, and established myself as a team leader in consulting.",
-        "text2": "Now I work as a freelancer from Asturias. Here I have found the peace and inspiration I need to create.",
-        "text3": "And I would love to put this energy at the service of your project.",
-        "cta": "Get in touch"
-      },
-      "Mountain": "Coding from the mountains"
-    }
-  
+  "about": {
+    "Introduction": {
+      "title": "I am Alejandro.",
+      "text1": "I graduated as a Telecommunications engineer, trained as a developer in startups, and established myself as a team leader in consulting.",
+      "text2": "Now I work as a freelancer from Asturias. Here I have found the peace and inspiration I need to create.",
+      "text3": "And I would love to put this energy at the service of your project.",
+      "cta": "Get in touch"
+    },
+    "Mountain": "Coding from the mountains"
+  }
 }

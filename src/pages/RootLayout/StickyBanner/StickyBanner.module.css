@@ -1,0 +1,148 @@
+.StickyBanner {
+  width: 31em;
+  max-width: 500px;
+  position: fixed;
+  bottom: 3.5vh;
+  right: 10vw;
+  border: 1px solid #ffffff5e;
+  background-color: rgb(0 0 0 / 75%);
+  color: var(--color-white);
+  font-size: 1.2vw;
+  padding: 0.5em 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1em;
+  z-index: 99999;
+  overflow: hidden;
+  max-height: calc(2em + 2px);
+  transition: max-height 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.CloseButton {
+  position: absolute;
+  top: 0rem;
+  right: 0.2rem;
+  font-size: 2em;
+  line-height: 1;
+}
+
+.Open .CloseButton {
+  top: -0.1rem;
+  right: 0.5rem;
+}
+
+.BannerContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 1.5em;
+  font-size: 1em;
+  line-height: 1;
+}
+
+.Separator {
+  font-size: 1em;
+  vertical-align: middle;
+  line-height: 1;
+  position: relative;
+  top: -0.1em;
+  margin: 0 0.5em;
+}
+
+.Open {
+  max-height: 75vh;
+
+}
+
+.Form {
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Title {
+  font-size: 1.2em;
+  font-weight: 600;
+  width: 100%;
+
+}
+
+.Cta {
+  font-size: 0.8em;
+  width: 100%;
+}
+
+.Form button {
+  border-radius: 8px;
+  background-color: var(--color-black);
+  border: none;
+  color: var(--color-white);
+}
+
+.Form input {
+  font-size: 0.8em;
+}
+
+.Form textarea {
+  font-size: 0.8em;
+  resize: vertical;
+  padding: 0.5em;
+  width: 100%;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  resize: none;
+}
+
+.Form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.Response {
+  font-size: 1em;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+@media (max-width: 1024px) and (hover: none) {
+  .StickyBanner {
+    max-width: 10vw;
+    left: 50%;
+    transform: translateX(130%);
+    bottom: 5vh;
+    font-size: 5vw;
+  }
+
+  .Form {
+    height: 25em;
+    display: none;
+  }
+
+
+  .Open {
+    max-width: 90vw;
+    max-height: 90vh;
+    transform: translateX(-50%);
+  }
+
+  .Open .Form {
+    display: flex;
+  }
+
+  .CloseButton {
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .Open .CloseButton{
+    transform: unset;
+  
+  }
+}
