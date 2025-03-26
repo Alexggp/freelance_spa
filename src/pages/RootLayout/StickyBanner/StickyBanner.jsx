@@ -47,9 +47,9 @@ const StickyBanner = () => {
 
       <div
         className={classes.BannerContainer}
-        onClick={() => { !isFormOpen ? setFormOpen(true) : null }}
-        onMouseEnter={() => { !isFormOpen ? setCursorType('pointer') : null }}
-        onMouseLeave={() => { !isFormOpen ? setCursorType('default') : null }}
+        onClick={() =>  setFormOpen(!isFormOpen)}
+        onMouseEnter={() =>  setCursorType('pointer')}
+        onMouseLeave={() =>  setCursorType('default')}
       >
         <Marquee>
           {t('root.StickyBar.bannerText')}
