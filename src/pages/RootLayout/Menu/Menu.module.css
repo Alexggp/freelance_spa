@@ -58,8 +58,10 @@
 
 @media (max-width: 1024px) and (hover: none) {
   .Menu {
-    transform: translateY(-100%);
+    top: -110vh;
     font-size: 14vw;
+    transform: rotate(0deg);
+
   }
 
   .Menu>.Selectable,
@@ -77,11 +79,8 @@
     all: unset;
   }
 
-
-  
-
   .isVisible {
-    transform: translateY(0);
+    transform: translateY(110vh);
 
   }
 }
