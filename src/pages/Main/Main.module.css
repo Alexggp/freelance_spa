@@ -13,6 +13,17 @@
   display: none;
 }
 
+
+.PosterImageContainer{
+  width: 100vw;
+  height: 40vh;
+}
+.PosterImage{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 @keyframes fadeIn {
   to {
     opacity: 1;
