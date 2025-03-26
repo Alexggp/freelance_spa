@@ -8,6 +8,7 @@ import SantanderImg from '../../../assets/projects/santander_sgcb.png';
 import linkIcon from '../../../assets/icons/svg/enter.svg'
 import { useCursorOnHoverArea } from '../../../hooks/useCursorOnHoverArea';
 import { useNavigate } from 'react-router-dom';
+import useScreenSize from '../../../hooks/useScreenSize';
 
 const ProjectsCta = () => {
   const refCursor = useCursorOnHoverArea({
@@ -16,18 +17,27 @@ const ProjectsCta = () => {
   });
   const { t } = useTranslation('global');
   const navigate = useNavigate();
+  const { isDesktop } = useScreenSize();
+
 
   return (
     <div className={classes.ProjectsCta}>
 
+      {
+        isDesktop ?
+          (
+            <>
+              <div className={classes.ExtraImageLeft}>
+                <img className={classes.Image} src={SantanderImg} />
+              </div>
 
-      <div className={classes.ExtraImageLeft}>
-        <img className={classes.Image} src={SantanderImg} />
-      </div>
-
-      <div className={classes.ExtraImageReft}>
-        <img className={classes.Image} src={OPVImg} />
-      </div>
+              <div className={classes.ExtraImageReft}>
+                <img className={classes.Image} src={OPVImg} />
+              </div>
+            </>
+          )
+          : <></>
+      }
 
 
       <div className={classes.ImageContainer} role='button'
