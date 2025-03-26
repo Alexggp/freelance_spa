@@ -1,8 +1,8 @@
 {
   "root": {
-    "StickyBar":{
+    "StickyBar": {
       "bannerText": "Consigue tu primera sesión de consultoría para tu proyecto",
-      "title": "¿Quieres que analicemos tu caso sin ningún compromiso?",	
+      "title": "¿Quieres que analicemos tu caso sin ningún compromiso?",
       "cta": "Déjame tu email y me pondré en contacto contigo.",
       "placeholder": "Tu mejor email",
       "textareaPlaceholder": "Si quieres, me puedes hacer una consulta",
@@ -53,7 +53,8 @@
       "button1": "Agenda",
       "button2": "una",
       "button3": "llamada"
-    }
+    },
+    "ProjectsCta": "Mis proyectos"
   },
   "about": {
     "Introduction": {
@@ -62,7 +63,7 @@
       "text2": "Ahora trabajo como freelance desde Asturias. Aquí he encontrado la paz y la inspiración que necesito para crear.",
       "text3": "Y me encantaría poner esta energía al servicio de tu proyecto.",
       "cta": "Escríbeme"
-    }, 
+    },
     "Mountain": "Código desde las montañas"
   }
 }

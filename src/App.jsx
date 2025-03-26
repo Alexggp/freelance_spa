@@ -3,6 +3,8 @@ import { Route, Routes, useNavigate } from 'react-router-dom';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+import { useLocation } from 'react-router-dom';
+
 import RootLayout from "./pages/RootLayout/RootLayout";
 import Main from "./pages/Main/Main";
 import About from "./pages/About/About";
@@ -15,6 +17,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   const navigate = useNavigate();
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
 
   useEffect(() => {
     const redirectPath = sessionStorage.redirect;

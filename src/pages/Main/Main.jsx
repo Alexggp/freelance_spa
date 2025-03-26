@@ -12,12 +12,12 @@ import PassionSection from './PassionSection/PassionSection';
 import Inspiration from './Inspiration/Inspiration';
 import FeaturesSlide from './FeaturesSlide/FeaturesSlide';
 import Contact from './Contact/Contact';
+import ProjectsCta from './ProjectsCta/ProjectsCta';
 
 const Main = () => {
 
   return (
     <div className={classes.MainPage}>
-
       <div className={classes.CoverSection}>
         <WordRevealLoop />
         <VideoPlayer src={sampleVideo} poster={videoPoster}/>
@@ -28,6 +28,7 @@ const Main = () => {
       <PassionSection />
       <Inspiration />
       <FeaturesSlide />
+      <ProjectsCta />
       <Contact />
     </div>
   );

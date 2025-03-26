@@ -51,7 +51,7 @@ const Projects = () => {
 
 
   return (
-    <div className={classes.Projects}>
+    <div className={classes.Projects} id='projects'>
       <div className={classes.InfoContainer}>
         {activeProject ?
           <ProjectReview project={activeProject} />

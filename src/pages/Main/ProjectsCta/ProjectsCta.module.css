@@ -1,0 +1,82 @@
+.ProjectsCta{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b4b0a9;
+  border-top: 4px solid var(--color-black);
+  border-bottom: 4px solid var(--color-black)
+
+}
+
+.ImageContainer, .ExtraImageLeft, .ExtraImageReft{
+  min-width: 300px ;
+  height: 80vh;
+  max-width: 60vw;
+  position: absolute;
+}
+
+.ExtraImageLeft{
+  left: -100vh;
+}
+
+.ExtraImageReft{
+  right: -100vh;
+}
+
+.ExtraImageLeft, .ExtraImageReft{
+  opacity: 0.2;
+}
+
+.Image{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.Title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+  font-size: 6vw;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.Title img{
+  width: 0.7em;
+  height: 0.7em;
+  margin: 0em 0.2em;
+  transform: translateY(0.1em);
+}
+
+.ImageContainer:hover .Title{
+  opacity: 1;
+}
+
+.ImageContainer:hover .Image{
+  opacity: 0.2;
+}
+
+@media (max-width: 1024px) and (hover: none) {
+  .ProjectsCta{
+    height: 50vh;
+  }
+
+  .Title{
+    opacity: 1;
+  }
+  
+  .Image{
+    opacity: 0.2;
+  }
+  .Title{
+    font-size: 11vw;
+  }
+}
