@@ -28,6 +28,8 @@
   width: 100vw;
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 1000;
 }
 
 @media (max-width: 1024px) and (hover: none) {

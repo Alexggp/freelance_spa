@@ -76,7 +76,7 @@
   }
 
   .Selectable:hover {
-    all: unset;
+    font-size: 14vw;
   }
 
   .isVisible {
