@@ -3,7 +3,8 @@ import { useCursor } from "../contexts/CursorContext";
 
 /**
  * Hook que gestiona el tipo de cursor si el mouse está encima del elemento,
- * incluso si ha llegado ahí por scroll.
+ * incluso si ha llegado ahí por scroll. Añade también soporte explícito con
+ * mouseEnter/mouseLeave para casos donde hay overlays absolutos.
  *
  * @param {Object} options
  * @param {string|Function} options.enterType - Tipo de cursor (o función que lo devuelve) al entrar
@@ -22,11 +23,11 @@ export const useCursorOnHoverArea = ({ enterType, leaveType }) => {
   const pointerPosRef = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
+    const resolveType = (type) => (typeof type === "function" ? type() : type);
+
     const updatePointerPos = (e) => {
       pointerPosRef.current = { x: e.clientX, y: e.clientY };
     };
-
-    const resolveType = (type) => (typeof type === "function" ? type() : type);
 
     const checkCursor = () => {
       const el = elementRef.current;
@@ -52,10 +53,26 @@ export const useCursorOnHoverArea = ({ enterType, leaveType }) => {
       requestAnimationFrame(checkCursor);
     };
 
+    const handleMouseEnter = () => {
+      setCursorType(resolveType(enterType));
+    };
+
+    const handleMouseLeave = () => {
+      setCursorType(resolveType(leaveType));
+    };
+
+    const el = elementRef.current;
+    if (!el) return;
+
+    el.addEventListener("mouseenter", handleMouseEnter);
+    el.addEventListener("mouseleave", handleMouseLeave);
     window.addEventListener("mousemove", updatePointerPos);
-    checkCursor();
+
+    checkCursor(); // inicia el loop
 
     return () => {
+      el.removeEventListener("mouseenter", handleMouseEnter);
+      el.removeEventListener("mouseleave", handleMouseLeave);
       window.removeEventListener("mousemove", updatePointerPos);
     };
   }, [enterType, leaveType, setCursorType]);

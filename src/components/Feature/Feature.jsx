@@ -3,7 +3,6 @@ import classes from './Feature.module.css';
 import { useCursor } from '../../contexts/CursorContext';
 import { useMouseParallax } from '../../hooks/useMouseParallax';
 import useScreenSize from '../../hooks/useScreenSize';
-import { useCursorOnHoverArea } from '../../hooks/useCursorOnHoverArea';
 
 const Feature = ({title, image, selected}) => {
   const [imageIsVisible, setImageIsVisible] = useState(false);
@@ -16,10 +15,6 @@ const Feature = ({title, image, selected}) => {
     setImageIsVisible(val)
   }
 
-  const ref = useCursorOnHoverArea({
-    enterType: () => videoRef.current?.paused ? "playVideo" : "pauseVideo",
-    leaveType: "default"
-  });
 
   return (
     <div className={classes.Feature}>
