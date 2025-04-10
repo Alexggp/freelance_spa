@@ -8,7 +8,7 @@ import inIconWhite from '../../../assets/icons/svg/linkedin_white.svg';
 
 import { useCursorOnHoverArea } from '../../../hooks/useCursorOnHoverArea';
 
-const EMAIL = 'alejandro.gg.perez@gmail.com';
+const EMAIL = 'alejandro@eutecnia.com';
 
 
 const Footer = ({alternative}) => {
