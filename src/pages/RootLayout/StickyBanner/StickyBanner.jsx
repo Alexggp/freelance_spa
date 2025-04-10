@@ -17,7 +17,7 @@ const StickyBanner = () => {
     e.preventDefault();
 
     try {
-      await fetch('https://formsubmit.co/ajax/497925d0bdcc3234eeb94938c875f3fb', {
+      await fetch('https://formsubmit.co/ajax/8eb679a3426f4fd1159bf5fe3a76520a', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
